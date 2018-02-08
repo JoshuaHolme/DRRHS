@@ -11,8 +11,8 @@
 		31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F181F45EF9300AA204F /* GrViewHWViewController.swift */; };
 		31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */; };
 		311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* GrSettingsViewController.swift */; };
-		313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */; };
-		313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */; };
+		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
+		313D4AD71F342668002FAFA3 /* GoldDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
 		3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */; };
 		3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */; };
@@ -26,6 +26,7 @@
 		31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */; };
 		31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */; };
 		31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */; };
+		6946B8512028E2B700F696E4 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B8502028E2B700F696E4 /* ClassView.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
 		696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153A1F70CCF500844EF8 /* Schedule.storyboard */; };
 		696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153E1F70CE3700844EF8 /* Settings.storyboard */; };
@@ -46,6 +47,7 @@
 		69D419AA1F60F74B00DF1B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D419A91F60F74B00DF1B2A /* Main.storyboard */; };
 		69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */; };
 		69D931E61F54FC61003D10B6 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E51F54FC61003D10B6 /* Teacher.swift */; };
+		69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F51A03202C1813008FD375 /* RoundedButton.swift */; };
 		8B8E77251C6DF5AAF791BFFB /* Pods_DRRHSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1596F0A0424EE2DB3260BE82 /* Pods_DRRHSUITests.framework */; };
 		9977D62A05659396767C9396 /* Pods_DRRHSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */; };
 		F5CA86866F0D3884A2D75B54 /* Pods_DRRHS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8488C9059FE65F1D88BFE5DA /* Pods_DRRHS.framework */; };
@@ -74,8 +76,8 @@
 		31111F181F45EF9300AA204F /* GrViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWViewController.swift; sourceTree = "<group>"; };
 		31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWTableViewCell.swift; sourceTree = "<group>"; };
 		311E2F801F4347790098B355 /* GrSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrSettingsViewController.swift; sourceTree = "<group>"; };
-		313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayViewController.swift; sourceTree = "<group>"; };
-		313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldDayViewController.swift; sourceTree = "<group>"; };
+		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
+		313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* GrB1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrB1ViewController.swift; sourceTree = "<group>"; };
 		3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 		31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAddHWViewController.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
+		6946B8502028E2B700F696E4 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
 		695317771F60BA760092454A /* DirectoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryTC.swift; sourceTree = "<group>"; };
 		696B153A1F70CCF500844EF8 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		696B153E1F70CE3700844EF8 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 		69D419A91F60F74B00DF1B2A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDetailVC.swift; sourceTree = "<group>"; };
 		69D931E51F54FC61003D10B6 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
+		69F51A03202C1813008FD375 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		8488C9059FE65F1D88BFE5DA /* Pods_DRRHS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889503338C678DF704102A81 /* Pods-DRRHSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHSUITests/Pods-DRRHSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BC31B450DFC50F8A09535C46 /* Pods-DRRHSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHSTests/Pods-DRRHSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,7 +181,7 @@
 				3182B9881F3615FB000F92DD /* GrB3ViewController.swift */,
 				3182B98A1F3617D5000F92DD /* GrB4ViewController.swift */,
 				311E2F801F4347790098B355 /* GrSettingsViewController.swift */,
-				313D4AD41F342648002FAFA3 /* GreenDayViewController.swift */,
+				313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */,
 			);
 			name = "Green Day Schedule";
 			path = ..;
@@ -186,7 +190,7 @@
 		311E24D41F539D8D00E49052 /* Gold Day Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				313D4AD61F342668002FAFA3 /* GoldDayViewController.swift */,
+				313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */,
 				3182B98C1F363233000F92DD /* GoB1ViewController.swift */,
 				3182B98E1F36324D000F92DD /* GoB2ViewController.swift */,
 				3182B9901F36326E000F92DD /* GoB3ViewController.swift */,
@@ -197,6 +201,15 @@
 				3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */,
 			);
 			path = "Gold Day Schedule";
+			sourceTree = "<group>";
+		};
+		6946B84F2028E28000F696E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6946B8502028E2B700F696E4 /* ClassView.swift */,
+				69F51A03202C1813008FD375 /* RoundedButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		696B153C1F70CD2D00844EF8 /* Storyboards */ = {
@@ -289,6 +302,7 @@
 			isa = PBXGroup;
 			children = (
 				699A69971F19816000E9CAD9 /* AppDelegate.swift */,
+				6946B84F2028E28000F696E4 /* View */,
 				696B153C1F70CD2D00844EF8 /* Storyboards */,
 				69B8ABA11F5CED3600A0A6BE /* Tab Bar */,
 				69D931E01F54F76A003D10B6 /* Directory */,
@@ -435,18 +449,21 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = XLEYC29AG5;
+						DevelopmentTeam = TGLE8RZWF5;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					699A69A91F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TGLE8RZWF5;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 699A69931F19816000E9CAD9;
 					};
 					699A69B41F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = TGLE8RZWF5;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 699A69931F19816000E9CAD9;
 					};
@@ -648,13 +665,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6946B8512028E2B700F696E4 /* ClassView.swift in Sources */,
+				69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */,
 				3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				69B8ABA41F5CED8A00A0A6BE /* DRGreen.swift in Sources */,
-				313D4AD51F342648002FAFA3 /* GreenDayViewController.swift in Sources */,
+				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
 				3182B9911F36326E000F92DD /* GoB3ViewController.swift in Sources */,
@@ -663,7 +682,7 @@
 				69D931E61F54FC61003D10B6 /* Teacher.swift in Sources */,
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
 				311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */,
-				313D4AD71F342668002FAFA3 /* GoldDayViewController.swift in Sources */,
+				313D4AD71F342668002FAFA3 /* GoldDayScheduleVC.swift in Sources */,
 				3182B9891F3615FB000F92DD /* GrB3ViewController.swift in Sources */,
 				3182B98B1F3617D5000F92DD /* GrB4ViewController.swift in Sources */,
 				3160B9CF1F35746B00EA532B /* GrB1ViewController.swift in Sources */,
@@ -769,7 +788,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -819,7 +838,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -832,13 +851,14 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XLEYC29AG5;
+				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holme.Dighton-Rehoboth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -848,13 +868,14 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = XLEYC29AG5;
+				DEVELOPMENT_TEAM = TGLE8RZWF5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.holme.Dighton-Rehoboth";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -870,7 +891,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DRRHS.app/DRRHS";
 			};
 			name = Debug;
@@ -886,7 +908,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DRRHS.app/DRRHS";
 			};
 			name = Release;
@@ -901,7 +924,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DRRHS;
 			};
 			name = Debug;
@@ -916,7 +940,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.holme.DRRHSUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TEST_TARGET_NAME = DRRHS;
 			};
 			name = Release;

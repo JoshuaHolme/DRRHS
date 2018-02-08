@@ -1,5 +1,5 @@
 //
-//  GoldDayViewController.swift
+//  GoldDayScheduleVC.swift
 //  DRRHS
 //
 //  Created by Sam DuBois on 8/3/17.
@@ -28,7 +28,7 @@ var GoB4ClassLabelField = String()
 var GoB4TeacherLabelField = String()
 var GoB4RoomLabelField = String()
 
-class GoldDayViewController: UIViewController {
+class GoldDayScheduleVC: UIViewController {
     
     //View Outlets that setup the look of the View Controller
     @IBOutlet weak var blockOne: UIView!

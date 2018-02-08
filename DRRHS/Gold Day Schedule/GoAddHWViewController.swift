@@ -90,16 +90,17 @@ class GoAddHWViewController: UIViewController, UITextFieldDelegate{
         
         let flexibleSpace = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.flexibleSpace, target: nil, action: nil)
         
-        let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
+        //let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
         
-        toolBar.setItems([flexibleSpace, doneButton], animated: true)
+        //toolBar.setItems([flexibleSpace, doneButton], animated: true)
         
         TextField.inputAccessoryView = toolBar
         DueDateTextField.inputAccessoryView = toolBar
     }
-    func doneClicked() {
+    //Swift 4 Conversion broke this
+    /*@objc func doneClicked() {
         view.endEditing(true)
-    }
+    }*/
     
     @IBAction func dismissPopUp(_ sender: Any) {
         dismiss(animated: true, completion: nil)
