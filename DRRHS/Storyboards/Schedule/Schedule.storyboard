@@ -21,20 +21,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-LK-af6">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6i-LK-af6">
                                 <rect key="frame" x="0.0" y="44" width="375" height="783"/>
                                 <connections>
                                     <segue destination="IBb-ac-I1Z" kind="embed" id="SAo-5f-pHz"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-ex-PSV">
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0xP-ex-PSV">
                                 <rect key="frame" x="0.0" y="44" width="375" height="783"/>
                                 <connections>
                                     <segue destination="tZj-ns-IGW" kind="embed" id="le9-iz-PCq"/>
                                 </connections>
                             </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="12y-Bm-2jp">
-                                <rect key="frame" x="136" y="52" width="103" height="29"/>
+                                <rect key="frame" x="62" y="52" width="250" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9f4-Wj-boq"/>
+                                </constraints>
                                 <segments>
                                     <segment title="Green"/>
                                     <segment title="Gold"/>
@@ -47,11 +50,10 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="12y-Bm-2jp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="6JQ-nD-1bH"/>
+                            <constraint firstItem="12y-Bm-2jp" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="8" id="5nh-NX-gLI"/>
                             <constraint firstItem="0xP-ex-PSV" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="49" id="8v3-2W-ypl"/>
+                            <constraint firstItem="12y-Bm-2jp" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="Ddx-SX-UrX"/>
                             <constraint firstItem="R6i-LK-af6" firstAttribute="bottom" secondItem="4ug-Mw-9AY" secondAttribute="top" constant="49" id="GCF-u6-Dg8"/>
-                            <constraint firstItem="12y-Bm-2jp" firstAttribute="centerX" secondItem="0xP-ex-PSV" secondAttribute="centerX" id="H2u-Ch-bPg"/>
-                            <constraint firstItem="0xP-ex-PSV" firstAttribute="top" secondItem="12y-Bm-2jp" secondAttribute="bottom" constant="-36" id="KhF-b1-Qpl"/>
                             <constraint firstAttribute="trailing" secondItem="0xP-ex-PSV" secondAttribute="trailing" id="NhW-Ej-u0T"/>
                             <constraint firstItem="0xP-ex-PSV" firstAttribute="trailing" secondItem="R6i-LK-af6" secondAttribute="trailing" id="RLe-L3-tjb"/>
                             <constraint firstItem="R6i-LK-af6" firstAttribute="leading" secondItem="0xP-ex-PSV" secondAttribute="leading" id="mAs-Ew-mKW"/>
@@ -76,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="-1600"/>
+            <point key="canvasLocation" x="1552.8" y="-1600.4926108374384"/>
         </scene>
         <!--Gold Day ScheduleVC-->
         <scene sceneID="4lP-va-jOG">

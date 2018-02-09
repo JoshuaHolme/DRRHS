@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xjA-QW-Kef">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xjA-QW-Kef">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--GrB1 View Controller-->
+        <!--InputVC-->
         <scene sceneID="fcY-Nf-gfL">
             <objects>
-                <viewController id="EeF-ZC-TfU" customClass="GrB1ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EeF-ZC-TfU" customClass="InputVC" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YOj-sR-DcT"/>
                         <viewControllerLayoutGuide type="bottom" id="RcT-DG-BSx"/>
@@ -114,324 +114,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeO-ys-9Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tYu-Oi-Km1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6616.8000000000002" y="-477.21139430284859"/>
-        </scene>
-        <!--GrB3 View Controller-->
-        <scene sceneID="N5Q-lW-Wmd">
-            <objects>
-                <viewController id="OM7-41-eGf" customClass="GrB3ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="qFi-me-pTr"/>
-                        <viewControllerLayoutGuide type="bottom" id="kcP-ff-FTF"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="zdq-cx-S7f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xdu-6R-MFn">
-                                <rect key="frame" x="16" y="40" width="84" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3f-dF-Th4">
-                                <rect key="frame" x="317" y="40" width="42" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveButtonIsPressed:" destination="OM7-41-eGf" eventType="touchUpInside" id="L8h-cU-Qbg"/>
-                                    <segue destination="T0e-Ed-7Hv" kind="unwind" identifier="GRB3Unwind" unwindAction="GRB3:" id="piX-O5-RR6"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What class are you taking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGv-er-FFe">
-                                <rect key="frame" x="16" y="87.5" width="213.5" height="21.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.80149508250000001" green="0.80149508250000001" blue="0.80149508250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Class Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3u4-jg-3pj">
-                                <rect key="frame" x="16" y="115" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who teaches the class?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QXX-rO-s4n">
-                                <rect key="frame" x="16" y="165" width="189" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EdA-tf-JN8">
-                                <rect key="frame" x="16" y="192" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What room is the class in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvC-SM-Msc">
-                                <rect key="frame" x="16" y="242" width="208" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Room Number Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lKw-M1-ytr">
-                                <rect key="frame" x="16" y="269" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92896630069999997" green="0.92896630069999997" blue="0.92896630069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="kGv-er-FFe" firstAttribute="leading" secondItem="xdu-6R-MFn" secondAttribute="leading" id="4NJ-kU-17O"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kGv-er-FFe" secondAttribute="trailing" id="6du-6Z-Su8"/>
-                            <constraint firstAttribute="trailing" secondItem="EdA-tf-JN8" secondAttribute="trailing" constant="16" id="7lO-gk-eRS"/>
-                            <constraint firstItem="3u4-jg-3pj" firstAttribute="leading" secondItem="zdq-cx-S7f" secondAttribute="leading" constant="16" id="A4U-nb-0hp"/>
-                            <constraint firstAttribute="trailing" secondItem="Y3f-dF-Th4" secondAttribute="trailing" constant="16" id="BVa-0X-gVu"/>
-                            <constraint firstAttribute="trailing" secondItem="3u4-jg-3pj" secondAttribute="trailing" constant="16" id="CJm-3e-RhB"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="QXX-rO-s4n" secondAttribute="trailing" id="GM0-sr-P9h"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xdu-6R-MFn" secondAttribute="trailing" id="HmK-cx-nbx"/>
-                            <constraint firstItem="EdA-tf-JN8" firstAttribute="leading" secondItem="QXX-rO-s4n" secondAttribute="leading" id="KSA-JD-rq0"/>
-                            <constraint firstItem="lKw-M1-ytr" firstAttribute="leading" secondItem="zdq-cx-S7f" secondAttribute="leading" constant="16" id="LqJ-eZ-feU"/>
-                            <constraint firstItem="xdu-6R-MFn" firstAttribute="leading" secondItem="zdq-cx-S7f" secondAttribute="leading" constant="16" id="NTq-4S-a3D"/>
-                            <constraint firstItem="Y3f-dF-Th4" firstAttribute="top" secondItem="qFi-me-pTr" secondAttribute="bottom" constant="20" id="P79-Do-Abp"/>
-                            <constraint firstItem="kGv-er-FFe" firstAttribute="top" secondItem="xdu-6R-MFn" secondAttribute="bottom" constant="16" id="Q5R-nX-VUy"/>
-                            <constraint firstItem="QXX-rO-s4n" firstAttribute="top" secondItem="3u4-jg-3pj" secondAttribute="bottom" constant="20" id="UNU-kf-Hak"/>
-                            <constraint firstAttribute="trailing" secondItem="lKw-M1-ytr" secondAttribute="trailing" constant="16" id="Vu1-w1-l1G"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="AvC-SM-Msc" secondAttribute="trailing" id="W6l-wx-zN2"/>
-                            <constraint firstItem="EdA-tf-JN8" firstAttribute="top" secondItem="QXX-rO-s4n" secondAttribute="bottom" constant="6" id="ZN7-Q8-9o4"/>
-                            <constraint firstItem="lKw-M1-ytr" firstAttribute="top" secondItem="AvC-SM-Msc" secondAttribute="bottom" constant="6" id="hCF-gb-4N1"/>
-                            <constraint firstItem="Y3f-dF-Th4" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xdu-6R-MFn" secondAttribute="trailing" id="lu1-yj-YvX"/>
-                            <constraint firstItem="QXX-rO-s4n" firstAttribute="leading" secondItem="xdu-6R-MFn" secondAttribute="leading" id="mvr-8Z-Re3"/>
-                            <constraint firstItem="xdu-6R-MFn" firstAttribute="top" secondItem="qFi-me-pTr" secondAttribute="bottom" constant="20" id="ozw-ZP-26P"/>
-                            <constraint firstItem="AvC-SM-Msc" firstAttribute="leading" secondItem="zdq-cx-S7f" secondAttribute="leading" constant="16" id="pXW-NC-To9"/>
-                            <constraint firstItem="EdA-tf-JN8" firstAttribute="leading" secondItem="zdq-cx-S7f" secondAttribute="leading" constant="16" id="rCA-gT-wtH"/>
-                            <constraint firstItem="AvC-SM-Msc" firstAttribute="top" secondItem="EdA-tf-JN8" secondAttribute="bottom" constant="20" id="rJK-ST-Ae5"/>
-                            <constraint firstItem="3u4-jg-3pj" firstAttribute="top" secondItem="kGv-er-FFe" secondAttribute="bottom" constant="6" id="w0g-aJ-4C0"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="ClassTextField" destination="3u4-jg-3pj" id="mJS-76-prS"/>
-                        <outlet property="RoomTextField" destination="lKw-M1-ytr" id="YSl-Mf-oN0"/>
-                        <outlet property="TeacherTextField" destination="EdA-tf-JN8" id="fCE-OT-Mxq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1hb-ln-2MD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="T0e-Ed-7Hv" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="7472.8000000000002" y="-478.11094452773619"/>
-        </scene>
-        <!--GrB2 View Controller-->
-        <scene sceneID="JIV-pi-7Wm">
-            <objects>
-                <viewController id="6TS-sc-DFj" customClass="GrB2ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="K9K-GJ-7zM"/>
-                        <viewControllerLayoutGuide type="bottom" id="XQB-It-tkj"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="W5i-Ul-bKk">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L5Y-23-5u4">
-                                <rect key="frame" x="16" y="40" width="83.5" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGC-K9-Fvu">
-                                <rect key="frame" x="313" y="36" width="42" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveButtonPressed:" destination="6TS-sc-DFj" eventType="touchUpInside" id="sXv-jN-8Xc"/>
-                                    <segue destination="5CK-QV-0g4" kind="unwind" identifier="GRB2Unwind" unwindAction="GRB2:" id="kaQ-r3-SN0"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What class are you taking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3vE-n4-cqE">
-                                <rect key="frame" x="16" y="87.5" width="213.5" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Class Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YvB-7m-CEd">
-                                <rect key="frame" x="16" y="114" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who teaches the class?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="92d-95-96J">
-                                <rect key="frame" x="16" y="164" width="189" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p5O-Uo-Zrl">
-                                <rect key="frame" x="16" y="191" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What room is the class in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kIw-Hu-WLr">
-                                <rect key="frame" x="16" y="241.5" width="208" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Room Number Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cz3-vs-n67">
-                                <rect key="frame" x="16" y="268" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92896630069999997" green="0.92896630069999997" blue="0.92896630069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="92d-95-96J" secondAttribute="trailing" id="047-Ad-M08"/>
-                            <constraint firstItem="3vE-n4-cqE" firstAttribute="top" secondItem="L5Y-23-5u4" secondAttribute="bottom" constant="16" id="5Eq-pb-h3T"/>
-                            <constraint firstItem="YvB-7m-CEd" firstAttribute="top" secondItem="3vE-n4-cqE" secondAttribute="bottom" constant="6" id="8wo-Rh-PhO"/>
-                            <constraint firstItem="p5O-Uo-Zrl" firstAttribute="leading" secondItem="W5i-Ul-bKk" secondAttribute="leading" constant="16" id="BwF-zb-NEB"/>
-                            <constraint firstItem="bGC-K9-Fvu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="L5Y-23-5u4" secondAttribute="trailing" id="BxD-jH-pQD"/>
-                            <constraint firstItem="L5Y-23-5u4" firstAttribute="leading" secondItem="W5i-Ul-bKk" secondAttribute="leading" constant="16" id="CI6-LX-uYd"/>
-                            <constraint firstAttribute="trailing" secondItem="p5O-Uo-Zrl" secondAttribute="trailing" constant="16" id="FrC-9s-ZJT"/>
-                            <constraint firstAttribute="trailing" secondItem="bGC-K9-Fvu" secondAttribute="trailing" constant="20" id="INK-7K-MAR"/>
-                            <constraint firstItem="92d-95-96J" firstAttribute="leading" secondItem="YvB-7m-CEd" secondAttribute="leading" id="KND-CA-YFb"/>
-                            <constraint firstItem="cz3-vs-n67" firstAttribute="top" secondItem="kIw-Hu-WLr" secondAttribute="bottom" constant="6" id="OLx-BQ-aWO"/>
-                            <constraint firstItem="L5Y-23-5u4" firstAttribute="top" secondItem="K9K-GJ-7zM" secondAttribute="bottom" constant="20" id="Qwh-88-zTf"/>
-                            <constraint firstItem="kIw-Hu-WLr" firstAttribute="top" secondItem="p5O-Uo-Zrl" secondAttribute="bottom" constant="20" id="U6V-rc-FTq"/>
-                            <constraint firstAttribute="trailing" secondItem="cz3-vs-n67" secondAttribute="trailing" constant="16" id="guA-XF-6iD"/>
-                            <constraint firstItem="kIw-Hu-WLr" firstAttribute="leading" secondItem="W5i-Ul-bKk" secondAttribute="leading" constant="16" id="hnl-xB-iXj"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kIw-Hu-WLr" secondAttribute="trailing" id="njo-ZR-0e6"/>
-                            <constraint firstItem="bGC-K9-Fvu" firstAttribute="top" secondItem="K9K-GJ-7zM" secondAttribute="bottom" constant="16" id="oJS-rC-gsN"/>
-                            <constraint firstAttribute="trailing" secondItem="YvB-7m-CEd" secondAttribute="trailing" constant="16" id="pL9-ET-e22"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="L5Y-23-5u4" secondAttribute="trailing" id="qqP-h0-ig5"/>
-                            <constraint firstItem="p5O-Uo-Zrl" firstAttribute="top" secondItem="92d-95-96J" secondAttribute="bottom" constant="6" id="reL-mG-87E"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3vE-n4-cqE" secondAttribute="trailing" id="tSM-CA-OkS"/>
-                            <constraint firstItem="3vE-n4-cqE" firstAttribute="leading" secondItem="L5Y-23-5u4" secondAttribute="leading" id="xNT-gz-Apx"/>
-                            <constraint firstItem="YvB-7m-CEd" firstAttribute="leading" secondItem="3vE-n4-cqE" secondAttribute="leading" id="yVo-yp-9OW"/>
-                            <constraint firstItem="cz3-vs-n67" firstAttribute="leading" secondItem="W5i-Ul-bKk" secondAttribute="leading" constant="16" id="yp3-ot-SmK"/>
-                            <constraint firstItem="92d-95-96J" firstAttribute="top" secondItem="YvB-7m-CEd" secondAttribute="bottom" constant="20" id="z2c-GW-yEu"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="ClassTextField" destination="YvB-7m-CEd" id="Cty-2T-Qom"/>
-                        <outlet property="RoomTextField" destination="cz3-vs-n67" id="SEi-5c-nOI"/>
-                        <outlet property="TeacherTextField" destination="p5O-Uo-Zrl" id="EMU-ZK-2zc"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rJN-wT-AyR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="5CK-QV-0g4" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="6616.8000000000002" y="250.52473763118442"/>
-        </scene>
-        <!--GrB4 View Controller-->
-        <scene sceneID="WJG-YY-q2z">
-            <objects>
-                <viewController id="7oq-mA-bdp" customClass="GrB4ViewController" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="nbo-6i-xif"/>
-                        <viewControllerLayoutGuide type="bottom" id="eN6-hi-cJQ"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="xqs-YK-ETW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3F-0G-Oii">
-                                <rect key="frame" x="16" y="40" width="84.5" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <color key="textColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUI-FY-Q2f">
-                                <rect key="frame" x="317" y="40" width="42" height="34"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <state key="normal" title="Save">
-                                    <color key="titleColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zhG-qB-IMh" kind="unwind" identifier="GRB4Unwind" unwindAction="GRB4:" id="TZh-U5-C1V"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What class are you taking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNx-Kz-2xm">
-                                <rect key="frame" x="16" y="87.5" width="213.5" height="21.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.80149508250000001" green="0.80149508250000001" blue="0.80149508250000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Class Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NG1-gx-css">
-                                <rect key="frame" x="16" y="115" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who teaches the class?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZTs-cx-crV">
-                                <rect key="frame" x="16" y="165" width="189" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Sh-dq-qPq">
-                                <rect key="frame" x="16" y="191.5" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What room is the class in?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ez1-So-Uwy">
-                                <rect key="frame" x="16" y="242" width="208" height="21"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Room Number Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="enJ-Ez-6RY">
-                                <rect key="frame" x="16" y="269" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" red="0.92896630069999997" green="0.92896630069999997" blue="0.92896630069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="enJ-Ez-6RY" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="4E0-Eb-a7b"/>
-                            <constraint firstItem="ZTs-cx-crV" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="4ZB-1f-dqX"/>
-                            <constraint firstItem="enJ-Ez-6RY" firstAttribute="top" secondItem="ez1-So-Uwy" secondAttribute="bottom" constant="6" id="7Nn-f5-tam"/>
-                            <constraint firstItem="t3F-0G-Oii" firstAttribute="top" secondItem="nbo-6i-xif" secondAttribute="bottom" constant="20" id="9ZG-Go-xoh"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="t3F-0G-Oii" secondAttribute="trailing" id="AaQ-f0-kkn"/>
-                            <constraint firstItem="8Sh-dq-qPq" firstAttribute="top" secondItem="ZTs-cx-crV" secondAttribute="bottom" constant="6" id="BR2-an-VeC"/>
-                            <constraint firstItem="hUI-FY-Q2f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="t3F-0G-Oii" secondAttribute="trailing" id="DRa-af-33s"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="XNx-Kz-2xm" secondAttribute="trailing" id="E5B-ZG-UvC"/>
-                            <constraint firstItem="ez1-So-Uwy" firstAttribute="top" secondItem="8Sh-dq-qPq" secondAttribute="bottom" constant="20" id="EdB-RO-3nh"/>
-                            <constraint firstItem="NG1-gx-css" firstAttribute="top" secondItem="XNx-Kz-2xm" secondAttribute="bottom" constant="6" id="HhB-7N-Gs1"/>
-                            <constraint firstItem="8Sh-dq-qPq" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="JiL-mT-rsy"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZTs-cx-crV" secondAttribute="trailing" id="KWO-7O-0Qb"/>
-                            <constraint firstItem="NG1-gx-css" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="L1t-W1-vjS"/>
-                            <constraint firstAttribute="trailing" secondItem="enJ-Ez-6RY" secondAttribute="trailing" constant="16" id="LAo-1o-RBy"/>
-                            <constraint firstAttribute="trailing" secondItem="8Sh-dq-qPq" secondAttribute="trailing" constant="16" id="SAP-ez-pw6"/>
-                            <constraint firstAttribute="trailing" secondItem="hUI-FY-Q2f" secondAttribute="trailing" constant="16" id="SS1-8C-Il7"/>
-                            <constraint firstItem="ez1-So-Uwy" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="SWc-hK-cUW"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ez1-So-Uwy" secondAttribute="trailing" id="UuE-qZ-LbU"/>
-                            <constraint firstItem="XNx-Kz-2xm" firstAttribute="top" secondItem="t3F-0G-Oii" secondAttribute="bottom" constant="16" id="chQ-yW-rDF"/>
-                            <constraint firstItem="XNx-Kz-2xm" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="f5c-ff-zsn"/>
-                            <constraint firstItem="ZTs-cx-crV" firstAttribute="top" secondItem="NG1-gx-css" secondAttribute="bottom" constant="20" id="fjc-dz-eOu"/>
-                            <constraint firstItem="hUI-FY-Q2f" firstAttribute="top" secondItem="nbo-6i-xif" secondAttribute="bottom" constant="20" id="mIM-BP-KAs"/>
-                            <constraint firstItem="t3F-0G-Oii" firstAttribute="leading" secondItem="xqs-YK-ETW" secondAttribute="leading" constant="16" id="mqA-SC-dN5"/>
-                            <constraint firstAttribute="trailing" secondItem="NG1-gx-css" secondAttribute="trailing" constant="16" id="nlu-L0-5po"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="ClassTextField" destination="NG1-gx-css" id="FyX-tX-p0c"/>
-                        <outlet property="RoomTextField" destination="enJ-Ez-6RY" id="SdV-NB-DSY"/>
-                        <outlet property="TeacherTextField" destination="8Sh-dq-qPq" id="zh2-0n-7IF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oSx-L8-uhG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="zhG-qB-IMh" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="7472.8000000000002" y="250.52473763118442"/>
+            <point key="canvasLocation" x="6580" y="-106"/>
         </scene>
         <!--Gr Settings View Controller-->
         <scene sceneID="gUA-eU-pMv">
@@ -454,94 +137,50 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="enG-VV-bNL">
                                 <rect key="frame" x="12" y="87.5" width="351" height="556"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAR-Dz-ebP">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dW-EK-iy1" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dW-EK-iy1">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                <state key="normal" title="Edit Block 1">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="EeF-ZC-TfU" kind="show" id="NEU-7Q-OaF"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="7dW-EK-iy1" firstAttribute="width" secondItem="EAR-Dz-ebP" secondAttribute="width" id="9WQ-sV-E4n"/>
-                                            <constraint firstItem="7dW-EK-iy1" firstAttribute="height" secondItem="EAR-Dz-ebP" secondAttribute="height" id="AZl-yc-Jcw"/>
-                                            <constraint firstItem="7dW-EK-iy1" firstAttribute="centerX" secondItem="EAR-Dz-ebP" secondAttribute="centerX" id="EdL-0L-CX3"/>
-                                            <constraint firstItem="7dW-EK-iy1" firstAttribute="centerY" secondItem="EAR-Dz-ebP" secondAttribute="centerY" id="wYf-j4-PiG"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZkD-RO-zF4">
+                                        <color key="backgroundColor" red="0.21568627450980393" green="0.49019607843137253" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="Edit Block 1">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editGRB1Pressed:" destination="xjA-QW-Kef" eventType="touchUpInside" id="M14-a0-kd1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-Ne-Tj2" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="155" width="351" height="91"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jy4-Ne-Tj2">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                <state key="normal" title="Edit Block 2">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="6TS-sc-DFj" kind="show" id="Ue1-dA-SO7"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="Jy4-Ne-Tj2" firstAttribute="height" secondItem="ZkD-RO-zF4" secondAttribute="height" id="P0S-ip-h27"/>
-                                            <constraint firstItem="Jy4-Ne-Tj2" firstAttribute="centerX" secondItem="ZkD-RO-zF4" secondAttribute="centerX" id="Qcd-T8-JhZ"/>
-                                            <constraint firstItem="Jy4-Ne-Tj2" firstAttribute="centerY" secondItem="ZkD-RO-zF4" secondAttribute="centerY" id="Tcv-UN-KGo"/>
-                                            <constraint firstItem="Jy4-Ne-Tj2" firstAttribute="width" secondItem="ZkD-RO-zF4" secondAttribute="width" id="wxs-2O-B8z"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ENN-cY-0Fn">
+                                        <color key="backgroundColor" red="0.2156862745" green="0.49019607840000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="Edit Block 2">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editGRB2Pressed:" destination="xjA-QW-Kef" eventType="touchUpInside" id="yrE-Ml-ec7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-Uu-5lz" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="310" width="351" height="91"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWk-Uu-5lz">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                <state key="normal" title="Edit Block 3">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="OM7-41-eGf" kind="show" id="5ca-wO-p68"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="CWk-Uu-5lz" firstAttribute="centerY" secondItem="ENN-cY-0Fn" secondAttribute="centerY" id="A05-lB-1rq"/>
-                                            <constraint firstItem="CWk-Uu-5lz" firstAttribute="width" secondItem="ENN-cY-0Fn" secondAttribute="width" id="hT1-SV-3CS"/>
-                                            <constraint firstItem="CWk-Uu-5lz" firstAttribute="centerX" secondItem="ENN-cY-0Fn" secondAttribute="centerX" id="jAi-kZ-cwP"/>
-                                            <constraint firstItem="CWk-Uu-5lz" firstAttribute="height" secondItem="ENN-cY-0Fn" secondAttribute="height" id="jTu-Cg-48X"/>
-                                        </constraints>
-                                    </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JjH-PW-3Pb">
+                                        <color key="backgroundColor" red="0.2156862745" green="0.49019607840000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="Edit Block 3">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editGRB3Pressed:" destination="xjA-QW-Kef" eventType="touchUpInside" id="1r8-hl-5hw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-d8-U9k" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="465" width="351" height="91"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AEf-d8-U9k">
-                                                <rect key="frame" x="0.0" y="0.0" width="351" height="91"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
-                                                <state key="normal" title="Edit Block 4">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="7oq-mA-bdp" kind="show" id="eiz-9a-1Dc"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <color key="backgroundColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstItem="AEf-d8-U9k" firstAttribute="height" secondItem="JjH-PW-3Pb" secondAttribute="height" id="KQH-Kk-TJY"/>
-                                            <constraint firstItem="AEf-d8-U9k" firstAttribute="centerY" secondItem="JjH-PW-3Pb" secondAttribute="centerY" id="OGx-kq-hJe"/>
-                                            <constraint firstItem="AEf-d8-U9k" firstAttribute="width" secondItem="JjH-PW-3Pb" secondAttribute="width" id="gn5-vx-hAs"/>
-                                            <constraint firstItem="AEf-d8-U9k" firstAttribute="centerX" secondItem="JjH-PW-3Pb" secondAttribute="centerX" id="mkt-zL-uHI"/>
-                                        </constraints>
-                                    </view>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.49019607840000001" blue="0.25490196079999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="33"/>
+                                        <state key="normal" title="Edit Block 4">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="editGRB4Pressed:" destination="xjA-QW-Kef" eventType="touchUpInside" id="rHD-w7-qDb"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="600" id="48w-yL-Pky"/>
@@ -562,10 +201,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="BlockFourView" destination="JjH-PW-3Pb" id="nGQ-LV-ZgG"/>
-                        <outlet property="BlockOneView" destination="EAR-Dz-ebP" id="KCS-rG-8Bb"/>
-                        <outlet property="BlockThreeView" destination="ENN-cY-0Fn" id="qd4-X2-OpR"/>
-                        <outlet property="BlockTwoView" destination="ZkD-RO-zF4" id="Ojh-64-cRy"/>
+                        <segue destination="EeF-ZC-TfU" kind="show" identifier="toInputVC" id="0DD-6F-had"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWt-p6-xD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
