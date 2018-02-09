@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //Initialize Twitter Kit
-        Twitter.sharedInstance().start(withConsumerKey:"T2Wid0Bme6VSkX05McK6MEHUf", consumerSecret:"Sq7OfRePU25ug54V8JwjtkkYHYkvoOQCCIF3jzeNCv3ZY7N6w8")
+        TWTRTwitter.sharedInstance().start(withConsumerKey:"T2Wid0Bme6VSkX05McK6MEHUf", consumerSecret:"Sq7OfRePU25ug54V8JwjtkkYHYkvoOQCCIF3jzeNCv3ZY7N6w8")
         
         
         
