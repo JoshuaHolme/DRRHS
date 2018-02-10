@@ -7,27 +7,6 @@
 //
 
 import UIKit
-
-//BLOCK 1 CORE DATA
-var GrB1ClassLabelSaved = String()
-var GrB1TeacherLabelSaved = String()
-var GrB1RoomLabelSaved = String()
-
-//BLOCK 2 CORE DATA
-var GrB2ClassLabelSaved = String()
-var GrB2TeacherLabelSaved = String()
-var GrB2RoomLabelSaved = String()
-
-//BLOCK 3 CORE DATA
-var GrB3ClassLabelSaved = String()
-var GrB3TeacherLabelSaved = String()
-var GrB3RoomLabelSaved = String()
-
-//BLOCK 4 CORE DATA
-var GrB4ClassLabelSaved = String()
-var GrB4TeacherLabelSaved = String()
-var GrB4RoomLabelSaved = String()
-
 class GrSettingsViewController: UIViewController {
     
     @IBAction func editGRB1Pressed(_ sender: Any) {
@@ -46,7 +25,6 @@ class GrSettingsViewController: UIViewController {
         userDataServices.instance.setIdentifier(block: GRB4)
         performSegue(withIdentifier: TO_INPUT_VC, sender: nil)
     }
-
     override func viewDidLoad() {
         super.viewDidLoad()
     }

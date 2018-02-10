@@ -26,13 +26,12 @@ class InputVC: UIViewController {
         guard let teacherName = teacherNameTextField.text , teacherNameTextField.text != "" else { return }
         guard let roomNumber = roomNumberTextField.text , roomNumberTextField.text != "" else { return }
         userDataServices.instance.createBlock(teacher: teacherName, room: roomNumber, className: className)
-        dismiss(animated: true, completion: nil)
+        NotificationCenter.default.post(name: USER_DATA_HAS_CHANGED, object: nil)
+        performSegue(withIdentifier: INPUT_UNWIND, sender: nil)
     }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

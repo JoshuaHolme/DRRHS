@@ -60,6 +60,7 @@ let GOB4ClassNameDefault = "Block 4"
 
 //Segues
 let TO_INPUT_VC = "toInputVC"
+let INPUT_UNWIND = "InputUnwind"
 
 //Notifications
 let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")

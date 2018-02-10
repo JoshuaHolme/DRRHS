@@ -35,7 +35,6 @@ class GoldDayScheduleVC: UIViewController {
     @IBOutlet weak var blockTwo: UIView!
     @IBOutlet weak var blockThree: UIView!
     @IBOutlet weak var blockFour: UIView!
-    @IBOutlet weak var homeworkButton: UIView!
     @IBOutlet weak var homeworkButtonPressed: UIButton!
     @IBOutlet weak var B1AddView: UIView!
     @IBOutlet weak var B2AddView: UIButton!
@@ -215,14 +214,6 @@ class GoldDayScheduleVC: UIViewController {
         }
         
         //Homework Button
-        
-        
-        homeworkButton.layer.borderWidth = 2.5
-        homeworkButton.layer.borderColor = UIColor(red: (220/255.0), green: (220/255.0), blue: (220/255.0), alpha: 1.0).cgColor
-        //Round Corners
-        homeworkButton.layer.cornerRadius = 20
-        homeworkButton.layer.masksToBounds = true
-        
         //Homework Button Label is autosized to fit different iPhones
         homeworkButtonPressed.titleLabel?.minimumScaleFactor = 0.2
         homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true

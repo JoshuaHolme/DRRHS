@@ -35,7 +35,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveButton:" destination="EeF-ZC-TfU" eventType="touchUpInside" id="Q8R-sz-hNc"/>
-                                    <segue destination="tYu-Oi-Km1" kind="unwind" identifier="GRB1Unwind" unwindAction="GRB1:" id="tlp-HM-MdP"/>
+                                    <segue destination="tYu-Oi-Km1" kind="unwind" identifier="InputUnwind" unwindAction="GRB1:" id="tlp-HM-MdP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What class are you taking?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Rw-1g-dK1">
@@ -114,7 +114,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YeO-ys-9Sf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="tYu-Oi-Km1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="6580" y="-106"/>
+            <point key="canvasLocation" x="6754" y="-146"/>
         </scene>
         <!--Gr Settings View Controller-->
         <scene sceneID="gUA-eU-pMv">
