@@ -17,208 +17,208 @@ class userDataServices {
     // Green Block 1
     var GrB1Teacher: String? {
         get {
-            return defaults.string(forKey: GRB1TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB1TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GrB1ClassName: String? {
         get {
-            return defaults.string(forKey: GRB1ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB1ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GrB1RoomNumber: String? {
         get {
-            return defaults.string(forKey: GRB1RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB1RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Green Block 2
     var GrB2Teacher: String? {
         get {
-            return defaults.string(forKey: GRB2TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB2TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GrB2ClassName: String? {
         get {
-            return defaults.string(forKey: GRB2ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB2ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GrB2RoomNumber: String? {
         get {
-            return defaults.string(forKey: GRB2RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB2RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Green Block 3
     var GrB3Teacher: String? {
         get {
-            return defaults.string(forKey: GRB3TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB3TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GrB3ClassName: String? {
         get {
-            return defaults.string(forKey: GRB3ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB3ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GrB3RoomNumber: String? {
         get {
-            return defaults.string(forKey: GRB3RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB3RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Green Block 4
     var GrB4Teacher: String? {
         get {
-            return defaults.string(forKey: GRB4TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB4TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GrB4ClassName: String? {
         get {
-            return defaults.string(forKey: GRB4ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB4ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GrB4RoomNumber: String? {
         get {
-            return defaults.string(forKey: GRB4RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GRB4RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Gold Block 1
     var GoB1Teacher: String? {
         get {
-            return defaults.string(forKey: GOB1TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB1TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GoB1ClassName: String? {
         get {
-            return defaults.string(forKey: GOB1ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB1ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GoB1RoomNumber: String? {
         get {
-            return defaults.string(forKey: GOB1RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB1RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Gold Block 2
     var GoB2Teacher: String? {
         get {
-            return defaults.string(forKey: GOB2TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB2TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GoB2ClassName: String? {
         get {
-            return defaults.string(forKey: GOB2ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB2ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GoB2RoomNumber: String? {
         get {
-            return defaults.string(forKey: GOB2RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB2RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Gold Block 3
     var GoB3Teacher: String? {
         get {
-            return defaults.string(forKey: GOB3TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB3TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GoB3ClassName: String? {
         get {
-            return defaults.string(forKey: GOB3ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB3ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GoB3RoomNumber: String? {
         get {
-            return defaults.string(forKey: GOB3RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB3RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     
     //Gold Block 4
     var GoB4Teacher: String? {
         get {
-            return defaults.string(forKey: GOB4TeacherDefault) as String?
+            return defaults.string(forKey: TEACHER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB4TeacherDefault)
+            defaults.set(newValue, forKey: TEACHER_DEFAULT)
         }
     }
     var GoB4ClassName: String? {
         get {
-            return defaults.string(forKey: GOB4ClassNameDefault) as String?
+            return defaults.string(forKey: CLASS_NAME_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB4ClassNameDefault)
+            defaults.set(newValue, forKey: CLASS_NAME_DEFAULT)
         }
     }
     var GoB4RoomNumber: String? {
         get {
-            return defaults.string(forKey: GOB4RoomNumberDefault) as String?
+            return defaults.string(forKey: ROOM_NUMBER_DEFAULT) as String?
         }
         set {
-            defaults.set(newValue, forKey: GOB4RoomNumberDefault)
+            defaults.set(newValue, forKey: ROOM_NUMBER_DEFAULT)
         }
     }
     public private(set) var identifier = ""
@@ -271,27 +271,6 @@ class userDataServices {
             
         }
         
-        
-        
     }
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
 }
