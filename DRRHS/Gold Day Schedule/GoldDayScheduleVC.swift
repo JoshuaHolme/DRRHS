@@ -110,20 +110,20 @@ class GoldDayScheduleVC: UIViewController {
         
         //The Core Data to Save all of the Info
         let B1ClassroomLabelDefault = UserDefaults.standard
-        if (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") != nil){
-            GoB1ClassLabelSaved = (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") as! NSString) as String
-            GoB1ClassLabelField = GoB1ClassLabelSaved
-        }
+//        if (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") != nil){
+//            GoB1ClassLabelSaved = (B1ClassroomLabelDefault.value(forKey: "GoB1ClassroomLabel") as! NSString) as String
+//            GoB1ClassLabelField = GoB1ClassLabelSaved
+//        }
         let B1TeacherLabelDefault = UserDefaults.standard
-        if (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") != nil){
-            GoB1TeacherLabelSaved = (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") as! NSString) as String
-            GoB1TeacherLabelField = GoB1TeacherLabelSaved
-        }
+//        if (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") != nil){
+//            GoB1TeacherLabelSaved = (B1TeacherLabelDefault.value(forKey: "GoB1TeacherLabel") as! NSString) as String
+//            GoB1TeacherLabelField = GoB1TeacherLabelSaved
+//        }
         let B1RoomLabelDefault = UserDefaults.standard
-        if (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") != nil){
-            GoB1RoomLabelSaved = (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") as! NSString) as String
-            GoB1RoomLabelField = GoB1RoomLabelSaved
-        }
+//        if (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") != nil){
+//            GoB1RoomLabelSaved = (B1RoomLabelDefault.value(forKey: "GoB1RoomLabel") as! NSString) as String
+//            GoB1RoomLabelField = GoB1RoomLabelSaved
+//        }
         
         //Block 2
         //Aestetics and Design Elements
@@ -136,24 +136,24 @@ class GoldDayScheduleVC: UIViewController {
         
         //Classroom Core Data
         let B2ClassroomLabelDefault = UserDefaults.standard
-        if (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") != nil){
-            GoB2ClassLabelSaved = (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") as! NSString) as String
-            GoB2ClassLabelField = GoB2ClassLabelSaved
-        }
+//        if (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") != nil){
+//            GoB2ClassLabelSaved = (B2ClassroomLabelDefault.value(forKey: "GoB2ClassroomLabel") as! NSString) as String
+//            GoB2ClassLabelField = GoB2ClassLabelSaved
+//        }
         
         //Teacher Core Data
         let B2TeacherLabelDefault = UserDefaults.standard
-        if (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") != nil){
-            GoB2TeacherLabelSaved = (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") as! NSString) as String
-            GoB2TeacherLabelField = GoB2TeacherLabelSaved
-        }
+//        if (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") != nil){
+//            GoB2TeacherLabelSaved = (B2TeacherLabelDefault.value(forKey: "GoB2TeacherLabel") as! NSString) as String
+//            GoB2TeacherLabelField = GoB2TeacherLabelSaved
+//        }
         
         //Room Core Data
         let B2RoomLabelDefault = UserDefaults.standard
-        if (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") != nil){
-            GoB2RoomLabelSaved = (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") as! NSString) as String
-            GoB2RoomLabelField = GoB2RoomLabelSaved
-        }
+//        if (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") != nil){
+//            GoB2RoomLabelSaved = (B2RoomLabelDefault.value(forKey: "GoB2RoomLabel") as! NSString) as String
+//            GoB2RoomLabelField = GoB2RoomLabelSaved
+//        }
         //Block 3
         //Aestetics and Design Elements
         blockThree.layer.borderWidth = 2
@@ -164,24 +164,24 @@ class GoldDayScheduleVC: UIViewController {
         
         //Classroom Core Data
         let B3ClassroomLabelDefault = UserDefaults.standard
-        if (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") != nil){
-            GoB3ClassLabelSaved = (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") as! NSString) as String
-            GoB3ClassLabelField = GoB3ClassLabelSaved
-        }
+//        if (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") != nil){
+//            GoB3ClassLabelSaved = (B3ClassroomLabelDefault.value(forKey: "GoB3ClassroomLabel") as! NSString) as String
+//            GoB3ClassLabelField = GoB3ClassLabelSaved
+//        }
         
         //Teacher Core Data
         let B3TeacherLabelDefault = UserDefaults.standard
-        if (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") != nil){
-            GoB3TeacherLabelSaved = (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") as! NSString) as String
-            GoB3TeacherLabelField = GoB3TeacherLabelSaved
-        }
+//        if (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") != nil){
+//            GoB3TeacherLabelSaved = (B3TeacherLabelDefault.value(forKey: "GoB3TeacherLabel") as! NSString) as String
+//            GoB3TeacherLabelField = GoB3TeacherLabelSaved
+//        }
         
         //Room Core Data
         let B3RoomLabelDefault = UserDefaults.standard
-        if (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") != nil){
-            GoB3RoomLabelSaved = (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") as! NSString) as String
-            GoB3RoomLabelField = GoB3RoomLabelSaved
-        }
+//        if (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") != nil){
+//            GoB3RoomLabelSaved = (B3RoomLabelDefault.value(forKey: "GoB3RoomLabel") as! NSString) as String
+//            GoB3RoomLabelField = GoB3RoomLabelSaved
+//        }
         
         
         //Block 4
@@ -194,24 +194,24 @@ class GoldDayScheduleVC: UIViewController {
         
         //Classroom Core Data:
         let B4ClassroomLabelDefault = UserDefaults.standard
-        if (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") != nil){
-            GoB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") as! NSString) as String
-            GoB4ClassLabelField = GoB4ClassLabelSaved
-        }
+//        if (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") != nil){
+//            GoB4ClassLabelSaved = (B4ClassroomLabelDefault.value(forKey: "GoB4ClassroomLabel") as! NSString) as String
+//            GoB4ClassLabelField = GoB4ClassLabelSaved
+//        }
         
         //Teacher Core Data:
         let B4TeacherLabelDefault = UserDefaults.standard
-        if (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") != nil){
-            GoB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") as! NSString) as String
-            GoB4TeacherLabelField = GoB4TeacherLabelSaved
-        }
+//        if (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") != nil){
+//            GoB4TeacherLabelSaved = (B4TeacherLabelDefault.value(forKey: "GoB4TeacherLabel") as! NSString) as String
+//            GoB4TeacherLabelField = GoB4TeacherLabelSaved
+//        }
         
         //Room Core Data:
         let B4RoomLabelDefault = UserDefaults.standard
-        if (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") != nil){
-            GoB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") as! NSString) as String
-            GoB4RoomLabelField = GoB4RoomLabelSaved
-        }
+//        if (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") != nil){
+//            GoB4RoomLabelSaved = (B4RoomLabelDefault.value(forKey: "GoB4RoomLabel") as! NSString) as String
+//            GoB4RoomLabelField = GoB4RoomLabelSaved
+//        }
         
         //Homework Button
         //Homework Button Label is autosized to fit different iPhones

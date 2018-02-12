@@ -12,27 +12,21 @@
 		31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F161F45D2A100AA204F /* GrAddHWViewController.swift */; };
 		31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F181F45EF9300AA204F /* GrViewHWViewController.swift */; };
 		31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */; };
-		311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* GrSettingsViewController.swift */; };
+		311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* EditScheduleVC.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
-		313D4AD71F342668002FAFA3 /* GoldDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
-		3160B9CF1F35746B00EA532B /* InputVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputVC.swift */; };
+		3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputInfoVC.swift */; };
 		3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */; };
-		3182B98D1F363233000F92DD /* GoB1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B98C1F363233000F92DD /* GoB1ViewController.swift */; };
-		3182B98F1F36324D000F92DD /* GoB2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B98E1F36324D000F92DD /* GoB2ViewController.swift */; };
-		3182B9911F36326E000F92DD /* GoB3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9901F36326E000F92DD /* GoB3ViewController.swift */; };
-		3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3182B9921F36327D000F92DD /* GoB4ViewController.swift */; };
-		31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */; };
 		31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */; };
 		31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */; };
 		6946B8512028E2B700F696E4 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B8502028E2B700F696E4 /* ClassView.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
 		696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153A1F70CCF500844EF8 /* Schedule.storyboard */; };
 		696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153E1F70CE3700844EF8 /* Settings.storyboard */; };
-		696B15411F70CE6600844EF8 /* EditGreenDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */; };
-		696B15451F70CEB000844EF8 /* EditGoldDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */; };
 		696B15481F70CF8000844EF8 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B15471F70CF8000844EF8 /* Home.storyboard */; };
 		696B154B1F70CFDE00844EF8 /* Directory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B154A1F70CFDE00844EF8 /* Directory.storyboard */; };
+		697C544E203126A1007A2D61 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C544D203126A1007A2D61 /* SettingsVC.swift */; };
+		697C5450203142AB007A2D61 /* GoldDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697C544F203142AB007A2D61 /* GoldDayScheduleVC.swift */; };
 		699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69971F19816000E9CAD9 /* AppDelegate.swift */; };
 		699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A69991F19816000E9CAD9 /* FirstViewController.swift */; };
 		699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699A699B1F19816000E9CAD9 /* SecondViewController.swift */; };
@@ -76,17 +70,11 @@
 		31111F161F45D2A100AA204F /* GrAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrAddHWViewController.swift; sourceTree = "<group>"; };
 		31111F181F45EF9300AA204F /* GrViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWViewController.swift; sourceTree = "<group>"; };
 		31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWTableViewCell.swift; sourceTree = "<group>"; };
-		311E2F801F4347790098B355 /* GrSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrSettingsViewController.swift; sourceTree = "<group>"; };
+		311E2F801F4347790098B355 /* EditScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleVC.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
-		313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
-		3160B9CE1F35746B00EA532B /* InputVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputVC.swift; sourceTree = "<group>"; };
+		3160B9CE1F35746B00EA532B /* InputInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoVC.swift; sourceTree = "<group>"; };
 		3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWTableViewCell.swift; sourceTree = "<group>"; };
-		3182B98C1F363233000F92DD /* GoB1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB1ViewController.swift; sourceTree = "<group>"; };
-		3182B98E1F36324D000F92DD /* GoB2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB2ViewController.swift; sourceTree = "<group>"; };
-		3182B9901F36326E000F92DD /* GoB3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB3ViewController.swift; sourceTree = "<group>"; };
-		3182B9921F36327D000F92DD /* GoB4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoB4ViewController.swift; sourceTree = "<group>"; };
-		31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSettingsViewController.swift; sourceTree = "<group>"; };
 		31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWViewController.swift; sourceTree = "<group>"; };
 		31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAddHWViewController.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,10 +83,10 @@
 		695317771F60BA760092454A /* DirectoryTC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryTC.swift; sourceTree = "<group>"; };
 		696B153A1F70CCF500844EF8 /* Schedule.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Schedule.storyboard; sourceTree = "<group>"; };
 		696B153E1F70CE3700844EF8 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditGreenDay.storyboard; sourceTree = "<group>"; };
-		696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EditGoldDay.storyboard; sourceTree = "<group>"; };
 		696B15471F70CF8000844EF8 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		696B154A1F70CFDE00844EF8 /* Directory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Directory.storyboard; sourceTree = "<group>"; };
+		697C544D203126A1007A2D61 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		697C544F203142AB007A2D61 /* GoldDayScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoldDayScheduleVC.swift; sourceTree = "<group>"; };
 		699A69941F19816000E9CAD9 /* DRRHS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DRRHS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		699A69971F19816000E9CAD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		699A69991F19816000E9CAD9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -187,12 +175,13 @@
 		311E24D31F539D6800E49052 /* Green Day Schedule */ = {
 			isa = PBXGroup;
 			children = (
+				697C544D203126A1007A2D61 /* SettingsVC.swift */,
+				311E2F801F4347790098B355 /* EditScheduleVC.swift */,
+				3160B9CE1F35746B00EA532B /* InputInfoVC.swift */,
+				313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */,
+				31111F161F45D2A100AA204F /* GrAddHWViewController.swift */,
 				31111F181F45EF9300AA204F /* GrViewHWViewController.swift */,
 				31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */,
-				31111F161F45D2A100AA204F /* GrAddHWViewController.swift */,
-				3160B9CE1F35746B00EA532B /* InputVC.swift */,
-				311E2F801F4347790098B355 /* GrSettingsViewController.swift */,
-				313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */,
 			);
 			name = "Green Day Schedule";
 			path = ..;
@@ -201,14 +190,9 @@
 		311E24D41F539D8D00E49052 /* Gold Day Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				313D4AD61F342668002FAFA3 /* GoldDayScheduleVC.swift */,
-				3182B98C1F363233000F92DD /* GoB1ViewController.swift */,
-				3182B98E1F36324D000F92DD /* GoB2ViewController.swift */,
-				3182B9901F36326E000F92DD /* GoB3ViewController.swift */,
-				3182B9921F36327D000F92DD /* GoB4ViewController.swift */,
-				31BFFB4E1F5503AE009C3D33 /* GoSettingsViewController.swift */,
-				31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */,
+				697C544F203142AB007A2D61 /* GoldDayScheduleVC.swift */,
 				31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */,
+				31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */,
 				3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */,
 			);
 			path = "Gold Day Schedule";
@@ -228,62 +212,12 @@
 			children = (
 				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				69D419A91F60F74B00DF1B2A /* Main.storyboard */,
-				696B153D1F70CD3C00844EF8 /* Schedule */,
-				696B15491F70CF9200844EF8 /* Home */,
-				696B154C1F70D08200844EF8 /* Directory */,
-				696B15421F70CE7B00844EF8 /* Settings */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		696B153D1F70CD3C00844EF8 /* Schedule */ = {
-			isa = PBXGroup;
-			children = (
 				696B153A1F70CCF500844EF8 /* Schedule.storyboard */,
-			);
-			path = Schedule;
-			sourceTree = "<group>";
-		};
-		696B15421F70CE7B00844EF8 /* Settings */ = {
-			isa = PBXGroup;
-			children = (
 				696B153E1F70CE3700844EF8 /* Settings.storyboard */,
-				696B15431F70CE8200844EF8 /* Edit Green Day */,
-				696B15461F70CED800844EF8 /* Edit Gold Day */,
-			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		696B15431F70CE8200844EF8 /* Edit Green Day */ = {
-			isa = PBXGroup;
-			children = (
-				696B15401F70CE6600844EF8 /* EditGreenDay.storyboard */,
-			);
-			path = "Edit Green Day";
-			sourceTree = "<group>";
-		};
-		696B15461F70CED800844EF8 /* Edit Gold Day */ = {
-			isa = PBXGroup;
-			children = (
-				696B15441F70CEB000844EF8 /* EditGoldDay.storyboard */,
-			);
-			path = "Edit Gold Day";
-			sourceTree = "<group>";
-		};
-		696B15491F70CF9200844EF8 /* Home */ = {
-			isa = PBXGroup;
-			children = (
+				696B154A1F70CFDE00844EF8 /* Directory.storyboard */,
 				696B15471F70CF8000844EF8 /* Home.storyboard */,
 			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		696B154C1F70D08200844EF8 /* Directory */ = {
-			isa = PBXGroup;
-			children = (
-				696B154A1F70CFDE00844EF8 /* Directory.storyboard */,
-			);
-			path = Directory;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		699A698B1F19816000E9CAD9 = {
@@ -509,8 +443,6 @@
 			files = (
 				696B154B1F70CFDE00844EF8 /* Directory.storyboard in Resources */,
 				69D419AA1F60F74B00DF1B2A /* Main.storyboard in Resources */,
-				696B15411F70CE6600844EF8 /* EditGreenDay.storyboard in Resources */,
-				696B15451F70CEB000844EF8 /* EditGoldDay.storyboard in Resources */,
 				699A69A41F19816000E9CAD9 /* LaunchScreen.storyboard in Resources */,
 				699A69A11F19816000E9CAD9 /* Assets.xcassets in Resources */,
 				696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */,
@@ -698,7 +630,6 @@
 			files = (
 				6946B8512028E2B700F696E4 /* ClassView.swift in Sources */,
 				69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */,
-				3182B9931F36327D000F92DD /* GoB4ViewController.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */,
@@ -708,23 +639,20 @@
 				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
-				3182B9911F36326E000F92DD /* GoB3ViewController.swift in Sources */,
 				69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */,
-				3182B98F1F36324D000F92DD /* GoB2ViewController.swift in Sources */,
 				69D931E61F54FC61003D10B6 /* Teacher.swift in Sources */,
+				697C5450203142AB007A2D61 /* GoldDayScheduleVC.swift in Sources */,
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
-				311E2F811F4347790098B355 /* GrSettingsViewController.swift in Sources */,
-				313D4AD71F342668002FAFA3 /* GoldDayScheduleVC.swift in Sources */,
-				3160B9CF1F35746B00EA532B /* InputVC.swift in Sources */,
+				311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */,
+				3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */,
 				31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */,
 				695317781F60BA760092454A /* DirectoryTC.swift in Sources */,
 				31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */,
 				3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */,
 				69B8ABA61F5CEFC600A0A6BE /* DRGold.swift in Sources */,
-				3182B98D1F363233000F92DD /* GoB1ViewController.swift in Sources */,
-				31BFFB4F1F5503AE009C3D33 /* GoSettingsViewController.swift in Sources */,
 				31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */,
 				310B32B3202DF7F600A92F6B /* UserDataServices.swift in Sources */,
+				697C544E203126A1007A2D61 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

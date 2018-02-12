@@ -1,5 +1,5 @@
 //
-//  constants.swift
+//  Constants.swift
 //  DRRHS
 //
 //  Created by Sam DuBois on 2/9/18.
@@ -23,49 +23,46 @@ let GOB3 = "Gold Day Block 3"
 let GOB4 = "Gold Day Block 4"
 
 
-//User Defaults (Initial Value if no Value submitted)
-
-let TEACHER_DEFAULT = "Teacher Name"
-let ROOM_NUMBER_DEFAULT = "###"
-let CLASS_NAME_DEFAULT = "Class Name"
+//Class Keys
 
 //Green Day
-//let GRB1_TEACHER_DEFAULT = "Teacher's Name"
-//let GRB1_ROOM_NUMBER_DEFAULT = "###"
-//let GRB1_CLASS_NAME_DEFAULT = "Block 1"
-//
-//let GRB2_TEACHER_DEFAULT = "Teacher's Name"
-//let GRB2_ROOM_NUMBER_DEFAULT = "###"
-//let GRB2ClassNameDefault = "Block 2"
-//
-//let GRB3TeacherDefault = "Teacher's Name"
-//let GRB3RoomNumberDefault = "###"
-//let GRB3ClassNameDefault = "Block 3"
-//
-//let GRB4TeacherDefault = "Teacher's Name"
-//let GRB4RoomNumberDefault = "###"
-//let GRB4ClassNameDefault = "Block 4"
+let GRB1_TEACHER = "Green Block 1 Teacher Name"
+let GRB1_ROOM = "Green Block 1 Room Number"
+let GRB1_CLASS = "Green Block 1 Class Name"
+
+let GRB2_TEACHER = "Green Block 2 Teacher Name"
+let GRB2_ROOM = "Green Block 2 Room Number"
+let GRB2_CLASS = "Green Block 2 Class Name"
+
+let GRB3_TEACHER = "Green Block 3 Teacher Name"
+let GRB3_ROOM = "Green Block 3 Room Number"
+let GRB3_CLASS = "Green Block 3 Class Name"
+
+let GRB4_TEACHER = "Green Block 4 Teacher Name"
+let GRB4_ROOM = "Green Block 4 Room Number"
+let GRB4_CLASS = "Green Block 4 Class Name"
 
 //Gold Day
-//let GOB1TeacherDefault = "Teacher's Name"
-//let GOB1RoomNumberDefault = "###"
-//let GOB1ClassNameDefault = "Block 1"
-//
-//let GOB2TeacherDefault = "Teacher's Name"
-//let GOB2RoomNumberDefault = "###"
-//let GOB2ClassNameDefault = "Block 2"
-//
-//let GOB3TeacherDefault = "Teacher's Name"
-//let GOB3RoomNumberDefault = "###"
-//let GOB3ClassNameDefault = "Block 3"
-//
-//let GOB4TeacherDefault = "Teacher's Name"
-//let GOB4RoomNumberDefault = "###"
-//let GOB4ClassNameDefault = "Block 4"
+let GOB1_TEACHER = "Gold Block 1 Teacher Name"
+let GOB1_ROOM = "Gold Block 1 Room Number"
+let GOB1_CLASS = "Gold Block 1 Class Name"
+
+let GOB2_TEACHER = "Gold Block 2 Teacher Name"
+let GOB2_ROOM = "Gold Block 2 Room Number"
+let GOB2_CLASS = "Gold Block 2 Class Name"
+
+let GOB3_TEACHER = "Gold Block 3 Teacher Name"
+let GOB3_ROOM = "Gold Block 3 Room Number"
+let GOB3_CLASS = "Gold Block 3 Class Name"
+
+let GOB4_TEACHER = "Gold Block 4 Teacher Name"
+let GOB4_ROOM = "Gold Block 4 Room Number"
+let GOB4_CLASS = "Gold Block 4 Class Name"
 
 //Segues
 let TO_INPUT_VC = "toInputVC"
 let INPUT_UNWIND = "InputUnwind"
+let TO_EDIT_SCHEDULE = "toEditSchedule"
 
 //Notifications
 let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")

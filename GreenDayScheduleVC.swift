@@ -58,12 +58,14 @@ class GreenDayScheduleVC: UIViewController
         homeworkButtonPressed.titleLabel?.adjustsFontSizeToFitWidth = true
     }
     
-    @objc func userDataDidChange(_ notif: Notification) {
+    @objc func userDataDidChange(_ notif: Notification)
+    {
         setUpSchedule()
     }
     
     // MARK: - View Did Load
-    override func viewWillAppear(_ animated: Bool){
+    override func viewWillAppear(_ animated: Bool)
+    {
         setUpSchedule()
     }
 
@@ -109,7 +111,8 @@ class GreenDayScheduleVC: UIViewController
             
         }
     }
-    func setUpSchedule() {
+    func setUpSchedule()
+    {
         // Block 1
         B1ClassLabel.text = userDataServices.instance.GrB1ClassName
         B1TeacherLabel.text = userDataServices.instance.GrB1Teacher
