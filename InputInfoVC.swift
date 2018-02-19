@@ -35,7 +35,6 @@ class InputInfoVC: UIViewController
         guard let roomNumber = roomNumberTextField.text , roomNumberTextField.text != "" else { return }
         
         userDataServices.instance.createBlock(teacher: teacherName, room: roomNumber, className: className)
-        NotificationCenter.default.post(name: USER_DATA_HAS_CHANGED, object: nil)
         
         performSegue(withIdentifier: INPUT_UNWIND, sender: nil)
     }

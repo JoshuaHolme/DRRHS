@@ -9,16 +9,13 @@
 /* Begin PBXBuildFile section */
 		310B32B3202DF7F600A92F6B /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B32B2202DF7F600A92F6B /* UserDataServices.swift */; };
 		310B32B6202DF9C500A92F6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B32B5202DF9C500A92F6B /* Constants.swift */; };
-		31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F161F45D2A100AA204F /* GrAddHWViewController.swift */; };
-		31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F181F45EF9300AA204F /* GrViewHWViewController.swift */; };
-		31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */; };
+		31111F171F45D2A100AA204F /* AddHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F161F45D2A100AA204F /* AddHomeworkVC.swift */; };
+		31111F191F45EF9300AA204F /* ViewHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */; };
+		31111F1F1F45F51B00AA204F /* ViewHomeworkTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */; };
 		311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* EditScheduleVC.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
 		3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputInfoVC.swift */; };
-		3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */; };
-		31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */; };
-		31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */; };
 		6946B8512028E2B700F696E4 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B8502028E2B700F696E4 /* ClassView.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
 		696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153A1F70CCF500844EF8 /* Schedule.storyboard */; };
@@ -38,6 +35,7 @@
 		69B8ABA61F5CEFC600A0A6BE /* DRGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */; };
 		69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */; };
 		69D419AA1F60F74B00DF1B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D419A91F60F74B00DF1B2A /* Main.storyboard */; };
+		69D8F8DA203B5BD30041708A /* HomeworkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D8F8D9203B5BD30041708A /* HomeworkCell.xib */; };
 		69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */; };
 		69D931E61F54FC61003D10B6 /* Teacher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D931E51F54FC61003D10B6 /* Teacher.swift */; };
 		69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F51A03202C1813008FD375 /* RoundedButton.swift */; };
@@ -67,16 +65,13 @@
 		1596F0A0424EE2DB3260BE82 /* Pods_DRRHSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		310B32B2202DF7F600A92F6B /* UserDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
 		310B32B5202DF9C500A92F6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		31111F161F45D2A100AA204F /* GrAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrAddHWViewController.swift; sourceTree = "<group>"; };
-		31111F181F45EF9300AA204F /* GrViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWViewController.swift; sourceTree = "<group>"; };
-		31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrViewHWTableViewCell.swift; sourceTree = "<group>"; };
+		31111F161F45D2A100AA204F /* AddHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkVC.swift; sourceTree = "<group>"; };
+		31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkVC.swift; sourceTree = "<group>"; };
+		31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkTVCell.swift; sourceTree = "<group>"; };
 		311E2F801F4347790098B355 /* EditScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleVC.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* InputInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoVC.swift; sourceTree = "<group>"; };
-		3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWTableViewCell.swift; sourceTree = "<group>"; };
-		31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoViewHWViewController.swift; sourceTree = "<group>"; };
-		31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoAddHWViewController.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
 		6946B8502028E2B700F696E4 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
@@ -104,6 +99,7 @@
 		69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DRGold.swift; sourceTree = "<group>"; };
 		69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		69D419A91F60F74B00DF1B2A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		69D8F8D9203B5BD30041708A /* HomeworkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeworkCell.xib; sourceTree = "<group>"; };
 		69D931E31F54F7B8003D10B6 /* DirectoryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryDetailVC.swift; sourceTree = "<group>"; };
 		69D931E51F54FC61003D10B6 /* Teacher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Teacher.swift; sourceTree = "<group>"; };
 		69F51A03202C1813008FD375 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
@@ -168,34 +164,33 @@
 			isa = PBXGroup;
 			children = (
 				310B32B5202DF9C500A92F6B /* Constants.swift */,
+				69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */,
+				69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		311E24D31F539D6800E49052 /* Green Day Schedule */ = {
+		311E24D31F539D6800E49052 /* Schedule */ = {
 			isa = PBXGroup;
 			children = (
 				697C544D203126A1007A2D61 /* SettingsVC.swift */,
 				311E2F801F4347790098B355 /* EditScheduleVC.swift */,
 				3160B9CE1F35746B00EA532B /* InputInfoVC.swift */,
 				313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */,
-				31111F161F45D2A100AA204F /* GrAddHWViewController.swift */,
-				31111F181F45EF9300AA204F /* GrViewHWViewController.swift */,
-				31111F1E1F45F51B00AA204F /* GrViewHWTableViewCell.swift */,
+				697C544F203142AB007A2D61 /* GoldDayScheduleVC.swift */,
+				31111F161F45D2A100AA204F /* AddHomeworkVC.swift */,
+				31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */,
+				31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */,
 			);
-			name = "Green Day Schedule";
+			name = Schedule;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		311E24D41F539D8D00E49052 /* Gold Day Schedule */ = {
+		311E24D41F539D8D00E49052 /* Unfinished Schedule */ = {
 			isa = PBXGroup;
 			children = (
-				697C544F203142AB007A2D61 /* GoldDayScheduleVC.swift */,
-				31BFFB521F550536009C3D33 /* GoAddHWViewController.swift */,
-				31BFFB501F55050C009C3D33 /* GoViewHWViewController.swift */,
-				3174CCA21F590EBB0080DC7E /* GoViewHWTableViewCell.swift */,
 			);
-			path = "Gold Day Schedule";
+			path = "Unfinished Schedule";
 			sourceTree = "<group>";
 		};
 		6946B84F2028E28000F696E4 /* View */ = {
@@ -212,8 +207,9 @@
 			children = (
 				699A69A21F19816000E9CAD9 /* LaunchScreen.storyboard */,
 				69D419A91F60F74B00DF1B2A /* Main.storyboard */,
-				696B153A1F70CCF500844EF8 /* Schedule.storyboard */,
+				69D8F8D9203B5BD30041708A /* HomeworkCell.xib */,
 				696B153E1F70CE3700844EF8 /* Settings.storyboard */,
+				696B153A1F70CCF500844EF8 /* Schedule.storyboard */,
 				696B154A1F70CFDE00844EF8 /* Directory.storyboard */,
 				696B15471F70CF8000844EF8 /* Home.storyboard */,
 			);
@@ -253,9 +249,8 @@
 				696B153C1F70CD2D00844EF8 /* Storyboards */,
 				69B8ABA11F5CED3600A0A6BE /* Tab Bar */,
 				69D931E01F54F76A003D10B6 /* Directory */,
-				311E24D31F539D6800E49052 /* Green Day Schedule */,
-				311E24D41F539D8D00E49052 /* Gold Day Schedule */,
-				69B8ABA21F5CED4E00A0A6BE /* Theme */,
+				311E24D31F539D6800E49052 /* Schedule */,
+				311E24D41F539D8D00E49052 /* Unfinished Schedule */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
 				699A69A51F19816000E9CAD9 /* Info.plist */,
 			);
@@ -288,15 +283,6 @@
 				69CB66451F2BC5D000F047D1 /* BaseTabBarController.swift */,
 			);
 			path = "Tab Bar";
-			sourceTree = "<group>";
-		};
-		69B8ABA21F5CED4E00A0A6BE /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */,
-				69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */,
-			);
-			path = Theme;
 			sourceTree = "<group>";
 		};
 		69D931E01F54F76A003D10B6 /* Directory */ = {
@@ -446,6 +432,7 @@
 				699A69A41F19816000E9CAD9 /* LaunchScreen.storyboard in Resources */,
 				699A69A11F19816000E9CAD9 /* Assets.xcassets in Resources */,
 				696B153B1F70CCF500844EF8 /* Schedule.storyboard in Resources */,
+				69D8F8DA203B5BD30041708A /* HomeworkCell.xib in Resources */,
 				696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */,
 				696B15481F70CF8000844EF8 /* Home.storyboard in Resources */,
 			);
@@ -632,25 +619,22 @@
 				69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
-				31BFFB531F550536009C3D33 /* GoAddHWViewController.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				310B32B6202DF9C500A92F6B /* Constants.swift in Sources */,
 				69B8ABA41F5CED8A00A0A6BE /* DRGreen.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
-				31111F191F45EF9300AA204F /* GrViewHWViewController.swift in Sources */,
+				31111F191F45EF9300AA204F /* ViewHomeworkVC.swift in Sources */,
 				69CB66461F2BC5D000F047D1 /* BaseTabBarController.swift in Sources */,
 				69D931E61F54FC61003D10B6 /* Teacher.swift in Sources */,
 				697C5450203142AB007A2D61 /* GoldDayScheduleVC.swift in Sources */,
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
 				311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */,
 				3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */,
-				31BFFB511F55050C009C3D33 /* GoViewHWViewController.swift in Sources */,
 				695317781F60BA760092454A /* DirectoryTC.swift in Sources */,
-				31111F1F1F45F51B00AA204F /* GrViewHWTableViewCell.swift in Sources */,
-				3174CCA31F590EBB0080DC7E /* GoViewHWTableViewCell.swift in Sources */,
+				31111F1F1F45F51B00AA204F /* ViewHomeworkTVCell.swift in Sources */,
 				69B8ABA61F5CEFC600A0A6BE /* DRGold.swift in Sources */,
-				31111F171F45D2A100AA204F /* GrAddHWViewController.swift in Sources */,
+				31111F171F45D2A100AA204F /* AddHomeworkVC.swift in Sources */,
 				310B32B3202DF7F600A92F6B /* UserDataServices.swift in Sources */,
 				697C544E203126A1007A2D61 /* SettingsVC.swift in Sources */,
 			);

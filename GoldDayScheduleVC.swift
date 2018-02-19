@@ -1,5 +1,5 @@
 //
-//  GreenDayScheduleVC.swift
+//  GoldDayScheduleVC.swift
 //  DRRHS
 //
 //  Created by Holme Computer on 8/3/17.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class GreenDayScheduleVC: UIViewController
+class GoldDayScheduleVC: UIViewController
 {
     // MARK: - Variables
-    let fromDay = "Green"
+    let fromDay = "Gold"
     
     // MARK: - IBOutlets
     
@@ -20,11 +20,11 @@ class GreenDayScheduleVC: UIViewController
     @IBOutlet weak var B1TeacherLabel: UILabel!
     @IBOutlet weak var B1RoomLabel: UILabel!
     
-    // Block 2 Outlet
+    // Block 2
     @IBOutlet weak var B2ClassLabel: UILabel!
     @IBOutlet weak var B2TeacherLabel: UILabel!
     @IBOutlet weak var B2RoomLabel: UILabel!
-
+    
     // Block 3
     @IBOutlet weak var B3ClassLabel: UILabel!
     @IBOutlet weak var B3TeacherLabel: UILabel!
@@ -40,7 +40,7 @@ class GreenDayScheduleVC: UIViewController
     {
         super.viewDidLoad()
     }
-
+    
     override func viewWillAppear(_ animated: Bool)
     {
         setUpSchedule()
@@ -49,24 +49,24 @@ class GreenDayScheduleVC: UIViewController
     func setUpSchedule()
     {
         // Block 1
-        B1ClassLabel.text = userDataServices.instance.GrB1ClassName
-        B1TeacherLabel.text = userDataServices.instance.GrB1Teacher
-        B1RoomLabel.text = userDataServices.instance.GrB1RoomNumber
+        B1ClassLabel.text = userDataServices.instance.GoB1ClassName
+        B1TeacherLabel.text = userDataServices.instance.GoB1Teacher
+        B1RoomLabel.text = userDataServices.instance.GoB1RoomNumber
         
         // Block 2
-        B2ClassLabel.text = userDataServices.instance.GrB2ClassName
-        B2TeacherLabel.text = userDataServices.instance.GrB2Teacher
-        B2RoomLabel.text = userDataServices.instance.GrB2RoomNumber
+        B2ClassLabel.text = userDataServices.instance.GoB2ClassName
+        B2TeacherLabel.text = userDataServices.instance.GoB2Teacher
+        B2RoomLabel.text = userDataServices.instance.GoB2RoomNumber
         
         // Block 3
-        B3ClassLabel.text = userDataServices.instance.GrB3ClassName
-        B3TeacherLabel.text = userDataServices.instance.GrB3Teacher
-        B3RoomLabel.text = userDataServices.instance.GrB3RoomNumber
+        B3ClassLabel.text = userDataServices.instance.GoB3ClassName
+        B3TeacherLabel.text = userDataServices.instance.GoB3Teacher
+        B3RoomLabel.text = userDataServices.instance.GoB3RoomNumber
         
         // Block 4
-        B4ClassLabel.text = userDataServices.instance.GrB4ClassName
-        B4TeacherLabel.text = userDataServices.instance.GrB4Teacher
-        B4RoomLabel.text = userDataServices.instance.GrB4RoomNumber
+        B4ClassLabel.text = userDataServices.instance.GoB4ClassName
+        B4TeacherLabel.text = userDataServices.instance.GoB4Teacher
+        B4RoomLabel.text = userDataServices.instance.GoB4RoomNumber
     }
     
     func addAlert()
@@ -88,11 +88,11 @@ class GreenDayScheduleVC: UIViewController
     }
     
     // MARK: - IBActions
-    @IBAction func B1AddBtnPressed(_ sender: Any)
+    @IBAction func B1AddButtonPressed(_ sender: Any)
     {
-        if userDataServices.instance.GrB1ClassName != nil
+        if userDataServices.instance.GoB1ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB1ClassName!
+            GrhomeworkTitleLabel = userDataServices.instance.GoB1ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -101,41 +101,11 @@ class GreenDayScheduleVC: UIViewController
         }
     }
     
-    @IBAction func B2AddBtnPressed(_ sender: Any)
+    @IBAction func B2AddButtonPressed(_ sender: Any)
     {
-        
-        if userDataServices.instance.GrB2ClassName != nil
+        if userDataServices.instance.GoB2ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB2ClassName!
-            self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
-        }
-        else
-        {
-            addAlert()
-        }
-        
-    }
-    
-    @IBAction func B3AddBtnPressed(_ sender: Any)
-    {
-        if userDataServices.instance.GrB3ClassName != nil
-        {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB3ClassName!
-            self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
-        }
-        else
-        {
-            addAlert()
-        }
-        
-        
-    }
-    
-    @IBAction func B4AddBtnPressed(_ sender: Any)
-    {
-        if userDataServices.instance.GrB4ClassName != nil
-        {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB4ClassName!
+            GrhomeworkTitleLabel = userDataServices.instance.GoB2ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -144,8 +114,33 @@ class GreenDayScheduleVC: UIViewController
         }
     }
     
-    @IBAction func vewHomeworkBtnPressed(_ sender: Any)
+    @IBAction func B3AddButtonPressed(_ sender: Any)
     {
-        self.performSegue(withIdentifier: TO_VIEW_HOMEWORK, sender: self)
+        if userDataServices.instance.GoB3ClassName != nil
+        {
+            GrhomeworkTitleLabel = userDataServices.instance.GoB3ClassName!
+            self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
+        }
+        else
+        {
+            addAlert()
+        }
+    }
+    
+    @IBAction func B4AddButtonPressed(_ sender: Any)
+    {
+        if userDataServices.instance.GoB4ClassName != nil
+        {
+            GrhomeworkTitleLabel = userDataServices.instance.GoB4ClassName!
+            self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
+        }
+        else
+        {
+            addAlert()
+        }
+    }
+    @IBAction func viewHomeworkBtn(_ sender: Any)
+    {
+        performSegue(withIdentifier: TO_VIEW_HOMEWORK, sender: nil)
     }
 }
