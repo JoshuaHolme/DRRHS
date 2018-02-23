@@ -63,6 +63,8 @@ let GOB4_CLASS = "Gold Block 4 Class Name"
 let TO_INPUT_VC = "toInputVC"
 let INPUT_UNWIND = "InputUnwind"
 let TO_EDIT_SCHEDULE = "toEditSchedule"
+let TO_ADD_HOMEWORK = "toAddHomeworkVC"
+let TO_VIEW_HOMEWORK = "toViewHomework"
 
 //Notifications
 let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")

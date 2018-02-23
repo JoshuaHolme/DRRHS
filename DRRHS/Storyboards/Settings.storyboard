@@ -110,8 +110,6 @@
         <!--Input InfoVC-->
         <scene sceneID="OOw-ES-Bcq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yH1-4s-cHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="0bm-dE-JiC" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="2t6-uR-vHQ" customClass="InputInfoVC" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DpU-jP-q1V"/>
@@ -213,13 +211,14 @@
                         <outlet property="teacherNameTextField" destination="SOW-9O-28g" id="mRB-dT-UF0"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yH1-4s-cHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="0bm-dE-JiC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1364" y="9"/>
         </scene>
         <!--Edit ScheduleVC-->
         <scene sceneID="r9o-X7-Eit">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="cCS-MX-dEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="U5a-3v-C6U" customClass="EditScheduleVC" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cPi-8o-2AW"/>
@@ -311,6 +310,7 @@
                         <segue destination="2t6-uR-vHQ" kind="show" identifier="toInputVC" id="UHL-WF-ReO"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCS-MX-dEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="9"/>
         </scene>
