@@ -65,6 +65,7 @@ let INPUT_UNWIND = "InputUnwind"
 let TO_EDIT_SCHEDULE = "toEditSchedule"
 let TO_ADD_HOMEWORK = "toAddHomeworkVC"
 let TO_VIEW_HOMEWORK = "toViewHomework"
+let TO_VIEW_HOMEWORK_DETAILED = "toViewHomeworkDetailed"
 
 //Notifications
 let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")

@@ -54,7 +54,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.classNameLbl.text = task.classTitle
         cell.dueDateLbl.text = task.dueDate
         cell.descriptionTxtView.text = task.homework
-        
+
         if task.classColor == "Green"
         {
             cell.dayIndicator.backgroundColor = .DRGreen
@@ -104,6 +104,10 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             homeworkTV.reloadData()
         }
         
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: TO_VIEW_HOMEWORK_DETAILED, sender: nil)
     }
     
     // MARK: - Actions

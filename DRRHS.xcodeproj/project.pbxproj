@@ -13,6 +13,7 @@
 		31111F191F45EF9300AA204F /* ViewHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */; };
 		31111F1F1F45F51B00AA204F /* ViewHomeworkTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */; };
 		311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* EditScheduleVC.swift */; };
+		312A9BDE204092AC00603567 /* ViewHomeworkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
 		31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31470705203FBFAB002CF4A0 /* Extensions.swift */; };
@@ -69,6 +70,7 @@
 		31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkVC.swift; sourceTree = "<group>"; };
 		31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkTVCell.swift; sourceTree = "<group>"; };
 		311E2F801F4347790098B355 /* EditScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleVC.swift; sourceTree = "<group>"; };
+		312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkDetailVC.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
 		31470705203FBFAB002CF4A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -180,16 +182,10 @@
 				31111F161F45D2A100AA204F /* AddHomeworkVC.swift */,
 				31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */,
 				31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */,
+				312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */,
 			);
 			name = Schedule;
 			path = ..;
-			sourceTree = "<group>";
-		};
-		311E24D41F539D8D00E49052 /* Unfinished Schedule */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Unfinished Schedule";
 			sourceTree = "<group>";
 		};
 		6946B84F2028E28000F696E4 /* View */ = {
@@ -250,7 +246,6 @@
 				69B8ABA11F5CED3600A0A6BE /* Tab Bar */,
 				69D931E01F54F76A003D10B6 /* Directory */,
 				311E24D31F539D6800E49052 /* Schedule */,
-				311E24D41F539D8D00E49052 /* Unfinished Schedule */,
 				699A69A01F19816000E9CAD9 /* Assets.xcassets */,
 				699A69A51F19816000E9CAD9 /* Info.plist */,
 			);
@@ -622,6 +617,7 @@
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				310B32B6202DF9C500A92F6B /* Constants.swift in Sources */,
+				312A9BDE204092AC00603567 /* ViewHomeworkDetailVC.swift in Sources */,
 				31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,

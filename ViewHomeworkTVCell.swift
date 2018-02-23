@@ -15,7 +15,6 @@ class ViewHomeworkTVCell: UITableViewCell
     @IBOutlet weak var classNameLbl: UILabel!
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var descriptionTxtView: UITextView!
-    var classColor = ""
     
     override func awakeFromNib()
     {
@@ -26,5 +25,9 @@ class ViewHomeworkTVCell: UITableViewCell
     {
         super.setSelected(selected, animated: animated)
 
+    }
+    
+    func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool) {
+        
     }
 }
