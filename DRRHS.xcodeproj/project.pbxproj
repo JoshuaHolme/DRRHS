@@ -15,6 +15,7 @@
 		311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* EditScheduleVC.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
+		31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31470705203FBFAB002CF4A0 /* Extensions.swift */; };
 		3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputInfoVC.swift */; };
 		6946B8512028E2B700F696E4 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B8502028E2B700F696E4 /* ClassView.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
@@ -71,6 +72,7 @@
 		311E2F801F4347790098B355 /* EditScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleVC.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
+		31470705203FBFAB002CF4A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* InputInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoVC.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				310B32B5202DF9C500A92F6B /* Constants.swift */,
 				69B8ABA31F5CED8A00A0A6BE /* DRGreen.swift */,
 				69B8ABA51F5CEFC600A0A6BE /* DRGold.swift */,
+				31470705203FBFAB002CF4A0 /* Extensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -382,7 +385,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TGLE8RZWF5;
+						DevelopmentTeam = XLEYC29AG5;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -621,6 +624,7 @@
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				310B32B6202DF9C500A92F6B /* Constants.swift in Sources */,
+				31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */,
 				69B8ABA41F5CED8A00A0A6BE /* DRGreen.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
@@ -793,7 +797,7 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -810,7 +814,7 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
