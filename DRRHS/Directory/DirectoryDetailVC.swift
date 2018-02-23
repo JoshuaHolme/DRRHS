@@ -8,10 +8,8 @@
 
 import UIKit
 
-class DirectoryDetailVC: UIViewController{
-    
-   
-    
+class DirectoryDetailVC: UIViewController
+{
     var name = ""
     var email = ""
     var roomNumber = ""
@@ -25,7 +23,8 @@ class DirectoryDetailVC: UIViewController{
     
     @IBOutlet weak var WebsiteLabel: UITextView!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         NameLabel.text = name
@@ -36,8 +35,6 @@ class DirectoryDetailVC: UIViewController{
         RoomNumberLabel.sizeToFit()
         WebsiteLabel.text = website
         WebsiteLabel.sizeToFit()
-        
     }
-    
 }
 

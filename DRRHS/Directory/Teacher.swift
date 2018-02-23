@@ -10,10 +10,8 @@ import Foundation
 
 struct Teacher
 {
-    
     let name: String
     let email: String
     let roomNumber: String
     let website: String
-    
 }
