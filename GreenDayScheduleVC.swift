@@ -97,19 +97,13 @@ class GreenDayScheduleVC: UIViewController
     // Why is this action here?
     @IBAction func GRHW(_ sender: UIStoryboardSegue)
     {
-        if sender.source is GrAddHWViewController
-        {
-            
-        }
+        
     }
     
     // Why is this action here?
     @IBAction func GRHWVIEW(_ sender: UIStoryboardSegue)
     {
-        if sender.source is GrAddHWViewController
-        {
-            
-        }
+        
     }
     func setUpSchedule()
     {
