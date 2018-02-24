@@ -14,6 +14,7 @@
 		31111F1F1F45F51B00AA204F /* ViewHomeworkTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */; };
 		311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 311E2F801F4347790098B355 /* EditScheduleVC.swift */; };
 		312A9BDE204092AC00603567 /* ViewHomeworkDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */; };
+		312A9BE02040F50300603567 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 312A9BDF2040F50300603567 /* RoundedView.swift */; };
 		313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */; };
 		3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3143B67E1F49E9ED00438E08 /* DRRHS.xcdatamodeld */; };
 		31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31470705203FBFAB002CF4A0 /* Extensions.swift */; };
@@ -71,6 +72,7 @@
 		31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkTVCell.swift; sourceTree = "<group>"; };
 		311E2F801F4347790098B355 /* EditScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditScheduleVC.swift; sourceTree = "<group>"; };
 		312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewHomeworkDetailVC.swift; sourceTree = "<group>"; };
+		312A9BDF2040F50300603567 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		313D4AD41F342648002FAFA3 /* GreenDayScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenDayScheduleVC.swift; sourceTree = "<group>"; };
 		3143B67F1F49E9ED00438E08 /* DRRHS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DRRHS.xcdatamodel; sourceTree = "<group>"; };
 		31470705203FBFAB002CF4A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 			children = (
 				6946B8502028E2B700F696E4 /* ClassView.swift */,
 				69F51A03202C1813008FD375 /* RoundedButton.swift */,
+				312A9BDF2040F50300603567 /* RoundedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				6946B8512028E2B700F696E4 /* ClassView.swift in Sources */,
 				69F51A04202C1813008FD375 /* RoundedButton.swift in Sources */,
 				699A699C1F19816000E9CAD9 /* SecondViewController.swift in Sources */,
+				312A9BE02040F50300603567 /* RoundedView.swift in Sources */,
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				310B32B6202DF9C500A92F6B /* Constants.swift in Sources */,

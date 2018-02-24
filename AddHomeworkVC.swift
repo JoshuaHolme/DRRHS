@@ -25,6 +25,10 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     @IBOutlet weak var TextField: UITextView!
     @IBOutlet weak var DueDateTextField: UITextField!
     @IBOutlet weak var addBtn: UIButton!
+    @IBOutlet weak var useImgBtn: RoundedButton!
+    @IBOutlet weak var useTextBtn: RoundedButton!
+    @IBOutlet weak var dueDateLbl: UILabel!
+    @IBOutlet weak var homeworkLbl: UILabel!
     
     @IBAction func saveButtonPressed(_ sender: Any)
     {
@@ -64,11 +68,11 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         
         if fromDay == "Green"
         {
-            addBtn.setTitleColor(.DRGreen, for: .normal)
+            setGreenDay()
         }
         else if fromDay == "Gold"
         {
-            addBtn.setTitleColor(.DRGold, for: .normal)
+            setGoldDay()
         }
         
         BackDrop.layer.borderWidth = 2.5
@@ -105,26 +109,49 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     /*@objc func doneClicked() {
      view.endEditing(true)
      }*/
-    
+
+// Someone Hits The Text Button
+    @IBAction func textBtnSelected(_ sender: Any) {
+        if fromDay == "Green" {
+            useTextBtn.backgroundColor = .DRGreen
+        } else {
+            useTextBtn.backgroundColor = .DRGold
+        }
+        
+        useTextBtn.setTitleColor(UIColor.white, for: .normal)
+        useImgBtn.backgroundColor = UIColor.white
+        useImgBtn.setTitleColor(UIColor.darkGray, for: .normal)
+    }
+
+// Someone Hits the Image Button
+    @IBAction func imageBtnSelected(_ sender: Any) {
+        if fromDay == "Green" {
+            useImgBtn.backgroundColor = .DRGreen
+        } else {
+            useImgBtn.backgroundColor = .DRGold
+        }
+        
+        useTextBtn.backgroundColor = UIColor.white
+        useTextBtn.setTitleColor(UIColor.darkGray, for: .normal)
+        useImgBtn.setTitleColor(UIColor.white, for: .normal)
+    }
+
+// This Function will dismiss the view if selected outside the region
     @IBAction func dismissPopUp(_ sender: Any)
     {
         dismiss(animated: true, completion: nil)
     }
-    
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+
+// This function will set the necessary labels required when the view is booted
     override func viewWillAppear(_ animated: Bool)
     {
         TitleLabel.text = "Add \(GrhomeworkTitleLabel) Homework"
     }
-    
+
+// Segues information over to view controller
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        //Information for New Homwework Assingment
+        // Information for New Homwework Assignment
         
         if TextField.text != nil
         {
@@ -142,6 +169,22 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     {
         self.view.endEditing(true)
         
+    }
+    
+// This function sets the parameters for the colors of Green Day
+    func setGreenDay() {
+        homeworkLbl.textColor = .DRGreen
+        dueDateLbl.textColor = .DRGreen
+        addBtn.backgroundColor = .DRGreen
+        useTextBtn.backgroundColor = .DRGreen
+    }
+    
+// This function sets the parameters for the colors of Gold Day
+    func setGoldDay() {
+        homeworkLbl.textColor = .DRGold
+        dueDateLbl.textColor = .DRGold
+        addBtn.backgroundColor = .DRGold
+        useTextBtn.backgroundColor = .DRGold
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
