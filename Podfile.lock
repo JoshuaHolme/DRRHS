@@ -1,15 +1,18 @@
 PODS:
+  - DeckTransition (2.0.0)
   - TwitterCore (3.1.0)
   - TwitterKit (3.3.0):
     - TwitterCore (>= 3.1.0)
 
 DEPENDENCIES:
+  - DeckTransition (~> 2.0)
   - TwitterKit
 
 SPEC CHECKSUMS:
+  DeckTransition: 2300694f94fbeca2c103f365dc9dc09ffae14a4f
   TwitterCore: 644d59e75abccb26cf0a9050d2c4dea0e5412241
   TwitterKit: a2e60ddcedbf54091eac6f27685ca7a87681e1d7
 
-PODFILE CHECKSUM: daf763095008b4cb079f47e8445d4d04eb110740
+PODFILE CHECKSUM: 46cbd301cb3919883e35e8c5d43017286564445e
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0
