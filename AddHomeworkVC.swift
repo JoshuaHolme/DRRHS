@@ -10,25 +10,24 @@ import UIKit
 import CoreData
 import UserNotifications
 
-var GrhomeworkTitleLabel = String()
-var GrHWassignment: String = ""
-var GrClassroomLabel: String!
-var GrDueDateLabel: String!
-
 class AddHomeworkVC: UIViewController, UITextFieldDelegate
 {
+    // Some Variables
     var fromDay: String?
+    var classTitleLabel = String()
+    var dueDate = ""
     
     //Outlets to the different peices on the app
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var BackDrop: UIView!
     @IBOutlet weak var TextField: UITextView!
-    @IBOutlet weak var DueDateTextField: UITextField!
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var useImgBtn: RoundedButton!
     @IBOutlet weak var useTextBtn: RoundedButton!
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var homeworkLbl: UILabel!
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
     
     @IBAction func saveButtonPressed(_ sender: Any)
     {
@@ -37,8 +36,8 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         
         let homeworkAssignment = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
         homeworkAssignment.homework = TextField.text
-        homeworkAssignment.dueDate = DueDateTextField.text
-        homeworkAssignment.classTitle = GrhomeworkTitleLabel
+        homeworkAssignment.dueDate = dueDate
+        homeworkAssignment.classTitle = classTitleLabel
         homeworkAssignment.classColor = fromDay
         
         //Save the data
@@ -57,14 +56,15 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         let requestIndentifier = "GoldDayNotification"
         let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request, withCompletionHandler: {Error in
-            
-            //handle Error here
+            // handle Error here
         })
         
         dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        generalSetup()
         
         if fromDay == "Green"
         {
@@ -75,40 +75,13 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
             setGoldDay()
         }
         
-        BackDrop.layer.borderWidth = 2.5
-        BackDrop.layer.borderColor = UIColor.black.cgColor
-        //Round Corners
-        BackDrop.layer.cornerRadius = 20
-        BackDrop.layer.masksToBounds = true
-        
         TextField.layer.borderWidth = 1.5
         TextField.layer.borderColor = UIColor(red: (160/255.0), green: (160/255.0), blue: (160/255.0), alpha: 1.0).cgColor
         //Rounded Corners
         TextField.layer.cornerRadius = 10
         TextField.layer.masksToBounds = true
         
-        DueDateTextField.layer.borderWidth = 1.5
-        DueDateTextField.layer.borderColor = UIColor(red: (160/255.0), green: (160/255.0), blue: (160/255.0), alpha: 1.0).cgColor
-        
-        DueDateTextField.layer.cornerRadius = 10
-        DueDateTextField.layer.masksToBounds = true
-        
-        //Done Button to dismiss the Keyboard
-        
-        let toolBar = UIToolbar()
-        toolBar.sizeToFit()
-        
-        //let doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.done, target: self, action: #selector(self.doneClicked))
-        
-        //toolBar.setItems([flexibleSpace, doneButton], animated: true)
-        
-        TextField.inputAccessoryView = toolBar
-        DueDateTextField.inputAccessoryView = toolBar
     }
-    //Swift 4 Conversion broke this
-    /*@objc func doneClicked() {
-     view.endEditing(true)
-     }*/
 
 // Someone Hits The Text Button
     @IBAction func textBtnSelected(_ sender: Any) {
@@ -135,34 +108,22 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         useTextBtn.setTitleColor(UIColor.darkGray, for: .normal)
         useImgBtn.setTitleColor(UIColor.white, for: .normal)
     }
-
-// This Function will dismiss the view if selected outside the region
-    @IBAction func dismissPopUp(_ sender: Any)
+    
+// Function that allows Date Picker to work
+    @IBAction func dueDateSelected(_ sender: Any)
     {
-        dismiss(animated: true, completion: nil)
+        let dateFormatter = DateFormatter()
+        
+        dateFormatter.dateStyle = DateFormatter.Style.short
+        dateFormatter.timeStyle = DateFormatter.Style.short
+        
+        dueDate = "Due: \(dateFormatter.string(from: datePicker.date))"
     }
 
 // This function will set the necessary labels required when the view is booted
     override func viewWillAppear(_ animated: Bool)
     {
-        TitleLabel.text = "Add \(GrhomeworkTitleLabel) Homework"
-    }
-
-// Segues information over to view controller
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
-    {
-        // Information for New Homwework Assignment
-        
-        if TextField.text != nil
-        {
-            let textEdit = TextField.text.replacingOccurrences(of: "HW:", with: " ")
-            GrHWassignment = textEdit
-        }
-        
-        if let newDueDate = DueDateTextField.text
-        {
-            GrDueDateLabel = "Due: \(newDueDate)"
-        }
+        TitleLabel.text = "Add \(classTitleLabel) Homework"
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
@@ -187,9 +148,13 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         useTextBtn.backgroundColor = .DRGold
     }
     
+// General Setup to make the view look good on multiple platforms
+    func generalSetup() {
+        TextField.sizeToFit()
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool
     {
-        
         self.view.endEditing(true)
         return true
     }

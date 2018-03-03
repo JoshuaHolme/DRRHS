@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewHomeworkTVCell: UITableViewCell
-{
+    {
+    
     // MARK: - Outlets
     @IBOutlet weak var dayIndicator: UIView!
     @IBOutlet weak var classNameLbl: UILabel!

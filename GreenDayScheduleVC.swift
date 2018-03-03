@@ -12,6 +12,7 @@ class GreenDayScheduleVC: UIViewController
 {
     // MARK: - Variables
     let fromDay = "Green"
+    var classTitleLabel = ""
     
     // MARK: - IBOutlets
     
@@ -84,6 +85,9 @@ class GreenDayScheduleVC: UIViewController
         {
             let vc = segue.destination as! AddHomeworkVC
             vc.fromDay = fromDay
+            vc.classTitleLabel = classTitleLabel
+            
+            
         }
     }
     
@@ -92,7 +96,7 @@ class GreenDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GrB1ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB1ClassName!
+            classTitleLabel = userDataServices.instance.GrB1ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -106,7 +110,7 @@ class GreenDayScheduleVC: UIViewController
         
         if userDataServices.instance.GrB2ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB2ClassName!
+            classTitleLabel = userDataServices.instance.GrB2ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -120,7 +124,7 @@ class GreenDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GrB3ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB3ClassName!
+            classTitleLabel = userDataServices.instance.GrB3ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -134,7 +138,7 @@ class GreenDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GrB4ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GrB4ClassName!
+            classTitleLabel = userDataServices.instance.GrB4ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else

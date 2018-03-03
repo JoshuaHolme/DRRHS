@@ -33,3 +33,8 @@ extension UIButton
         layer.add(wiggleAnimation, forKey: "position")
     }
 }
+
+extension UIView
+{
+
+}

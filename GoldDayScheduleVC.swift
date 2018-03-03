@@ -12,6 +12,7 @@ class GoldDayScheduleVC: UIViewController
 {
     // MARK: - Variables
     let fromDay = "Gold"
+    var classTitleLabel = ""
     
     // MARK: - IBOutlets
     
@@ -92,7 +93,7 @@ class GoldDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GoB1ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GoB1ClassName!
+            classTitleLabel = userDataServices.instance.GoB1ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -105,7 +106,7 @@ class GoldDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GoB2ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GoB2ClassName!
+            classTitleLabel = userDataServices.instance.GoB2ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -118,7 +119,7 @@ class GoldDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GoB3ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GoB3ClassName!
+            classTitleLabel = userDataServices.instance.GoB3ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
@@ -131,7 +132,7 @@ class GoldDayScheduleVC: UIViewController
     {
         if userDataServices.instance.GoB4ClassName != nil
         {
-            GrhomeworkTitleLabel = userDataServices.instance.GoB4ClassName!
+            classTitleLabel = userDataServices.instance.GoB4ClassName!
             self.performSegue(withIdentifier: TO_ADD_HOMEWORK, sender: self)
         }
         else
