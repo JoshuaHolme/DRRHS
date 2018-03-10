@@ -22,20 +22,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnv-xV-6fY">
-                                <rect key="frame" x="141.5" y="28" width="93" height="31.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <rect key="frame" x="139" y="28" width="98.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-ek-NSa">
-                                <rect key="frame" x="0.0" y="132" width="375" height="75"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-ek-NSa">
+                                <rect key="frame" x="0.0" y="110" width="375" height="75"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6D-DS-pE9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnX-4e-KuY" userLabel="Edit Green Day Schedule">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="   Edit Green Day">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -53,11 +54,12 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-Wj-a7t">
-                                        <rect key="frame" x="0.0" y="43.5" width="375" height="31.5"/>
+                                        <rect key="frame" x="0.0" y="39.5" width="375" height="35.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujg-ji-ttt">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="   Edit Gold Day">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -80,15 +82,15 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schedule" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYp-Ps-Laq">
-                                <rect key="frame" x="16" y="103.5" width="75" height="20.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <rect key="frame" x="16" y="78" width="89" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9289663007456852" green="0.9289663007456852" blue="0.9289663007456852" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="pYp-Ps-Laq" firstAttribute="top" secondItem="cnv-xV-6fY" secondAttribute="bottom" constant="44.5" id="51F-7g-pw2"/>
+                            <constraint firstItem="pYp-Ps-Laq" firstAttribute="top" secondItem="cnv-xV-6fY" secondAttribute="bottom" constant="20" id="51F-7g-pw2"/>
                             <constraint firstItem="PTr-ek-NSa" firstAttribute="leading" secondItem="n3j-pZ-Mi9" secondAttribute="leading" id="E6M-tU-gex"/>
                             <constraint firstItem="PTr-ek-NSa" firstAttribute="top" secondItem="pYp-Ps-Laq" secondAttribute="bottom" constant="8" id="FmN-MD-lvv"/>
                             <constraint firstItem="cnv-xV-6fY" firstAttribute="top" secondItem="h7K-d9-Yrj" secondAttribute="bottom" constant="8" id="LqY-xl-p7s"/>

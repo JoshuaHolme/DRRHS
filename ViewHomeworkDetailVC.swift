@@ -10,11 +10,33 @@ import UIKit
 
 class ViewHomeworkDetailVC: UIViewController {
 
+    @IBOutlet weak var classTitle: UILabel!
+    @IBOutlet weak var teacherName: UILabel!
+    @IBOutlet weak var homework: UILabel!
+    @IBOutlet weak var dueDate: UILabel!
+    @IBOutlet weak var CircleGraph: CircleGraphView!
+    
+    var classTitleField: String?
+    var teacherNameField: String?
+    var homeworkField: String?
+    var dueDateField: String?
+    var arcLength: Double?
+    var arcColor: UIColor?
+    
+    
     @IBAction func doneBtnSelected(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+        classTitle.text = classTitleField
+        teacherName.text = teacherNameField
+        homework.text = homeworkField
+        dueDate.text = dueDateField
+        CircleGraph.endArc = CGFloat(arcLength!)
+        CircleGraph.arcColor = arcColor!
+        CircleGraph.arcBackgroundColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+        
 
         // Do any additional setup after loading the view.
     }
@@ -24,7 +46,15 @@ class ViewHomeworkDetailVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func emailBtnPressed(_ sender: Any) {
+    }
+    
+    @IBAction func websiteBtnPressed(_ sender: Any) {
+    }
+    
+    @IBAction func directoryBtnPressed(_ sender: Any) {
+    }
+    
     /*
     // MARK: - Navigation
 

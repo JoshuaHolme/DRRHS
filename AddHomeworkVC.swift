@@ -117,7 +117,7 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         dateFormatter.dateStyle = DateFormatter.Style.short
         dateFormatter.timeStyle = DateFormatter.Style.short
         
-        dueDate = "Due: \(dateFormatter.string(from: datePicker.date))"
+        dueDate = dateFormatter.string(from: datePicker.date)
     }
 
 // This function will set the necessary labels required when the view is booted

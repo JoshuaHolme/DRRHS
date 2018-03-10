@@ -16,6 +16,7 @@ class ViewHomeworkTVCell: UITableViewCell
     @IBOutlet weak var classNameLbl: UILabel!
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var descriptionTxtView: UITextView!
+    @IBOutlet weak var CircleGraph: CircleGraphView!
     
     override func awakeFromNib()
     {
@@ -31,4 +32,5 @@ class ViewHomeworkTVCell: UITableViewCell
     func selectRowIndexes(_ indexes: IndexSet, byExtendingSelection extend: Bool) {
         
     }
+    
 }

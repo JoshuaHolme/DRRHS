@@ -17,7 +17,15 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     // MARK: - Outlets
     @IBOutlet weak var homeworkTV: UITableView!
     
-    // MARK: - Funcitons
+    // MARK: - Variables
+    var dueDate: String?
+    var classTitle: String?
+    var homework: String?
+    var arcLength: Double?
+    var arcColor: UIColor?
+    var teacherName: String?
+    
+    // MARK: - Functions
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -50,10 +58,17 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeworkCell") as! ViewHomeworkTVCell
        
         let task = GreenDayHomework[indexPath.row]
+        Functions.instance.setTime(DueDate: task.dueDate!)
+        let arcLength = Functions.instance.calculateArcLength()
+        let arcColor = Functions.instance.setColor()
         
         cell.classNameLbl.text = task.classTitle
         cell.dueDateLbl.text = task.dueDate
         cell.descriptionTxtView.text = task.homework
+        cell.CircleGraph.arcColor = arcColor
+        cell.CircleGraph.endArc = CGFloat(arcLength)
+        cell.CircleGraph.arcWidth = 7
+        cell.CircleGraph.arcBackgroundColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
 
         if task.classColor == "Green"
         {
@@ -107,7 +122,26 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let task = GreenDayHomework[indexPath.row]
+            Functions.instance.setTime(DueDate: task.dueDate!)
+            arcLength = Functions.instance.calculateArcLength()
+            arcColor = Functions.instance.setColor()
+       
+            classTitle = task.classTitle!
+            dueDate = task.dueDate!
+            homework = task.homework!
         performSegue(withIdentifier: TO_VIEW_HOMEWORK_DETAILED, sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? ViewHomeworkDetailVC
+        vc?.classTitleField = classTitle
+        vc?.dueDateField = dueDate
+        vc?.homeworkField = homework
+        vc?.teacherNameField = "Ms. Harwood"
+        vc?.arcLength = arcLength
+        vc?.arcColor = arcColor
     }
     
     // MARK: - Actions
