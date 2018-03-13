@@ -122,19 +122,23 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
         let task = GreenDayHomework[indexPath.row]
-            Functions.instance.setTime(DueDate: task.dueDate!)
-            arcLength = Functions.instance.calculateArcLength()
-            arcColor = Functions.instance.setColor()
-       
-            classTitle = task.classTitle!
-            dueDate = task.dueDate!
-            homework = task.homework!
+        Functions.instance.setTime(DueDate: task.dueDate!)
+        arcLength = Functions.instance.calculateArcLength()
+        arcColor = Functions.instance.setColor()
         
-        if task.classColor == "Green" {
+        classTitle = task.classTitle!
+        dueDate = task.dueDate!
+        homework = task.homework!
+        
+        if task.classColor == "Green"
+        {
             day = "Green"
-        } else if task.classColor == "Gold" {
+        }
+        else if task.classColor == "Gold"
+        {
             day = "Gold"
         }
         

@@ -31,38 +31,49 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     
     @IBAction func saveButtonPressed(_ sender: Any)
     {
-        
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        
-        let homeworkAssignment = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
-        homeworkAssignment.homework = TextField.text
-        homeworkAssignment.dueDate = dueDate
-        homeworkAssignment.classTitle = classTitleLabel
-        homeworkAssignment.classColor = fromDay
-        
-        //Save the data
-        (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
-        self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
-        
-        let content = UNMutableNotificationContent()
-        content.title = "Reminder"
-
-        content.badge = 1
-        content.categoryIdentifier = "notificationCategory"
-        
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*5, repeats: false)
-        
-        let requestIndentifier = "GoldDayNotification"
-        let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: {Error in
-            // handle Error here
-        })
-        
-        dismiss(animated: true, completion: nil)
+        if dueDate == ""
+        {
+            let alert = UIAlertController(title: "Uh Oh!", message: "Don't forget to change the due date.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else
+        {
+            let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            
+            let homeworkAssignment = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
+            homeworkAssignment.homework = TextField.text
+            homeworkAssignment.dueDate = dueDate
+            homeworkAssignment.classTitle = classTitleLabel
+            homeworkAssignment.classColor = fromDay
+            
+            //Save the data
+            (UIApplication.shared.delegate as! AppDelegate).saveContext()
+            
+            self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
+            
+            let content = UNMutableNotificationContent()
+            content.title = "Reminder"
+            
+            content.badge = 1
+            content.categoryIdentifier = "notificationCategory"
+            
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*5, repeats: false)
+            
+            let requestIndentifier = "GoldDayNotification"
+            let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
+            UNUserNotificationCenter.current().add(request, withCompletionHandler: {Error in
+                // handle Error here
+            })
+            
+            dismiss(animated: true, completion: nil)
+        }
     }
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         generalSetup()
         
@@ -149,7 +160,8 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     }
     
 // General Setup to make the view look good on multiple platforms
-    func generalSetup() {
+    func generalSetup()
+    {
         TextField.sizeToFit()
     }
     

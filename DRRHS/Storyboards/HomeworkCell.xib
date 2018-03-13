@@ -57,11 +57,11 @@
                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                     </textView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBo-OH-Hl7" customClass="CircleGraphView" customModule="DRRHS" customModuleProvider="target">
-                        <rect key="frame" x="502" y="34.5" width="50" height="50"/>
+                        <rect key="frame" x="591" y="34.5" width="50" height="50"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="50" id="04W-Pd-hD5"/>
-                            <constraint firstAttribute="height" constant="50" id="U9E-GB-hOL"/>
+                            <constraint firstAttribute="width" constant="50" id="Tl6-ty-Qdy"/>
+                            <constraint firstAttribute="height" constant="50" id="kWu-js-eTW"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -72,8 +72,9 @@
                     <constraint firstItem="Eqj-d2-mgr" firstAttribute="top" secondItem="7l1-h6-FWX" secondAttribute="topMargin" constant="6" id="KtG-L4-bbq"/>
                     <constraint firstItem="KDo-0k-KRk" firstAttribute="leading" secondItem="7l1-h6-FWX" secondAttribute="leading" constant="8" id="SeX-An-HuM"/>
                     <constraint firstItem="Ic8-bu-AX1" firstAttribute="top" secondItem="FBa-B7-cE8" secondAttribute="bottom" constant="1" id="VIO-o1-3Dp"/>
-                    <constraint firstItem="zBo-OH-Hl7" firstAttribute="leading" secondItem="Ic8-bu-AX1" secondAttribute="trailing" constant="20" id="geG-tB-yNm"/>
                     <constraint firstItem="KDo-0k-KRk" firstAttribute="top" secondItem="7l1-h6-FWX" secondAttribute="top" constant="8" id="iFX-dX-3aL"/>
+                    <constraint firstItem="zBo-OH-Hl7" firstAttribute="centerY" secondItem="7l1-h6-FWX" secondAttribute="centerY" id="iQR-3s-gOu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zBo-OH-Hl7" secondAttribute="trailing" constant="8" id="iWi-5C-0US"/>
                     <constraint firstItem="Ic8-bu-AX1" firstAttribute="leading" secondItem="KDo-0k-KRk" secondAttribute="trailing" constant="16" id="kik-Fe-hWz"/>
                     <constraint firstItem="FBa-B7-cE8" firstAttribute="top" secondItem="KDo-0k-KRk" secondAttribute="top" id="n9n-3E-hhj"/>
                     <constraint firstItem="Ic8-bu-AX1" firstAttribute="width" secondItem="7l1-h6-FWX" secondAttribute="width" multiplier="2:3" id="pvz-co-z5g"/>

@@ -13,7 +13,7 @@ class Functions {
     
     static let instance = Functions()
 
-    public private(set) var dueDate : String = "3/4/18, 6:20 PM"
+    public private(set) var dueDate : String = ""
     private(set) var currentDate = Date()
     private(set) var calendar = Calendar.current
 
@@ -50,31 +50,42 @@ class Functions {
         currentYear = calendar.component(.year, from: currentDate) - 2000
         currentHour = calendar.component(.hour, from: currentDate)
         currentMinute = calendar.component(.minute, from: currentDate)
-    
-        if dueDateArray[2].contains("AM") {
-            if timeArray[0].contains("12") {
+        
+        if dueDateArray[2].contains("AM")
+        {
+            if timeArray[0].contains("12")
+            {
                 dueDateMinute = Int(timeArray[1].replacingOccurrences(of: "AM", with: ""))!
                 dueDateHour = Int(timeArray[0])! - 12
-            } else {
+            }
+            else
+            {
                 dueDateMinute = Int(timeArray[1].replacingOccurrences(of: "AM", with: ""))!
                 dueDateHour = Int(timeArray[0])!
             }
-        } else {
-            if timeArray[0].contains("12") {
+        }
+        else
+        {
+            if timeArray[0].contains("12")
+            {
                 dueDateMinute = Int(timeArray[1].replacingOccurrences(of: "PM", with: ""))!
                 dueDateHour = Int(timeArray[0])!
-            } else {
+            }
+            else
+            {
                 dueDateMinute = Int(timeArray[1].replacingOccurrences(of: "PM", with: ""))!
                 dueDateHour = Int(timeArray[0])! + 12
             }
         }
     }
-
-    func calculateArcLength() -> Double {
     
+    func calculateArcLength() -> Double
+    {
+        
         // Calculate the arc length
     
-        if dueDateMonth < currentMonth {
+        if dueDateMonth < currentMonth
+        {
             let totalMonth = Double(dueDateMonth - (currentMonth - 12)) / 12.0
             arcLength = Double(totalMonth) + 0.75
             if arcLength > 1 {
