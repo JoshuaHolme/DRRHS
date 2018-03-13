@@ -767,10 +767,16 @@
                     <navigationItem key="navigationItem" title="Drafting IV Homework" id="O4S-Id-tjt"/>
                     <connections>
                         <outlet property="CircleGraph" destination="dhH-Jt-chG" id="I6n-A6-ERO"/>
+                        <outlet property="DoneButton" destination="2iz-aI-RGf" id="uYT-M2-kBy"/>
                         <outlet property="classTitle" destination="nXv-8F-8De" id="web-CG-Wbc"/>
+                        <outlet property="directoryBtn" destination="nQK-NI-C52" id="Lm6-Dv-RdM"/>
                         <outlet property="dueDate" destination="lkb-es-Xnk" id="9fK-UN-qz5"/>
+                        <outlet property="dueDateLbl" destination="EKK-EZ-EbE" id="Ce7-d6-f14"/>
+                        <outlet property="emailBtn" destination="Myp-ts-hcR" id="izq-QS-8eg"/>
                         <outlet property="homework" destination="sit-sG-pK7" id="nhk-ZW-8g1"/>
+                        <outlet property="homeworkLabel" destination="Nwz-Sh-hnd" id="xKu-AQ-eDw"/>
                         <outlet property="teacherName" destination="TSC-GH-WtM" id="PlA-E0-DI1"/>
+                        <outlet property="websiteBtn" destination="6eI-2e-hGw" id="GLo-kL-gc2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzT-wR-zmc" userLabel="First Responder" sceneMemberID="firstResponder"/>

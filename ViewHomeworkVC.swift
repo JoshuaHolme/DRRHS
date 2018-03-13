@@ -24,6 +24,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var arcLength: Double?
     var arcColor: UIColor?
     var teacherName: String?
+    var day: String?
     
     // MARK: - Functions
     override func viewDidLoad()
@@ -130,6 +131,13 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             classTitle = task.classTitle!
             dueDate = task.dueDate!
             homework = task.homework!
+        
+        if task.classColor == "Green" {
+            day = "Green"
+        } else if task.classColor == "Gold" {
+            day = "Gold"
+        }
+        
         performSegue(withIdentifier: TO_VIEW_HOMEWORK_DETAILED, sender: nil)
         
     }
@@ -142,6 +150,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc?.teacherNameField = "Ms. Harwood"
         vc?.arcLength = arcLength
         vc?.arcColor = arcColor
+        vc?.day = day
     }
     
     // MARK: - Actions

@@ -74,7 +74,7 @@ let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")
 let TEACHER_LIST =
 [
     //A
-    Teacher(name:"Ms. Andrews", email: "SAndrews@drregional.org", roomNumber: "TBD", website: "TBD"),
+    Teacher(name:"Ms. Andrews", email: "SAndrews@drregional.org", roomNumber: "TBD", website: "N/A"),
     Teacher(name:"Mr. Ascoli", email: "JAscoli@drregional.org", roomNumber: "TBD", website: "https://sites.google.com/a/drregional.org/mr-ascoli-s-home-page/"),
     Teacher(name:"Mr. Augusto", email: "VAugusto@drregional.org", roomNumber: "TBD", website: "http://www.drregional.org/dighton-dohobothhigh"),
     

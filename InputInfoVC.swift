@@ -9,9 +9,6 @@
 import UIKit
 
 //Variables
-var GrB1classText : String!
-var GrB1teacherTextField: String!
-var GrB1roomTextField: String!
 
 class InputInfoVC: UIViewController
 {

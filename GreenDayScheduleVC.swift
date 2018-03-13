@@ -86,8 +86,6 @@ class GreenDayScheduleVC: UIViewController
             let vc = segue.destination as! AddHomeworkVC
             vc.fromDay = fromDay
             vc.classTitleLabel = classTitleLabel
-            
-            
         }
     }
     
