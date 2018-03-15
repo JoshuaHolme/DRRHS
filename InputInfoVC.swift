@@ -15,6 +15,7 @@ class InputInfoVC: UIViewController
 
     var blockName: String!
     var blockColor: UIColor!
+    var teacherBtnPressed = false
     
     //IB Outlets
     @IBOutlet weak var blockNameLbl: UILabel!
@@ -23,6 +24,7 @@ class InputInfoVC: UIViewController
     @IBOutlet weak var classEditTextBox: UITextField!
     @IBOutlet weak var teacherNameTextField: UITextField!
     @IBOutlet weak var roomNumberTextField: UITextField!
+    @IBOutlet weak var pickTeacherBtn: RoundedButton!
     
     //IB function to unwind the segue back to what it was before
     @IBAction func saveButton(_ sender: Any)
@@ -48,5 +50,25 @@ class InputInfoVC: UIViewController
     {
         self.view.endEditing(true)
     }
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if teacherBtnPressed == true
+        {
+            let vc = segue.destination as? DirectoryTC
+            vc?.fromInputInfo = true
+        }
+    }
+    
+    // IB Actions
+    @IBAction func pickTeacherBtnPressed(_ sender: Any)
+    {
+        teacherBtnPressed = true
+        performSegue(withIdentifier: FROM_SETTINGS_TO_DIRECTORY, sender: self)
+    }
+    
+    @IBAction func unwindSegueFromDirectory(_ sender: UIStoryboardSegue)
+    {
+        
+    }
 }

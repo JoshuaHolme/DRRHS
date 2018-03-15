@@ -10,6 +10,7 @@ import UIKit
 
 class DirectoryTC: UITableViewController, UISearchResultsUpdating
 {
+    var fromInputInfo = false
 
     // Arrays for the list of teachers
     var filteredTeachers = [Teacher]()
@@ -144,17 +145,43 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating
             selectedTeacher = teacher
         }
         
-        self.performSegue(withIdentifier: "teacherDetail", sender: self)
+        if fromInputInfo == true
+        {
+            if searchController.isActive
+            {
+                
+                searchController.dismiss(animated: false, completion: {self.performSegue(withIdentifier: FROM_DIRECTORY_TO_SETTINGS, sender: self)})
+            }
+            else
+            {
+                self.performSegue(withIdentifier: FROM_DIRECTORY_TO_SETTINGS, sender: self)
+            }
+        }
+        else if fromInputInfo == false
+        {
+            self.performSegue(withIdentifier: "teacherDetail", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        let vc = segue.destination as? DirectoryDetailVC
+        if fromInputInfo == false
+        {
+            let vc = segue.destination as? DirectoryDetailVC
+            
+            vc?.name = selectedTeacher.name
+            vc?.email = selectedTeacher.email
+            vc?.roomNumber = selectedTeacher.roomNumber
+            vc?.website = selectedTeacher.website
+        }
+        else if fromInputInfo == true
+        {
+            let vc = segue.destination as? InputInfoVC
+            
+            vc?.teacherNameTextField.text = selectedTeacher.name
+            vc?.roomNumberTextField.text = selectedTeacher.roomNumber
+        }
         
-        vc?.name = selectedTeacher.name
-        vc?.email = selectedTeacher.email
-        vc?.roomNumber = selectedTeacher.roomNumber
-        vc?.website = selectedTeacher.website
     }
     
     func addNavBarImage()

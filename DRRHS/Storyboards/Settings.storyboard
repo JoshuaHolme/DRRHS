@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,14 +28,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-ek-NSa">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PTr-ek-NSa">
                                 <rect key="frame" x="0.0" y="110" width="375" height="75"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6D-DS-pE9">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnX-4e-KuY" userLabel="Edit Green Day Schedule">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="   Edit Green Day">
@@ -54,10 +55,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cyU-Wj-a7t">
-                                        <rect key="frame" x="0.0" y="39.5" width="375" height="35.5"/>
+                                        <rect key="frame" x="0.0" y="42.5" width="375" height="32.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ujg-ji-ttt">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="35.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="32.5"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="   Edit Gold Day">
@@ -150,14 +151,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who teaches the class?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Q-Nf-Wvu">
-                                <rect key="frame" x="16" y="168" width="189" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick a teacher for the class." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y7Q-Nf-Wvu">
+                                <rect key="frame" x="16" y="168" width="221" height="21"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SOW-9O-28g">
-                                <rect key="frame" x="16" y="194.5" width="343" height="30"/>
+                                <rect key="frame" x="16" y="195" width="343" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
@@ -174,12 +175,37 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeT-0p-UMF" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                <rect key="frame" x="32" y="330" width="311" height="50"/>
+                                <color key="backgroundColor" red="0.0065151359010000003" green="0.5" blue="0.22171467489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Ra-nh-Sgf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Pick a teacher">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pickTeacherBtnPressed:" destination="2t6-uR-vHQ" eventType="touchUpInside" id="nVG-dW-3Gw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92942053079999998" green="0.92940044399999999" blue="0.92940443750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="JFQ-Zi-fl8" firstAttribute="top" secondItem="DpU-jP-q1V" secondAttribute="bottom" constant="20" id="5Fm-Oh-t3w"/>
+                            <constraint firstItem="HeT-0p-UMF" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" constant="16" id="EYk-A5-35M"/>
                             <constraint firstItem="Md6-jS-yQH" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leading" constant="16" id="Eu3-2v-puD"/>
                             <constraint firstItem="pFN-do-5Y8" firstAttribute="leading" secondItem="Md6-jS-yQH" secondAttribute="leading" id="FCP-bS-I8i"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HeT-0p-UMF" secondAttribute="trailing" constant="16" id="GyV-iO-myY"/>
+                            <constraint firstItem="HeT-0p-UMF" firstAttribute="centerX" secondItem="Pj6-dl-YxO" secondAttribute="centerX" id="HJF-dV-IB8"/>
                             <constraint firstItem="Z8D-ne-OMw" firstAttribute="top" secondItem="C8H-w6-6uA" secondAttribute="bottom" constant="6" id="IHr-Xu-394"/>
                             <constraint firstItem="SOW-9O-28g" firstAttribute="top" secondItem="y7Q-Nf-Wvu" secondAttribute="bottom" constant="6" id="O7R-Cc-JBV"/>
                             <constraint firstItem="SOW-9O-28g" firstAttribute="leading" secondItem="y7Q-Nf-Wvu" secondAttribute="leading" id="Pim-YY-x6l"/>
@@ -191,6 +217,7 @@
                             <constraint firstAttribute="trailing" secondItem="7nC-Bv-oiD" secondAttribute="trailing" constant="16" id="aua-Tf-nnI"/>
                             <constraint firstItem="pFN-do-5Y8" firstAttribute="top" secondItem="Md6-jS-yQH" secondAttribute="bottom" constant="16" id="eia-H4-2o4"/>
                             <constraint firstItem="7nC-Bv-oiD" firstAttribute="top" secondItem="pFN-do-5Y8" secondAttribute="bottom" constant="6" id="hQS-4R-av8"/>
+                            <constraint firstItem="HeT-0p-UMF" firstAttribute="top" secondItem="Z8D-ne-OMw" secondAttribute="bottom" constant="24" id="i8J-26-ex3"/>
                             <constraint firstAttribute="trailing" secondItem="JFQ-Zi-fl8" secondAttribute="trailing" constant="16" id="iHc-1T-jDi"/>
                             <constraint firstItem="7nC-Bv-oiD" firstAttribute="leading" secondItem="pFN-do-5Y8" secondAttribute="leading" id="iiJ-r5-Zay"/>
                             <constraint firstAttribute="trailing" secondItem="Z8D-ne-OMw" secondAttribute="trailing" constant="16" id="ikW-sA-g2m"/>
@@ -208,9 +235,11 @@
                     <connections>
                         <outlet property="blockNameLbl" destination="Md6-jS-yQH" id="DMj-dO-yIa"/>
                         <outlet property="classEditTextBox" destination="7nC-Bv-oiD" id="uuK-wM-Tt8"/>
+                        <outlet property="pickTeacherBtn" destination="HeT-0p-UMF" id="nvN-Cv-aWA"/>
                         <outlet property="roomNumberTextField" destination="Z8D-ne-OMw" id="i5V-jr-bUS"/>
                         <outlet property="saveBtn" destination="JFQ-Zi-fl8" id="oYt-Wn-koN"/>
                         <outlet property="teacherNameTextField" destination="SOW-9O-28g" id="mRB-dT-UF0"/>
+                        <segue destination="bCY-Hz-EQ3" kind="show" identifier="fromSettingsToDirectory" id="2lW-uA-t9B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yH1-4s-cHa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -315,6 +344,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cCS-MX-dEl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="9"/>
+        </scene>
+        <!--Directory-->
+        <scene sceneID="bQS-fc-DQ2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Directory" id="bCY-Hz-EQ3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0dF-vs-UKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2017" y="8"/>
         </scene>
     </scenes>
 </document>

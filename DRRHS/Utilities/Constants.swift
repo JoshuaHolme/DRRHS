@@ -66,6 +66,8 @@ let TO_EDIT_SCHEDULE = "toEditSchedule"
 let TO_ADD_HOMEWORK = "toAddHomeworkVC"
 let TO_VIEW_HOMEWORK = "toViewHomework"
 let TO_VIEW_HOMEWORK_DETAILED = "toViewHomeworkDetailed"
+let FROM_SETTINGS_TO_DIRECTORY = "fromSettingsToDirectory"
+let FROM_DIRECTORY_TO_SETTINGS = "fromDirectoryToSettings"
 
 //Notifications
 let USER_DATA_HAS_CHANGED = Notification.Name("NotifUserDataChanged")

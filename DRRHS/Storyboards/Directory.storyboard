@@ -47,8 +47,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="J5C-VM-9eR" kind="unwind" identifier="fromDirectoryToSettings" unwindAction="unwindSegueFromDirectory:" id="xKy-P5-zgl"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J3L-5J-Zee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="J5C-VM-9eR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1394" y="861"/>
         </scene>
