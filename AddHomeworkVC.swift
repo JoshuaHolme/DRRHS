@@ -15,6 +15,10 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     // Some Variables
     var fromDay: String?
     var classTitleLabel = String()
+    var currentDate = Date()
+    var identity = String()
+    var calendar = Calendar.current
+    
     var dueDate = ""
     
     //Outlets to the different peices on the app
@@ -48,6 +52,7 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
             homeworkAssignment.dueDate = dueDate
             homeworkAssignment.classTitle = classTitleLabel
             homeworkAssignment.classColor = fromDay
+            homeworkAssignment.identityCode = identity
             
             //Save the data
             (UIApplication.shared.delegate as! AppDelegate).saveContext()

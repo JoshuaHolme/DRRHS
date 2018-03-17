@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D47" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17D102" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="GoldDaySchedule" representedClassName="GoldDaySchedule" syncable="YES" codeGenerationType="class">
         <attribute name="classColor" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="classTitle" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,9 +11,10 @@
         <attribute name="classTitle" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="dueDate" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="homework" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="identityCode" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="GoldDaySchedule" positionX="-63" positionY="9" width="128" height="105"/>
-        <element name="GreenDaySchedule" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="GreenDaySchedule" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>

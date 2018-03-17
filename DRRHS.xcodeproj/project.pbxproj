@@ -21,6 +21,7 @@
 		3159ECB9204ED705001A2D23 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159ECB8204ED705001A2D23 /* Functions.swift */; };
 		3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputInfoVC.swift */; };
 		3183A76A204B9CCD00ED1985 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183A769204B9CCD00ED1985 /* CircleGraphView.swift */; };
+		31C3168B205CCDA60042D49A /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3168A205CCDA60042D49A /* Enumerations.swift */; };
 		6946B8512028E2B700F696E4 /* ClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946B8502028E2B700F696E4 /* ClassView.swift */; };
 		695317781F60BA760092454A /* DirectoryTC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695317771F60BA760092454A /* DirectoryTC.swift */; };
 		696B153F1F70CE3700844EF8 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 696B153E1F70CE3700844EF8 /* Settings.storyboard */; };
@@ -81,6 +82,7 @@
 		3159ECB8204ED705001A2D23 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* InputInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoVC.swift; sourceTree = "<group>"; };
 		3183A769204B9CCD00ED1985 /* CircleGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
+		31C3168A205CCDA60042D49A /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		3AD89A80203E0FE0276673C4 /* Pods_DRRHSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DRRHS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DRRHS/Pods-DRRHS.debug.xcconfig"; sourceTree = "<group>"; };
 		6946B8502028E2B700F696E4 /* ClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				310B32B2202DF7F600A92F6B /* UserDataServices.swift */,
 				3159ECB8204ED705001A2D23 /* Functions.swift */,
+				31C3168A205CCDA60042D49A /* Enumerations.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -386,7 +389,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TGLE8RZWF5;
+						DevelopmentTeam = XLEYC29AG5;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -634,6 +637,7 @@
 				3183A76A204B9CCD00ED1985 /* CircleGraphView.swift in Sources */,
 				312A9BDE204092AC00603567 /* ViewHomeworkDetailVC.swift in Sources */,
 				31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */,
+				31C3168B205CCDA60042D49A /* Enumerations.swift in Sources */,
 				313D4AD51F342648002FAFA3 /* GreenDayScheduleVC.swift in Sources */,
 				3143B6801F49E9ED00438E08 /* DRRHS.xcdatamodeld in Sources */,
 				31111F191F45EF9300AA204F /* ViewHomeworkVC.swift in Sources */,
@@ -804,7 +808,7 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -821,7 +825,7 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

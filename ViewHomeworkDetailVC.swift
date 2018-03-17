@@ -21,13 +21,14 @@ class ViewHomeworkDetailVC: UIViewController {
     @IBOutlet weak var emailBtn: RoundedButton!
     @IBOutlet weak var websiteBtn: RoundedButton!
     @IBOutlet weak var directoryBtn: RoundedButton!
-    
-    var classTitleField: String?
+
     var teacherNameField: String?
+    var classTitleField: String?
     var homeworkField: String?
     var dueDateField: String?
     var arcLength: Double?
     var arcColor: UIColor?
+    var identity: identity.RawValue?
     var day: String?
     
     
@@ -60,14 +61,34 @@ class ViewHomeworkDetailVC: UIViewController {
             websiteBtn.backgroundColor = .DRGold
             directoryBtn.backgroundColor = .DRGold
         }
-        
-
-        // Do any additional setup after loading the view.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Function to determine the identity and replace TeacherName Label with the appropriate Name, email, and websites
+    func determineTeacherInfo(identity: identity.RawValue!) {
+        if identity == GRB1{
+            
+        }
+        else if identity == GRB2 {
+            
+        }
+        else if identity == GRB3 {
+            
+        }
+        else if identity == GRB4 {
+            
+        }
+        else if identity == GOB1 {
+            
+        }
+        else if identity == GOB2 {
+            
+        }
+        else if identity == GOB3 {
+            
+        }
+        else if identity == GOB4 {
+            
+        }
     }
     
     @IBAction func emailBtnPressed(_ sender: Any) {
@@ -78,15 +99,5 @@ class ViewHomeworkDetailVC: UIViewController {
     
     @IBAction func directoryBtnPressed(_ sender: Any) {
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -7,7 +7,6 @@
 //
 //  This Class allows us to change the default opening tab
 
-import Foundation
 import UIKit
 
 var baseTabBarNumber: Int = 1
