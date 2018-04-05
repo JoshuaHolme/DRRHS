@@ -71,6 +71,12 @@
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<false/>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
+	<key>CFBundleDisplayName</key>
+	<string></string>
+	<key>NSCameraUsageDescription</key>
+	<string>DRRHS Would Like to Access Your Camera to Take Pictures of Homework and Assignments</string>
 	<key>UIStatusBarTintParameters</key>
 	<dict>
 		<key>UINavigationBar</key>

@@ -17,6 +17,11 @@ class ViewHomeworkTVCell: UITableViewCell
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var descriptionTxtView: UITextView!
     @IBOutlet weak var CircleGraph: CircleGraphView!
+    @IBOutlet weak var viewHomeworkBtn: RoundedButton!
+    
+    @IBAction func viewHomeworkBtnPressed(_ sender: Any) {
+        
+    }
     
     override func awakeFromNib()
     {

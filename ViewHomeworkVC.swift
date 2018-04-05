@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 //Homework Array to store information of Core Data
-var GreenDayHomework:[GreenDaySchedule] = []
+var GreenDayHomework:[Schedule] = []
 
 class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSource
 {
@@ -24,6 +24,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var arcLength: Double?
     var arcColor: UIColor?
     var teacherName: String?
+    var image: UIImage?
     var day: String?
     
     // MARK: - Functions
@@ -70,14 +71,22 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.CircleGraph.endArc = CGFloat(arcLength)
         cell.CircleGraph.arcWidth = 7
         cell.CircleGraph.arcBackgroundColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+        
 
         if task.classColor == "Green"
         {
             cell.dayIndicator.backgroundColor = .DRGreen
+            cell.viewHomeworkBtn.backgroundColor = .DRGreen
         }
         else if task.classColor == "Gold"
         {
             cell.dayIndicator.backgroundColor = .DRGold
+            cell.viewHomeworkBtn.backgroundColor = .DRGold
+        }
+        
+        if task.picture != nil {
+            cell.viewHomeworkBtn.isHidden = false
+            cell.descriptionTxtView.isHidden = true
         }
         
         return cell
@@ -89,7 +98,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         do
         {
-            GreenDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+            GreenDayHomework = try context.fetch(Schedule.fetchRequest())
         }
         catch
         {
@@ -110,7 +119,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             do
             {
-                GreenDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+                GreenDayHomework = try context.fetch(Schedule.fetchRequest())
             }
             catch
             {
@@ -142,9 +151,14 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
             day = "Gold"
         }
         
+        if let imageData = task.picture {
+            image = UIImage(data: imageData)
+        }
+        
         performSegue(withIdentifier: TO_VIEW_HOMEWORK_DETAILED, sender: nil)
         
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc = segue.destination as? ViewHomeworkDetailVC
@@ -155,6 +169,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc?.arcLength = arcLength
         vc?.arcColor = arcColor
         vc?.day = day
+        vc?.image = image
     }
     
     // MARK: - Actions

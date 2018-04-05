@@ -32,7 +32,7 @@ class FirstViewController: UIViewController
         
         do
         {
-            GreenDayHomework = try context.fetch(GreenDaySchedule.fetchRequest())
+            GreenDayHomework = try context.fetch(Schedule.fetchRequest())
         }
         catch
         {

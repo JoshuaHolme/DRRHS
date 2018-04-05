@@ -21,7 +21,8 @@ class ViewHomeworkDetailVC: UIViewController {
     @IBOutlet weak var emailBtn: RoundedButton!
     @IBOutlet weak var websiteBtn: RoundedButton!
     @IBOutlet weak var directoryBtn: RoundedButton!
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     var teacherNameField: String?
     var classTitleField: String?
     var homeworkField: String?
@@ -29,6 +30,7 @@ class ViewHomeworkDetailVC: UIViewController {
     var arcLength: Double?
     var arcColor: UIColor?
     var identity: identity.RawValue?
+    var image: UIImage?
     var day: String?
     
     
@@ -41,9 +43,18 @@ class ViewHomeworkDetailVC: UIViewController {
         teacherName.text = teacherNameField
         homework.text = homeworkField
         dueDate.text = dueDateField
+        imageView?.image = image
         CircleGraph.endArc = CGFloat(arcLength!)
         CircleGraph.arcColor = arcColor!
         CircleGraph.arcBackgroundColor = #colorLiteral(red: 0.9294117647, green: 0.9294117647, blue: 0.9294117647, alpha: 1)
+        
+        if image != nil {
+            imageView.contentMode = .scaleAspectFill
+            imageView.layer.masksToBounds = true
+            imageView.layer.cornerRadius = 15
+            imageView.isHidden = false
+            homework.isHidden = true
+        }
         
         if day == "Green" {
             homeworkLabel.textColor = .DRGreen

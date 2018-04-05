@@ -9,8 +9,9 @@
 import UIKit
 import CoreData
 import UserNotifications
+import MobileCoreServices
 
-class AddHomeworkVC: UIViewController, UITextFieldDelegate
+class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     // Some Variables
     var fromDay: String?
@@ -18,6 +19,7 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     var currentDate = Date()
     var identity = String()
     var calendar = Calendar.current
+    var imageView = UIImage()
     
     var dueDate = ""
     
@@ -25,6 +27,7 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     @IBOutlet weak var TitleLabel: UILabel!
     @IBOutlet weak var BackDrop: UIView!
     @IBOutlet weak var TextField: UITextView!
+    @IBOutlet weak var imgField: UIImageView!
     @IBOutlet weak var addBtn: UIButton!
     @IBOutlet weak var useImgBtn: RoundedButton!
     @IBOutlet weak var useTextBtn: RoundedButton!
@@ -47,12 +50,13 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         {
             let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
-            let homeworkAssignment = NSEntityDescription.insertNewObject(forEntityName: "GreenDaySchedule", into: context) as! GreenDaySchedule
+            let homeworkAssignment = NSEntityDescription.insertNewObject(forEntityName: "Schedule", into: context) as! Schedule
             homeworkAssignment.homework = TextField.text
             homeworkAssignment.dueDate = dueDate
             homeworkAssignment.classTitle = classTitleLabel
             homeworkAssignment.classColor = fromDay
             homeworkAssignment.identityCode = identity
+            homeworkAssignment.picture = UIImageJPEGRepresentation(imageView, 1)
             
             //Save the data
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
@@ -107,6 +111,8 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
             useTextBtn.backgroundColor = .DRGold
         }
         
+        imgField.isHidden = true
+        TextField.isHidden = false
         useTextBtn.setTitleColor(UIColor.white, for: .normal)
         useImgBtn.backgroundColor = UIColor.white
         useImgBtn.setTitleColor(UIColor.darkGray, for: .normal)
@@ -123,6 +129,17 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
         useTextBtn.backgroundColor = UIColor.white
         useTextBtn.setTitleColor(UIColor.darkGray, for: .normal)
         useImgBtn.setTitleColor(UIColor.white, for: .normal)
+        
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera)
+        {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.mediaTypes = [kUTTypeImage as String]
+            imagePicker.allowsEditing = false
+            
+            self.present(imagePicker, animated: true, completion: nil)
+        }
     }
     
 // Function that allows Date Picker to work
@@ -174,5 +191,54 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate
     {
         self.view.endEditing(true)
         return true
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        let mediaType = info[UIImagePickerControllerMediaType] as! NSString
+        
+        self.dismiss(animated: true, completion: nil)
+        
+        if mediaType.isEqual(to: kUTTypeImage as String)
+        {
+            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+            
+            imgField.isHidden = false
+            TextField.isHidden = true
+            imgField.image = image
+            imageView = image
+            imgField.contentMode = .scaleAspectFill
+            imgField.layer.masksToBounds = true
+            imgField.layer.cornerRadius = 15
+        }
+    }
+    
+    @objc func image(image: UIImage, didFinishSavingWithError error: NSErrorPointer, contextInfo:UnsafeRawPointer) {
+        
+        if error != nil {
+            let alert = UIAlertController(title: "Save Failed", message: "Failed to save image", preferredStyle: UIAlertControllerStyle.alert)
+            
+            let cancelAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alert.addAction(cancelAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        self.dismiss(animated: true, completion: nil)
+        if fromDay == "Green" {
+            useTextBtn.backgroundColor = .DRGreen
+        } else {
+            useTextBtn.backgroundColor = .DRGold
+        }
+        
+        imgField.isHidden = true
+        TextField.isHidden = false
+        useTextBtn.setTitleColor(UIColor.white, for: .normal)
+        useImgBtn.backgroundColor = UIColor.white
+        useImgBtn.setTitleColor(UIColor.darkGray, for: .normal)
+        
     }
 }
