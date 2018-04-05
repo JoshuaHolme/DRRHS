@@ -20,13 +20,14 @@ class ViewHomeworkDetailVC: UIViewController {
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var emailBtn: RoundedButton!
     @IBOutlet weak var websiteBtn: RoundedButton!
-    @IBOutlet weak var directoryBtn: RoundedButton!
     @IBOutlet weak var imageView: UIImageView!
     
     var teacherNameField: String?
     var classTitleField: String?
     var homeworkField: String?
     var dueDateField: String?
+    var websiteField: String?
+    var emailField: String?
     var arcLength: Double?
     var arcColor: UIColor?
     var identity: identity.RawValue?
@@ -62,7 +63,6 @@ class ViewHomeworkDetailVC: UIViewController {
             dueDateLbl.textColor = .DRGreen
             emailBtn.backgroundColor = .DRGreen
             websiteBtn.backgroundColor = .DRGreen
-            directoryBtn.backgroundColor = .DRGreen
             
         } else if day == "Gold" {
             homeworkLabel.textColor = .DRGold
@@ -70,35 +70,75 @@ class ViewHomeworkDetailVC: UIViewController {
             dueDateLbl.textColor = .DRGold
             emailBtn.backgroundColor = .DRGold
             websiteBtn.backgroundColor = .DRGold
-            directoryBtn.backgroundColor = .DRGold
         }
+        determineTeacherInfo(identity: identity)
     }
     
     // Function to determine the identity and replace TeacherName Label with the appropriate Name, email, and websites
     func determineTeacherInfo(identity: identity.RawValue!) {
         if identity == GRB1{
-            
+            if let teacherArray = userDataServices.instance.GrB1Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GRB2 {
-            
+            if let teacherArray = userDataServices.instance.GrB2Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GRB3 {
-            
+            if let teacherArray = userDataServices.instance.GrB3Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GRB4 {
-            
+            if let teacherArray = userDataServices.instance.GrB4Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GOB1 {
-            
+            if let teacherArray = userDataServices.instance.GoB1Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GOB2 {
-            
+            if let teacherArray = userDataServices.instance.GoB2Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GOB3 {
-            
+            if let teacherArray = userDataServices.instance.GoB3Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
         else if identity == GOB4 {
-            
+            if let teacherArray = userDataServices.instance.GoB4Teacher?.components(separatedBy: ",")
+            {
+                teacherName.text = teacherArray[0]
+                emailField = teacherArray[1]
+                websiteField = teacherArray[2]
+            }
         }
     }
     

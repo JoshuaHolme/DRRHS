@@ -20,22 +20,22 @@ class GreenDayScheduleVC: UIViewController
     // Block 1
     @IBOutlet weak var B1ClassLabel: UILabel!
     @IBOutlet weak var B1TeacherLabel: UILabel!
-    @IBOutlet weak var B1RoomLabel: UILabel!
+//    @IBOutlet weak var B1RoomLabel: UILabel!
     
     // Block 2 Outlet
     @IBOutlet weak var B2ClassLabel: UILabel!
     @IBOutlet weak var B2TeacherLabel: UILabel!
-    @IBOutlet weak var B2RoomLabel: UILabel!
+//    @IBOutlet weak var B2RoomLabel: UILabel!
 
     // Block 3
     @IBOutlet weak var B3ClassLabel: UILabel!
     @IBOutlet weak var B3TeacherLabel: UILabel!
-    @IBOutlet weak var B3RoomLabel: UILabel!
+//    @IBOutlet weak var B3RoomLabel: UILabel!
     
     // Block 4
     @IBOutlet weak var B4ClassLabel: UILabel!
     @IBOutlet weak var B4TeacherLabel: UILabel!
-    @IBOutlet weak var B4RoomLabel: UILabel!
+//    @IBOutlet weak var B4RoomLabel: UILabel!
     
     // MARK: - Functions
     override func viewDidLoad()
@@ -52,23 +52,35 @@ class GreenDayScheduleVC: UIViewController
     {
         // Block 1
         B1ClassLabel.text = userDataServices.instance.GrB1ClassName
-        B1TeacherLabel.text = userDataServices.instance.GrB1Teacher
-        B1RoomLabel.text = userDataServices.instance.GrB1RoomNumber
+//        B1RoomLabel.text = userDataServices.instance.GrB1RoomNumber
+        
+        if let teacherNameArray = userDataServices.instance.GrB1Teacher?.components(separatedBy: ",") {
+            B1TeacherLabel.text = teacherNameArray[0]
+        }
         
         // Block 2
         B2ClassLabel.text = userDataServices.instance.GrB2ClassName
-        B2TeacherLabel.text = userDataServices.instance.GrB2Teacher
-        B2RoomLabel.text = userDataServices.instance.GrB2RoomNumber
+//        B2RoomLabel.text = userDataServices.instance.GrB2RoomNumber
+        
+        if let teacherNameArray = userDataServices.instance.GrB2Teacher?.components(separatedBy: ",") {
+            B1TeacherLabel.text = teacherNameArray[0]
+        }
         
         // Block 3
         B3ClassLabel.text = userDataServices.instance.GrB3ClassName
-        B3TeacherLabel.text = userDataServices.instance.GrB3Teacher
-        B3RoomLabel.text = userDataServices.instance.GrB3RoomNumber
+//        B3RoomLabel.text = userDataServices.instance.GrB3RoomNumber
+        
+        if let teacherNameArray = userDataServices.instance.GrB3Teacher?.components(separatedBy: ",") {
+            B1TeacherLabel.text = teacherNameArray[0]
+        }
         
         // Block 4
         B4ClassLabel.text = userDataServices.instance.GrB4ClassName
-        B4TeacherLabel.text = userDataServices.instance.GrB4Teacher
-        B4RoomLabel.text = userDataServices.instance.GrB4RoomNumber
+//        B4RoomLabel.text = userDataServices.instance.GrB4RoomNumber
+        
+        if let teacherNameArray = userDataServices.instance.GrB4Teacher?.components(separatedBy: ",") {
+            B1TeacherLabel.text = teacherNameArray[0]
+        }
     }
     
     func addAlert()

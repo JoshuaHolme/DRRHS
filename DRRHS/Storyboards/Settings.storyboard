@@ -166,7 +166,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classroom:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8H-w6-6uA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C8H-w6-6uA">
                                 <rect key="frame" x="16" y="295" width="343" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="cV0-B9-hNM"/>
@@ -197,7 +197,7 @@
                                     <action selector="pickTeacherBtnPressed:" destination="2t6-uR-vHQ" eventType="touchUpInside" id="nVG-dW-3Gw"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Room Number Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8D-ne-OMw">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher's Email Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z8D-ne-OMw">
                                 <rect key="frame" x="16" y="324" width="343" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="TTh-3w-TPk"/>
@@ -206,19 +206,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Website:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLW-xp-aNf">
+                                <rect key="frame" x="16" y="362" width="343" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="bix-rV-JCZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Teacher's Website Name Here." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1no-SI-kC4">
+                                <rect key="frame" x="16" y="390" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DwE-SV-ZsT"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92942053079999998" green="0.92940044399999999" blue="0.92940443750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="HeT-0p-UMF" firstAttribute="top" secondItem="7nC-Bv-oiD" secondAttribute="bottom" constant="26" id="1oP-3I-a1K"/>
                             <constraint firstItem="JFQ-Zi-fl8" firstAttribute="top" secondItem="DpU-jP-q1V" secondAttribute="bottom" constant="20" id="5Fm-Oh-t3w"/>
                             <constraint firstItem="C8H-w6-6uA" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" id="BGq-mq-OcI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aLW-xp-aNf" secondAttribute="trailing" id="BYP-G8-bFb"/>
                             <constraint firstItem="SOW-9O-28g" firstAttribute="top" secondItem="y7Q-Nf-Wvu" secondAttribute="bottom" constant="8" id="ENq-Tq-Ipy"/>
                             <constraint firstItem="Md6-jS-yQH" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leading" constant="16" id="Eu3-2v-puD"/>
                             <constraint firstItem="pFN-do-5Y8" firstAttribute="leading" secondItem="Md6-jS-yQH" secondAttribute="leading" id="FCP-bS-I8i"/>
                             <constraint firstItem="HeT-0p-UMF" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" constant="16" id="M46-PV-DuO"/>
                             <constraint firstItem="SOW-9O-28g" firstAttribute="trailing" secondItem="Pj6-dl-YxO" secondAttribute="trailingMargin" id="M4s-tr-jW9"/>
+                            <constraint firstItem="aLW-xp-aNf" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" id="PRc-vd-JBY"/>
+                            <constraint firstItem="1no-SI-kC4" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" id="PRs-9D-kkd"/>
                             <constraint firstItem="7nC-Bv-oiD" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leading" constant="16" id="SLt-oO-qrm"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="pFN-do-5Y8" secondAttribute="trailing" id="WgL-bb-FBG"/>
+                            <constraint firstItem="aLW-xp-aNf" firstAttribute="top" secondItem="Z8D-ne-OMw" secondAttribute="bottom" constant="8" id="aew-ro-zfj"/>
                             <constraint firstAttribute="trailing" secondItem="7nC-Bv-oiD" secondAttribute="trailing" constant="16" id="aua-Tf-nnI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HeT-0p-UMF" secondAttribute="trailing" constant="16" id="bAf-0O-Y5e"/>
                             <constraint firstItem="Z8D-ne-OMw" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" id="cTy-hq-kpn"/>
@@ -231,9 +253,11 @@
                             <constraint firstItem="7nC-Bv-oiD" firstAttribute="leading" secondItem="pFN-do-5Y8" secondAttribute="leading" id="iiJ-r5-Zay"/>
                             <constraint firstItem="Md6-jS-yQH" firstAttribute="top" secondItem="DpU-jP-q1V" secondAttribute="bottom" constant="20" id="mbS-rF-hgv"/>
                             <constraint firstItem="JFQ-Zi-fl8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Md6-jS-yQH" secondAttribute="trailing" id="oFB-GQ-IYo"/>
+                            <constraint firstItem="1no-SI-kC4" firstAttribute="top" secondItem="aLW-xp-aNf" secondAttribute="bottom" constant="8" id="rc8-zt-3GP"/>
                             <constraint firstItem="Z8D-ne-OMw" firstAttribute="trailing" secondItem="Pj6-dl-YxO" secondAttribute="trailingMargin" id="tiR-gG-hUn"/>
                             <constraint firstItem="C8H-w6-6uA" firstAttribute="trailing" secondItem="Pj6-dl-YxO" secondAttribute="trailingMargin" id="w5R-Xr-9ev"/>
                             <constraint firstItem="y7Q-Nf-Wvu" firstAttribute="top" secondItem="HeT-0p-UMF" secondAttribute="bottom" constant="13" id="xnr-io-xiq"/>
+                            <constraint firstItem="1no-SI-kC4" firstAttribute="trailing" secondItem="Pj6-dl-YxO" secondAttribute="trailingMargin" id="yX0-y1-jUe"/>
                             <constraint firstItem="y7Q-Nf-Wvu" firstAttribute="leading" secondItem="Pj6-dl-YxO" secondAttribute="leadingMargin" id="yd3-OO-XcJ"/>
                         </constraints>
                     </view>
@@ -241,9 +265,10 @@
                         <outlet property="blockNameLbl" destination="Md6-jS-yQH" id="DMj-dO-yIa"/>
                         <outlet property="classEditTextBox" destination="7nC-Bv-oiD" id="uuK-wM-Tt8"/>
                         <outlet property="pickTeacherBtn" destination="HeT-0p-UMF" id="nvN-Cv-aWA"/>
-                        <outlet property="roomNumberTextField" destination="Z8D-ne-OMw" id="i5V-jr-bUS"/>
                         <outlet property="saveBtn" destination="JFQ-Zi-fl8" id="oYt-Wn-koN"/>
+                        <outlet property="teacherEmailTextField" destination="Z8D-ne-OMw" id="qv6-1k-PeB"/>
                         <outlet property="teacherNameTextField" destination="SOW-9O-28g" id="mRB-dT-UF0"/>
+                        <outlet property="teacherWesbiteTextField" destination="1no-SI-kC4" id="gFp-rY-q3e"/>
                         <segue destination="bCY-Hz-EQ3" kind="show" identifier="fromSettingsToDirectory" id="2lW-uA-t9B"/>
                     </connections>
                 </viewController>

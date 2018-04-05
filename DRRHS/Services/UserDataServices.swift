@@ -41,17 +41,17 @@ class userDataServices
         }
     }
     
-    var GrB1RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GRB1_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GRB1_ROOM)
-        }
-    }
+//    var GrB1RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GRB1_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GRB1_ROOM)
+//        }
+//    }
     
     //Green Block 2
     var GrB2Teacher: String?
@@ -78,17 +78,17 @@ class userDataServices
         }
     }
     
-    var GrB2RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GRB2_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GRB2_ROOM)
-        }
-    }
+//    var GrB2RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GRB2_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GRB2_ROOM)
+//        }
+//    }
     
     //Green Block 3
     var GrB3Teacher: String?
@@ -115,17 +115,17 @@ class userDataServices
         }
     }
     
-    var GrB3RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GRB3_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GRB3_ROOM)
-        }
-    }
+//    var GrB3RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GRB3_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GRB3_ROOM)
+//        }
+//    }
     
     //Green Block 4
     var GrB4Teacher: String?
@@ -152,17 +152,17 @@ class userDataServices
         }
     }
     
-    var GrB4RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GRB4_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GRB4_ROOM)
-        }
-    }
+//    var GrB4RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GRB4_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GRB4_ROOM)
+//        }
+//    }
     
     //Gold Block 1
     var GoB1Teacher: String?
@@ -189,17 +189,17 @@ class userDataServices
         }
     }
     
-    var GoB1RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GOB1_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GOB1_ROOM)
-        }
-    }
+//    var GoB1RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GOB1_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GOB1_ROOM)
+//        }
+//    }
     
     //Gold Block 2
     var GoB2Teacher: String?
@@ -226,17 +226,17 @@ class userDataServices
         }
     }
     
-    var GoB2RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GOB2_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GOB2_ROOM)
-        }
-    }
+//    var GoB2RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GOB2_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GOB2_ROOM)
+//        }
+//    }
     
     //Gold Block 3
     var GoB3Teacher: String? {
@@ -260,17 +260,17 @@ class userDataServices
         }
     }
     
-    var GoB3RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GOB3_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GOB3_ROOM)
-        }
-    }
+//    var GoB3RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GOB3_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GOB3_ROOM)
+//        }
+//    }
     
     //Gold Block 4
     var GoB4Teacher: String?
@@ -297,17 +297,17 @@ class userDataServices
         }
     }
     
-    var GoB4RoomNumber: String?
-    {
-        get
-        {
-            return defaults.string(forKey: GOB4_ROOM) as String?
-        }
-        set
-        {
-            defaults.set(newValue, forKey: GOB4_ROOM)
-        }
-    }
+//    var GoB4RoomNumber: String?
+//    {
+//        get
+//        {
+//            return defaults.string(forKey: GOB4_ROOM) as String?
+//        }
+//        set
+//        {
+//            defaults.set(newValue, forKey: GOB4_ROOM)
+//        }
+//    }
     
     public private(set) var identifier = ""
     
@@ -316,7 +316,7 @@ class userDataServices
         self.identifier = block
     }
     
-    func createBlock(teacher: String, room: String, className: String)
+    func createBlock(teacher: String, /*room: String, */className: String)
     {
         
         switch identifier
@@ -324,47 +324,47 @@ class userDataServices
             
         case GRB1:
             self.GrB1Teacher = teacher
-            self.GrB1RoomNumber = room
+//            self.GrB1RoomNumber = room
             self.GrB1ClassName = className
             
         case GRB2:
             self.GrB2Teacher = teacher
-            self.GrB2RoomNumber = room
+//            self.GrB2RoomNumber = room
             self.GrB2ClassName = className
             
         case GRB3:
             self.GrB3Teacher = teacher
-            self.GrB3RoomNumber = room
+//            self.GrB3RoomNumber = room
             self.GrB3ClassName = className
             
         case GRB4:
             self.GrB4Teacher = teacher
-            self.GrB4RoomNumber = room
+//            self.GrB4RoomNumber = room
             self.GrB4ClassName = className
             
         case GOB1:
             self.GoB1Teacher = teacher
-            self.GoB1RoomNumber = room
+//            self.GoB1RoomNumber = room
             self.GoB1ClassName = className
             
         case GOB2:
             self.GoB2Teacher = teacher
-            self.GoB2RoomNumber = room
+//            self.GoB2RoomNumber = room
             self.GoB2ClassName = className
             
         case GOB3:
             self.GoB3Teacher = teacher
-            self.GoB3RoomNumber = room
+//            self.GoB3RoomNumber = room
             self.GoB3ClassName = className
             
         case GOB4:
             self.GoB4Teacher = teacher
-            self.GoB4RoomNumber = room
+//            self.GoB4RoomNumber = room
             self.GoB4ClassName = className
             
         default:
             self.GoB4Teacher = ""
-            self.GoB4RoomNumber = ""
+//            self.GoB4RoomNumber = ""
             self.GoB4ClassName = ""
         }
     }

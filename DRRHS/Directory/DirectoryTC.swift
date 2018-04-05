@@ -171,7 +171,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating
             
             vc?.name = selectedTeacher.name
             vc?.email = selectedTeacher.email
-            vc?.roomNumber = selectedTeacher.roomNumber
+//            vc?.roomNumber = selectedTeacher.roomNumber
             vc?.website = selectedTeacher.website
         }
         else if fromInputInfo == true
@@ -179,7 +179,9 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating
             let vc = segue.destination as? InputInfoVC
             
             vc?.teacherNameTextField.text = selectedTeacher.name
-            vc?.roomNumberTextField.text = selectedTeacher.roomNumber
+//            vc?.roomNumberTextField.text = selectedTeacher.roomNumber
+            vc?.teacherEmailTextField.text = selectedTeacher.email
+            vc?.teacherWesbiteTextField.text = selectedTeacher.website
         }
         
     }

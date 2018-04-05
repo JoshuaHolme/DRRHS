@@ -101,21 +101,15 @@
                                                 <rect key="frame" x="12" y="8" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CSH-M5-xhD">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X9s-Yb-ctv">
-                                                        <rect key="frame" x="0.0" y="38.333333333333329" width="143" height="38.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="X9s-Yb-ctv">
+                                                        <rect key="frame" x="0.0" y="57.666666666666671" width="143" height="57.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cwj-24-rep">
-                                                        <rect key="frame" x="0.0" y="76.666666666666671" width="31.333333333333332" height="38.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -153,21 +147,15 @@
                                                 <rect key="frame" x="12" y="8" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="73E-dj-uF2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8qV-Xw-JKD">
-                                                        <rect key="frame" x="0.0" y="38.333333333333343" width="143" height="38.333333333333343"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8qV-Xw-JKD">
+                                                        <rect key="frame" x="0.0" y="57.666666666666657" width="143" height="57.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ufE-nj-xmQ">
-                                                        <rect key="frame" x="0.0" y="76.666666666666657" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -205,21 +193,15 @@
                                                 <rect key="frame" x="12" y="8.6666666666666856" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="T88-xg-lAB">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-CY-0ZH">
-                                                        <rect key="frame" x="0.0" y="38.333333333333314" width="143" height="38.333333333333343"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DrQ-CY-0ZH">
+                                                        <rect key="frame" x="0.0" y="57.666666666666629" width="143" height="57.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LAC-6A-0g8">
-                                                        <rect key="frame" x="0.0" y="76.666666666666629" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -257,21 +239,15 @@
                                                 <rect key="frame" x="12" y="8" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KBx-to-T15">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8iv-h5-I4D">
-                                                        <rect key="frame" x="0.0" y="38.333333333333314" width="143" height="38.333333333333343"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8iv-h5-I4D">
+                                                        <rect key="frame" x="0.0" y="57.666666666666686" width="143" height="57.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="5VV-PI-fXU">
-                                                        <rect key="frame" x="0.0" y="76.666666666666629" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -346,16 +322,12 @@
                     </view>
                     <connections>
                         <outlet property="B1ClassLabel" destination="CSH-M5-xhD" id="gx5-06-lK5"/>
-                        <outlet property="B1RoomLabel" destination="cwj-24-rep" id="hAW-ln-hUq"/>
                         <outlet property="B1TeacherLabel" destination="X9s-Yb-ctv" id="LnB-U7-1DF"/>
                         <outlet property="B2ClassLabel" destination="73E-dj-uF2" id="LYf-Fl-2oG"/>
-                        <outlet property="B2RoomLabel" destination="ufE-nj-xmQ" id="4Gy-gV-qDk"/>
                         <outlet property="B2TeacherLabel" destination="8qV-Xw-JKD" id="fyI-i2-siH"/>
                         <outlet property="B3ClassLabel" destination="T88-xg-lAB" id="w4h-t6-Hyt"/>
-                        <outlet property="B3RoomLabel" destination="LAC-6A-0g8" id="dd1-Yu-lcg"/>
                         <outlet property="B3TeacherLabel" destination="DrQ-CY-0ZH" id="aMv-Ti-mAk"/>
                         <outlet property="B4ClassLabel" destination="KBx-to-T15" id="9qB-gB-hfW"/>
-                        <outlet property="B4RoomLabel" destination="5VV-PI-fXU" id="9Rr-qC-Mm0"/>
                         <outlet property="B4TeacherLabel" destination="8iv-h5-I4D" id="t6m-eR-5lz"/>
                         <segue destination="dqC-o4-gSK" kind="custom" identifier="toAddHomeworkVC" customClass="DeckSegue" customModule="DeckTransition" id="r6j-Mw-BKR"/>
                         <segue destination="Jkg-wU-vEE" kind="presentation" identifier="toViewHomework" id="QwS-Q7-rtf"/>
@@ -629,65 +601,6 @@
                                 <color key="textColor" red="0.34337008383131001" green="0.34802321578764683" blue="0.37184246088647599" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kur-yg-7y7">
-                                <rect key="frame" x="284.33333333333331" y="72" width="114" height="34"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-ts-hcR" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="34"/>
-                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="e">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="emailBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="Owg-me-Qpq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-2e-hGw" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="0.0" width="30" height="34"/>
-                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="i">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="websiteBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="z7U-0u-c0C"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nQK-NI-C52" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="0.0" width="30" height="34"/>
-                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="TD">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="14"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="directoryBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="wPb-uZ-56M"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwz-Sh-hnd">
                                 <rect key="frame" x="16" y="110" width="138" height="33"/>
                                 <constraints>
@@ -764,6 +677,51 @@
                             <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pkv-TW-6fB">
                                 <rect key="frame" x="10.333333333333343" y="151.00000000000003" width="393.33333333333326" height="311.66666666666674"/>
                             </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kur-yg-7y7">
+                                <rect key="frame" x="276" y="60.666666666666657" width="122" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-ts-hcR" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="JM5-C1-hgX"/>
+                                            <constraint firstAttribute="width" constant="55" id="RKl-VA-Qyd"/>
+                                        </constraints>
+                                        <state key="normal" title="e">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="emailBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="Owg-me-Qpq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-2e-hGw" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="0.0" width="55" height="55"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="i">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="websiteBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="z7U-0u-c0C"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -798,7 +756,6 @@
                         <outlet property="CircleGraph" destination="dhH-Jt-chG" id="I6n-A6-ERO"/>
                         <outlet property="DoneButton" destination="2iz-aI-RGf" id="uYT-M2-kBy"/>
                         <outlet property="classTitle" destination="nXv-8F-8De" id="web-CG-Wbc"/>
-                        <outlet property="directoryBtn" destination="nQK-NI-C52" id="Lm6-Dv-RdM"/>
                         <outlet property="dueDate" destination="lkb-es-Xnk" id="9fK-UN-qz5"/>
                         <outlet property="dueDateLbl" destination="EKK-EZ-EbE" id="Ce7-d6-f14"/>
                         <outlet property="emailBtn" destination="Myp-ts-hcR" id="izq-QS-8eg"/>
@@ -831,21 +788,15 @@
                                                 <rect key="frame" x="12" y="8" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 1" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="IOd-9G-KAz" userLabel="B1 Class Label">
-                                                        <rect key="frame" x="0.0" y="0.0" width="96" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="102.33333333333333" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NVI-ND-h6D">
-                                                        <rect key="frame" x="0.0" y="38.333333333333329" width="143" height="38.333333333333329"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NVI-ND-h6D">
+                                                        <rect key="frame" x="0.0" y="57.666666666666671" width="143" height="57.333333333333329"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cgx-rs-toS">
-                                                        <rect key="frame" x="0.0" y="76.666666666666671" width="31.333333333333332" height="38.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -888,21 +839,15 @@
                                                 <rect key="frame" x="12" y="8.6666666666666643" width="143" height="114.66666666666669"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 2" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n95-JB-MI0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="99.333333333333329" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="106.33333333333333" height="57.333333333333336"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="25Z-K1-xwj">
-                                                        <rect key="frame" x="0.0" y="38.333333333333343" width="143" height="38"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="25Z-K1-xwj">
+                                                        <rect key="frame" x="0.0" y="57.333333333333343" width="143" height="57.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Sw1-k4-lUa">
-                                                        <rect key="frame" x="0.0" y="76.333333333333343" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -940,21 +885,15 @@
                                                 <rect key="frame" x="12.666666666666671" y="8.6666666666666856" width="143" height="115"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QVX-Wy-8Sq">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G7O-aA-nmb">
-                                                        <rect key="frame" x="0.0" y="38.333333333333314" width="143" height="38.333333333333343"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G7O-aA-nmb">
+                                                        <rect key="frame" x="0.0" y="57.666666666666629" width="143" height="57.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aiL-xx-ANU">
-                                                        <rect key="frame" x="0.0" y="76.666666666666629" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -992,21 +931,15 @@
                                                 <rect key="frame" x="12.666666666666671" y="8.3333333333333073" width="143" height="115.33333333333331"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block 4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Nc6-gM-XCu">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="38.333333333333336"/>
-                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="107.66666666666667" height="57.666666666666664"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teacher Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-bi-QY1">
-                                                        <rect key="frame" x="0.0" y="38.333333333333371" width="143" height="38.666666666666657"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-bi-QY1">
+                                                        <rect key="frame" x="0.0" y="57.666666666666686" width="143" height="57.666666666666657"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="FyY-KM-ABc">
-                                                        <rect key="frame" x="0.0" y="77.000000000000057" width="31.333333333333332" height="38.333333333333343"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -1082,16 +1015,12 @@
                     </view>
                     <connections>
                         <outlet property="B1ClassLabel" destination="IOd-9G-KAz" id="wiH-xn-cSt"/>
-                        <outlet property="B1RoomLabel" destination="cgx-rs-toS" id="uEP-re-XT7"/>
                         <outlet property="B1TeacherLabel" destination="NVI-ND-h6D" id="mWn-Z3-wVj"/>
                         <outlet property="B2ClassLabel" destination="n95-JB-MI0" id="Mlu-Ys-8k9"/>
-                        <outlet property="B2RoomLabel" destination="Sw1-k4-lUa" id="jA8-kx-6tf"/>
                         <outlet property="B2TeacherLabel" destination="25Z-K1-xwj" id="1MZ-Z8-scx"/>
                         <outlet property="B3ClassLabel" destination="QVX-Wy-8Sq" id="JOl-JX-3zg"/>
-                        <outlet property="B3RoomLabel" destination="aiL-xx-ANU" id="0Ik-8t-iMO"/>
                         <outlet property="B3TeacherLabel" destination="G7O-aA-nmb" id="58F-FD-xOT"/>
                         <outlet property="B4ClassLabel" destination="Nc6-gM-XCu" id="0es-b2-58h"/>
-                        <outlet property="B4RoomLabel" destination="FyY-KM-ABc" id="bOZ-0p-uaP"/>
                         <outlet property="B4TeacherLabel" destination="qfd-bi-QY1" id="VmK-bk-EMI"/>
                         <segue destination="dqC-o4-gSK" kind="custom" identifier="toAddHomeworkVC" customClass="DeckSegue" customModule="DeckTransition" id="tcb-X6-txe"/>
                     </connections>
@@ -1114,7 +1043,7 @@
         <image name="spacer" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QwS-Q7-rtf"/>
-        <segue reference="r6j-Mw-BKR"/>
+        <segue reference="i2W-2E-0UV"/>
+        <segue reference="tcb-X6-txe"/>
     </inferredMetricsTieBreakers>
 </document>

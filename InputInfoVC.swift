@@ -23,17 +23,19 @@ class InputInfoVC: UIViewController
     
     @IBOutlet weak var classEditTextBox: UITextField!
     @IBOutlet weak var teacherNameTextField: UITextField!
-    @IBOutlet weak var roomNumberTextField: UITextField!
+//    @IBOutlet weak var roomNumberTextField: UITextField!
+    @IBOutlet weak var teacherEmailTextField: UITextField!
+    @IBOutlet weak var teacherWesbiteTextField: UITextField!
     @IBOutlet weak var pickTeacherBtn: RoundedButton!
     
     //IB function to unwind the segue back to what it was before
     @IBAction func saveButton(_ sender: Any)
     {
         guard let className = classEditTextBox.text , classEditTextBox.text != "" else { return }
-        guard let teacherName = teacherNameTextField.text , teacherNameTextField.text != "" else { return }
-        guard let roomNumber = roomNumberTextField.text , roomNumberTextField.text != "" else { return }
+        let teacherInfo = "\(String(describing: teacherNameTextField.text!)), \(String(describing: teacherEmailTextField.text!)), \(String(describing: teacherWesbiteTextField.text!))"
+//        guard let roomNumber = roomNumberTextField.text , roomNumberTextField.text != "" else { return }
         
-        userDataServices.instance.createBlock(teacher: teacherName, room: roomNumber, className: className)
+        userDataServices.instance.createBlock(teacher: teacherInfo, className: className)
         
         performSegue(withIdentifier: INPUT_UNWIND, sender: nil)
     }

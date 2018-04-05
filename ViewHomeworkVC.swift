@@ -24,6 +24,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     var arcLength: Double?
     var arcColor: UIColor?
     var teacherName: String?
+    var identity: String?
     var image: UIImage?
     var day: String?
     
@@ -138,6 +139,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         arcLength = Functions.instance.calculateArcLength()
         arcColor = Functions.instance.setColor()
         
+        identity = task.identityCode
         classTitle = task.classTitle!
         dueDate = task.dueDate!
         homework = task.homework!
@@ -165,11 +167,12 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         vc?.classTitleField = classTitle
         vc?.dueDateField = dueDate
         vc?.homeworkField = homework
-        vc?.teacherNameField = "Ms. Harwood"
+        vc?.teacherNameField = "No Teacher Given"
         vc?.arcLength = arcLength
         vc?.arcColor = arcColor
         vc?.day = day
         vc?.image = image
+        vc?.identity = identity
     }
     
     // MARK: - Actions
