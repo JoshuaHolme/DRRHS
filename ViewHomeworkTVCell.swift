@@ -17,7 +17,8 @@ class ViewHomeworkTVCell: UITableViewCell
     @IBOutlet weak var dueDateLbl: UILabel!
     @IBOutlet weak var descriptionTxtView: UITextView!
     @IBOutlet weak var CircleGraph: CircleGraphView!
-    @IBOutlet weak var viewHomeworkBtn: RoundedButton!
+    @IBOutlet weak var pictureLabel: UILabel!
+    
     
     @IBAction func viewHomeworkBtnPressed(_ sender: Any) {
         

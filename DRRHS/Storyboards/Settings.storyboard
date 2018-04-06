@@ -266,7 +266,7 @@
                         <outlet property="classEditTextBox" destination="7nC-Bv-oiD" id="uuK-wM-Tt8"/>
                         <outlet property="pickTeacherBtn" destination="HeT-0p-UMF" id="nvN-Cv-aWA"/>
                         <outlet property="saveBtn" destination="JFQ-Zi-fl8" id="oYt-Wn-koN"/>
-                        <outlet property="teacherEmailTextField" destination="Z8D-ne-OMw" id="qv6-1k-PeB"/>
+                        <outlet property="teacherEmailTextField" destination="Z8D-ne-OMw" id="WHK-SY-MjF"/>
                         <outlet property="teacherNameTextField" destination="SOW-9O-28g" id="mRB-dT-UF0"/>
                         <outlet property="teacherWesbiteTextField" destination="1no-SI-kC4" id="gFp-rY-q3e"/>
                         <segue destination="bCY-Hz-EQ3" kind="show" identifier="fromSettingsToDirectory" id="2lW-uA-t9B"/>

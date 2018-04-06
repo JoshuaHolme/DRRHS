@@ -16,6 +16,7 @@ class GoldDayScheduleVC: UIViewController
     var identity: identity.RawValue?
     
     // MARK: - IBOutlets
+    @IBOutlet weak var homeworkButton: RoundedButton!
     
     // Block 1
     @IBOutlet weak var B1ClassLabel: UILabel!
@@ -41,6 +42,7 @@ class GoldDayScheduleVC: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        homeworkButton.cornerRadius = homeworkButton.frame.height / 2
     }
     
     override func viewWillAppear(_ animated: Bool)
@@ -63,7 +65,7 @@ class GoldDayScheduleVC: UIViewController
 //        B2RoomLabel.text = userDataServices.instance.GoB2RoomNumber
         
         if let teacherNameArray = userDataServices.instance.GoB2Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+            B2TeacherLabel.text = teacherNameArray[0]
         }
         
         // Block 3
@@ -71,15 +73,15 @@ class GoldDayScheduleVC: UIViewController
 //        B3RoomLabel.text = userDataServices.instance.GoB3RoomNumber
         
         if let teacherNameArray = userDataServices.instance.GoB3Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+            B3TeacherLabel.text = teacherNameArray[0]
         }
         
         // Block 4
         B4ClassLabel.text = userDataServices.instance.GoB4ClassName
 //        B4RoomLabel.text = userDataServices.instance.GoB4RoomNumber
         
-        if let teacherNameArray = userDataServices.instance.GoB3Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+        if let teacherNameArray = userDataServices.instance.GoB4Teacher?.components(separatedBy: ",") {
+            B4TeacherLabel.text = teacherNameArray[0]
         }
     }
     

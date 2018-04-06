@@ -72,6 +72,7 @@ class ViewHomeworkDetailVC: UIViewController {
             websiteBtn.backgroundColor = .DRGold
         }
         determineTeacherInfo(identity: identity)
+        print(userDataServices.instance.GrB1Teacher?.components(separatedBy: ","))
     }
     
     // Function to determine the identity and replace TeacherName Label with the appropriate Name, email, and websites
@@ -143,12 +144,14 @@ class ViewHomeworkDetailVC: UIViewController {
     }
     
     @IBAction func emailBtnPressed(_ sender: Any) {
+        if let url = URL(string: "mailto:\(emailField!)") {
+            UIApplication.shared.open(url, options: [:])
+        }
     }
     
     @IBAction func websiteBtnPressed(_ sender: Any) {
+        if let url = URL(string: websiteField!) {
+            UIApplication.shared.open(url, options: [:])
+        }
     }
-    
-    @IBAction func directoryBtnPressed(_ sender: Any) {
-    }
-
 }

@@ -14,6 +14,7 @@ class GreenDayScheduleVC: UIViewController
     let fromDay = "Green"
     var classTitleLabel = ""
     var identity: identity.RawValue!
+    @IBOutlet weak var homeworkButton: RoundedButton!
     
     // MARK: - IBOutlets
     
@@ -41,6 +42,7 @@ class GreenDayScheduleVC: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        homeworkButton.cornerRadius = homeworkButton.frame.height / 3.1
     }
 
     override func viewWillAppear(_ animated: Bool)
@@ -63,23 +65,23 @@ class GreenDayScheduleVC: UIViewController
 //        B2RoomLabel.text = userDataServices.instance.GrB2RoomNumber
         
         if let teacherNameArray = userDataServices.instance.GrB2Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+            B2TeacherLabel.text = teacherNameArray[0]
         }
         
         // Block 3
         B3ClassLabel.text = userDataServices.instance.GrB3ClassName
 //        B3RoomLabel.text = userDataServices.instance.GrB3RoomNumber
         
-        if let teacherNameArray = userDataServices.instance.GrB3Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+        if let teacherNameArray: [String] = userDataServices.instance.GrB3Teacher?.components(separatedBy: ",") {
+            B3TeacherLabel.text = teacherNameArray[0]
         }
         
         // Block 4
         B4ClassLabel.text = userDataServices.instance.GrB4ClassName
 //        B4RoomLabel.text = userDataServices.instance.GrB4RoomNumber
         
-        if let teacherNameArray = userDataServices.instance.GrB4Teacher?.components(separatedBy: ",") {
-            B1TeacherLabel.text = teacherNameArray[0]
+        if let teacherNameArray: [String] = userDataServices.instance.GrB4Teacher?.components(separatedBy: ",") {
+            B4TeacherLabel.text = teacherNameArray[0]
         }
     }
     

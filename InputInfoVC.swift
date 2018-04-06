@@ -32,7 +32,7 @@ class InputInfoVC: UIViewController
     @IBAction func saveButton(_ sender: Any)
     {
         guard let className = classEditTextBox.text , classEditTextBox.text != "" else { return }
-        let teacherInfo = "\(String(describing: teacherNameTextField.text!)), \(String(describing: teacherEmailTextField.text!)), \(String(describing: teacherWesbiteTextField.text!))"
+        let teacherInfo = "\(String(describing: teacherNameTextField.text!)),\(String(describing: teacherEmailTextField.text!)),\(String(describing: teacherWesbiteTextField.text!))"
 //        guard let roomNumber = roomNumberTextField.text , roomNumberTextField.text != "" else { return }
         
         userDataServices.instance.createBlock(teacher: teacherInfo, className: className)

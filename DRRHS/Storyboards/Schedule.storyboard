@@ -329,6 +329,7 @@
                         <outlet property="B3TeacherLabel" destination="DrQ-CY-0ZH" id="aMv-Ti-mAk"/>
                         <outlet property="B4ClassLabel" destination="KBx-to-T15" id="9qB-gB-hfW"/>
                         <outlet property="B4TeacherLabel" destination="8iv-h5-I4D" id="t6m-eR-5lz"/>
+                        <outlet property="homeworkButton" destination="kLh-Y2-dPS" id="dBg-tE-Yg6"/>
                         <segue destination="dqC-o4-gSK" kind="custom" identifier="toAddHomeworkVC" customClass="DeckSegue" customModule="DeckTransition" id="r6j-Mw-BKR"/>
                         <segue destination="Jkg-wU-vEE" kind="presentation" identifier="toViewHomework" id="QwS-Q7-rtf"/>
                     </connections>
@@ -539,7 +540,7 @@
                                     <segue destination="aZB-bo-e9G" kind="unwind" identifier="GRHWVIEWUnwind" unwindAction="GRHWVIEW:" id="bpG-FC-lOg"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-Dg-BQA">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tuv-Dg-BQA">
                                 <rect key="frame" x="0.0" y="72" width="414" height="596"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -678,15 +679,38 @@
                                 <rect key="frame" x="10.333333333333343" y="151.00000000000003" width="393.33333333333326" height="311.66666666666674"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="kur-yg-7y7">
-                                <rect key="frame" x="276" y="60.666666666666657" width="122" height="55"/>
+                                <rect key="frame" x="276" y="61" width="122" height="55"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myp-ts-hcR" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ckM-1x-amh">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
-                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA6-er-wh1" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
+                                                <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="i">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="27"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="websiteBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="boj-cE-INI"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="55" id="JM5-C1-hgX"/>
-                                            <constraint firstAttribute="width" constant="55" id="RKl-VA-Qyd"/>
+                                            <constraint firstAttribute="width" constant="55" id="g9A-Bx-h2X"/>
+                                            <constraint firstAttribute="height" constant="55" id="tcN-Ta-Elt"/>
                                         </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-2e-hGw" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                        <rect key="frame" x="67" y="0.0" width="55" height="55"/>
+                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="e">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -699,25 +723,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <action selector="emailBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="Owg-me-Qpq"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-2e-hGw" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                                        <rect key="frame" x="67" y="0.0" width="55" height="55"/>
-                                        <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <state key="normal" title="i">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="27"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="websiteBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="z7U-0u-c0C"/>
+                                            <action selector="emailBtnPressed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="aXg-80-qw2"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -758,12 +764,12 @@
                         <outlet property="classTitle" destination="nXv-8F-8De" id="web-CG-Wbc"/>
                         <outlet property="dueDate" destination="lkb-es-Xnk" id="9fK-UN-qz5"/>
                         <outlet property="dueDateLbl" destination="EKK-EZ-EbE" id="Ce7-d6-f14"/>
-                        <outlet property="emailBtn" destination="Myp-ts-hcR" id="izq-QS-8eg"/>
+                        <outlet property="emailBtn" destination="6eI-2e-hGw" id="xqa-Md-zQO"/>
                         <outlet property="homework" destination="sit-sG-pK7" id="nhk-ZW-8g1"/>
                         <outlet property="homeworkLabel" destination="Nwz-Sh-hnd" id="xKu-AQ-eDw"/>
                         <outlet property="imageView" destination="Pkv-TW-6fB" id="EGy-bq-hT0"/>
                         <outlet property="teacherName" destination="TSC-GH-WtM" id="PlA-E0-DI1"/>
-                        <outlet property="websiteBtn" destination="6eI-2e-hGw" id="GLo-kL-gc2"/>
+                        <outlet property="websiteBtn" destination="nA6-er-wh1" id="oe7-xr-L9d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzT-wR-zmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1022,6 +1028,7 @@
                         <outlet property="B3TeacherLabel" destination="G7O-aA-nmb" id="58F-FD-xOT"/>
                         <outlet property="B4ClassLabel" destination="Nc6-gM-XCu" id="0es-b2-58h"/>
                         <outlet property="B4TeacherLabel" destination="qfd-bi-QY1" id="VmK-bk-EMI"/>
+                        <outlet property="homeworkButton" destination="SNy-14-JWW" id="LAb-3d-NF8"/>
                         <segue destination="dqC-o4-gSK" kind="custom" identifier="toAddHomeworkVC" customClass="DeckSegue" customModule="DeckTransition" id="tcb-X6-txe"/>
                     </connections>
                 </viewController>
@@ -1043,7 +1050,7 @@
         <image name="spacer" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i2W-2E-0UV"/>
-        <segue reference="tcb-X6-txe"/>
+        <segue reference="QwS-Q7-rtf"/>
+        <segue reference="r6j-Mw-BKR"/>
     </inferredMetricsTieBreakers>
 </document>

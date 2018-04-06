@@ -77,16 +77,16 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         if task.classColor == "Green"
         {
             cell.dayIndicator.backgroundColor = .DRGreen
-            cell.viewHomeworkBtn.backgroundColor = .DRGreen
+            cell.pictureLabel.textColor = .DRGreen
         }
         else if task.classColor == "Gold"
         {
             cell.dayIndicator.backgroundColor = .DRGold
-            cell.viewHomeworkBtn.backgroundColor = .DRGold
+            cell.pictureLabel.textColor = .DRGold
         }
         
         if task.picture != nil {
-            cell.viewHomeworkBtn.isHidden = false
+            cell.pictureLabel.isHidden = false
             cell.descriptionTxtView.isHidden = true
         }
         
@@ -134,6 +134,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
     {
+        homeworkTV.deselectRow(at: indexPath, animated: false)
         let task = GreenDayHomework[indexPath.row]
         Functions.instance.setTime(DueDate: task.dueDate!)
         arcLength = Functions.instance.calculateArcLength()
@@ -155,6 +156,8 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         if let imageData = task.picture {
             image = UIImage(data: imageData)
+        } else {
+            image = nil
         }
         
         performSegue(withIdentifier: TO_VIEW_HOMEWORK_DETAILED, sender: nil)

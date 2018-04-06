@@ -16,7 +16,7 @@
         <tableViewCell clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" shouldIndentWhileEditing="NO" reuseIdentifier="HomeworkCell" rowHeight="118" id="pdI-MZ-BFa" customClass="ViewHomeworkTVCell" customModule="DRRHS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="669" height="119"/>
             <autoresizingMask key="autoresizingMask"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pdI-MZ-BFa" id="7l1-h6-FWX">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pdI-MZ-BFa" id="7l1-h6-FWX">
                 <rect key="frame" x="0.0" y="0.0" width="669" height="118.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -49,25 +49,6 @@
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         <dataDetectorType key="dataDetectorTypes" link="YES"/>
                     </textView>
-                    <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vnX-l6-fDX" userLabel="View Homework Button" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                        <rect key="frame" x="36" y="47.5" width="401.5" height="50"/>
-                        <color key="backgroundColor" red="0.0065151359010000003" green="0.5" blue="0.22171467489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="50" id="oT6-gH-FAs"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
-                        <state key="normal" title="Photo">
-                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </state>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                        <connections>
-                            <action selector="viewHomeworkBtnPressed:" destination="pdI-MZ-BFa" eventType="touchUpInside" id="Shn-pI-ScL"/>
-                        </connections>
-                    </button>
                     <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBo-OH-Hl7" customClass="CircleGraphView" customModule="DRRHS" customModuleProvider="target">
                         <rect key="frame" x="591" y="34.5" width="50" height="50"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,17 +57,26 @@
                             <constraint firstAttribute="height" constant="50" id="kWu-js-eTW"/>
                         </constraints>
                     </view>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Photo Inserted" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJG-aK-aLd">
+                        <rect key="frame" x="36" y="47.5" width="312" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="CJx-ax-XA8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                        <color key="textColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="vnX-l6-fDX" firstAttribute="leading" secondItem="KDo-0k-KRk" secondAttribute="trailing" constant="16" id="0gZ-Yc-vfI"/>
                     <constraint firstAttribute="bottom" secondItem="KDo-0k-KRk" secondAttribute="bottom" constant="8" id="1jK-g3-2PU"/>
                     <constraint firstItem="Eqj-d2-mgr" firstAttribute="leading" secondItem="FBa-B7-cE8" secondAttribute="trailing" constant="15.5" id="5Jl-wd-GAS"/>
-                    <constraint firstItem="vnX-l6-fDX" firstAttribute="width" secondItem="7l1-h6-FWX" secondAttribute="width" multiplier="9/15" id="8b8-yB-TKj"/>
+                    <constraint firstItem="aJG-aK-aLd" firstAttribute="leading" secondItem="KDo-0k-KRk" secondAttribute="trailing" constant="16" id="CQz-E7-n7Z"/>
+                    <constraint firstItem="aJG-aK-aLd" firstAttribute="top" secondItem="Eqj-d2-mgr" secondAttribute="bottom" constant="11" id="D9z-P3-7zu"/>
                     <constraint firstItem="zBo-OH-Hl7" firstAttribute="centerY" secondItem="KDo-0k-KRk" secondAttribute="centerY" id="GZx-cW-jl5"/>
                     <constraint firstItem="Eqj-d2-mgr" firstAttribute="top" secondItem="7l1-h6-FWX" secondAttribute="topMargin" constant="6" id="KtG-L4-bbq"/>
                     <constraint firstItem="KDo-0k-KRk" firstAttribute="leading" secondItem="7l1-h6-FWX" secondAttribute="leading" constant="8" id="SeX-An-HuM"/>
+                    <constraint firstItem="aJG-aK-aLd" firstAttribute="width" secondItem="7l1-h6-FWX" secondAttribute="width" multiplier="7/15" id="VFH-c3-8wx"/>
                     <constraint firstItem="Ic8-bu-AX1" firstAttribute="top" secondItem="FBa-B7-cE8" secondAttribute="bottom" constant="1" id="VIO-o1-3Dp"/>
-                    <constraint firstItem="vnX-l6-fDX" firstAttribute="top" secondItem="Eqj-d2-mgr" secondAttribute="bottom" constant="11" id="e3z-WK-Tjj"/>
                     <constraint firstItem="KDo-0k-KRk" firstAttribute="top" secondItem="7l1-h6-FWX" secondAttribute="top" constant="8" id="iFX-dX-3aL"/>
                     <constraint firstItem="zBo-OH-Hl7" firstAttribute="centerY" secondItem="7l1-h6-FWX" secondAttribute="centerY" id="iQR-3s-gOu"/>
                     <constraint firstAttribute="trailingMargin" secondItem="zBo-OH-Hl7" secondAttribute="trailing" constant="8" id="iWi-5C-0US"/>
@@ -102,7 +92,7 @@
                 <outlet property="dayIndicator" destination="KDo-0k-KRk" id="QD8-bJ-t81"/>
                 <outlet property="descriptionTxtView" destination="Ic8-bu-AX1" id="tdQ-Fu-tmu"/>
                 <outlet property="dueDateLbl" destination="Eqj-d2-mgr" id="KEf-sQ-sh0"/>
-                <outlet property="viewHomeworkBtn" destination="vnX-l6-fDX" id="hLR-lM-3Rb"/>
+                <outlet property="pictureLabel" destination="aJG-aK-aLd" id="ZWb-Gu-5zm"/>
             </connections>
             <point key="canvasLocation" x="-3816.5" y="-1175.5"/>
         </tableViewCell>
