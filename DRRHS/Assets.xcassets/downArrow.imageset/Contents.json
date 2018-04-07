@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
+      "filename" : "downArrow.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "world-click-512.png",
       "scale" : "2x"
     },
     {
