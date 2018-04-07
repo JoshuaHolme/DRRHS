@@ -13,7 +13,7 @@ class Functions {
     
     static let instance = Functions()
 
-    public private(set) var dueDate : String = ""
+    public private(set) var dueDate: String = ""
     private(set) var currentDate = Date()
     private(set) var calendar = Calendar.current
 
@@ -115,14 +115,14 @@ class Functions {
                 }
             } else if dueDateDay > currentDay {
                 let totalDay = Double(dueDateDay - currentDay) / 31.0
-                arcLength = Double(totalDay) + 0.25
+                arcLength = Double(totalDay) + 0.50
                 if arcLength > 0.75 {
                     arcLength = 0.75
                     return arcLength
                 } else {
                     return arcLength
                 }
-            } else if dueDateDay - currentDay == 0 {
+            } else if dueDateDay - currentDay <= 1 {
                 let totalHour = Double(dueDateHour - currentHour) / 24
                 arcLength = totalHour
                 if arcLength > 0.25 {
@@ -137,9 +137,9 @@ class Functions {
     }
     
     func setColor() -> UIColor {
-        if arcLength > 0.50 {
+        if arcLength > 0.55 {
             return UIColor.DRGreen
-        } else if arcLength > 0.25 && arcLength <= 0.50 {
+        } else if arcLength > 0.25 && arcLength <= 0.55 {
             return UIColor.DRGold
         } else if arcLength > 0 && arcLength <= 0.25 {
             return UIColor.red

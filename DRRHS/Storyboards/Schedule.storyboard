@@ -119,7 +119,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="hKw-KV-qvH"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -165,7 +165,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="wTR-Ao-h5D"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -211,7 +211,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="v4m-0a-pki"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -257,7 +257,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="nyZ-Be-V5T"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
@@ -454,8 +454,8 @@
                                             </subviews>
                                         </stackView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Class Name Homework" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="dDF-4q-4FV">
-                                            <rect key="frame" x="21" y="12" width="372.66666666666669" height="70.333333333333329"/>
-                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                            <rect key="frame" x="20.666666666666657" y="12" width="372.66666666666674" height="70.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="27"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1049,7 +1049,7 @@
         <image name="spacer" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QwS-Q7-rtf"/>
-        <segue reference="r6j-Mw-BKR"/>
+        <segue reference="i2W-2E-0UV"/>
+        <segue reference="tcb-X6-txe"/>
     </inferredMetricsTieBreakers>
 </document>

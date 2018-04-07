@@ -42,7 +42,7 @@ class GoldDayScheduleVC: UIViewController
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        homeworkButton.cornerRadius = homeworkButton.frame.height / 2
+        homeworkButton.cornerRadius = homeworkButton.frame.height / 3.1
     }
     
     override func viewWillAppear(_ animated: Bool)

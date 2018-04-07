@@ -32,6 +32,7 @@ class ViewHomeworkVC: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        homeworkTV.reloadData()
     }
     
     override func viewWillAppear(_ animated: Bool)
