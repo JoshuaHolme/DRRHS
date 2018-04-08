@@ -747,11 +747,21 @@
                                     <constraint firstAttribute="height" constant="30" id="zKg-HM-Vqf"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-Dj-rHW">
+                                <rect key="frame" x="16" y="161" width="382" height="286"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="imageButtonPushed:" destination="Akc-Ib-71R" eventType="touchUpInside" id="s7n-vJ-lHn"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.9951923077" green="0.9903846154" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="2iz-aI-RGf" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="1eF-vd-jLc"/>
                             <constraint firstItem="2iz-aI-RGf" firstAttribute="top" secondItem="bhZ-Oa-e3E" secondAttribute="bottom" constant="12" id="27D-fl-ujp"/>
+                            <constraint firstItem="bhZ-Oa-e3E" firstAttribute="top" secondItem="A9K-Dj-rHW" secondAttribute="bottom" constant="12" id="2aO-2K-9y3"/>
                             <constraint firstItem="HQy-IS-QSH" firstAttribute="centerX" secondItem="mc1-jy-I6q" secondAttribute="centerX" id="32H-lm-QR7"/>
                             <constraint firstItem="bhZ-Oa-e3E" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="6S3-8I-a2J"/>
                             <constraint firstItem="kur-yg-7y7" firstAttribute="top" secondItem="nXv-8F-8De" secondAttribute="bottom" constant="8" id="8Ig-tl-MzC"/>
@@ -771,7 +781,10 @@
                             <constraint firstItem="sit-sG-pK7" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="YVs-Ld-XKV"/>
                             <constraint firstItem="iRI-Fp-GcH" firstAttribute="trailing" secondItem="kur-yg-7y7" secondAttribute="trailing" constant="16" id="ZC9-BR-OZx"/>
                             <constraint firstItem="HQy-IS-QSH" firstAttribute="top" secondItem="mc1-jy-I6q" secondAttribute="top" constant="2" id="az8-US-YmY"/>
+                            <constraint firstItem="A9K-Dj-rHW" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="bPL-WV-5uy"/>
+                            <constraint firstItem="iRI-Fp-GcH" firstAttribute="trailing" secondItem="A9K-Dj-rHW" secondAttribute="trailing" constant="16" id="f9a-LU-BDg"/>
                             <constraint firstItem="2iz-aI-RGf" firstAttribute="centerX" secondItem="mc1-jy-I6q" secondAttribute="centerX" id="fhc-sa-81N"/>
+                            <constraint firstItem="A9K-Dj-rHW" firstAttribute="top" secondItem="Nwz-Sh-hnd" secondAttribute="bottom" constant="8" id="pUa-tv-9e6"/>
                             <constraint firstItem="iRI-Fp-GcH" firstAttribute="trailing" secondItem="Pkv-TW-6fB" secondAttribute="trailing" constant="16" id="uy2-Jt-se7"/>
                             <constraint firstItem="bhZ-Oa-e3E" firstAttribute="top" secondItem="sit-sG-pK7" secondAttribute="bottom" constant="12" id="yQM-Pw-AbO"/>
                             <constraint firstItem="nXv-8F-8De" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="zK7-fa-DUB"/>
@@ -791,11 +804,69 @@
                         <outlet property="imageView" destination="Pkv-TW-6fB" id="EGy-bq-hT0"/>
                         <outlet property="teacherName" destination="TSC-GH-WtM" id="PlA-E0-DI1"/>
                         <outlet property="websiteBtn" destination="nA6-er-wh1" id="oe7-xr-L9d"/>
+                        <segue destination="COu-SB-ftq" kind="presentation" identifier="toImageVC" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="iRV-PK-PB7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kzT-wR-zmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4601.449275362319" y="-1423.3695652173915"/>
+        </scene>
+        <!--ImageVC-->
+        <scene sceneID="VUI-OP-YPS">
+            <objects>
+                <viewController id="COu-SB-ftq" customClass="ImageVC" customModule="DRRHS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="D1G-yf-1en">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="668"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WLR-32-dKI">
+                                <rect key="frame" x="0.0" y="111.33333333333334" width="414" height="445.33333333333326"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-vG-rTb" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                <rect key="frame" x="348" y="39" width="46" height="40"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qhy-D8-mmh"/>
+                                    <constraint firstAttribute="width" constant="46" id="eMP-WN-hbu"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="twtr-icn_close.png">
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="closeButtonPressed:" destination="COu-SB-ftq" eventType="touchUpInside" id="6tu-N5-a5r"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Pyl-vG-rTb" firstAttribute="top" secondItem="D1G-yf-1en" secondAttribute="top" constant="39" id="Axx-YV-tgd"/>
+                            <constraint firstItem="WLR-32-dKI" firstAttribute="width" secondItem="D1G-yf-1en" secondAttribute="width" id="EMU-0d-Emh"/>
+                            <constraint firstItem="WLR-32-dKI" firstAttribute="height" secondItem="D1G-yf-1en" secondAttribute="height" multiplier="2/3" id="VTa-lu-Lcv"/>
+                            <constraint firstItem="WLR-32-dKI" firstAttribute="centerX" secondItem="D1G-yf-1en" secondAttribute="centerX" id="Xl4-W4-snU"/>
+                            <constraint firstItem="hWf-EX-3Gy" firstAttribute="trailing" secondItem="Pyl-vG-rTb" secondAttribute="trailing" constant="20" id="vOr-m5-2vT"/>
+                            <constraint firstItem="WLR-32-dKI" firstAttribute="centerY" secondItem="D1G-yf-1en" secondAttribute="centerY" id="yiI-RN-PFE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hWf-EX-3Gy"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="WLR-32-dKI" id="iII-yy-Nin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjx-e5-8w6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5462.3188405797109" y="-1423.3695652173915"/>
         </scene>
         <!--Green Day ScheduleVC-->
         <scene sceneID="iJe-r1-bgC">
@@ -1076,6 +1147,7 @@
         <image name="internetIcon" width="172" height="168"/>
         <image name="settingsIcon" width="25" height="25"/>
         <image name="spacer" width="25" height="25"/>
+        <image name="twtr-icn_close.png" width="15" height="15"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="i2W-2E-0UV"/>

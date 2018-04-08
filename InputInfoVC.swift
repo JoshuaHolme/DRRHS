@@ -18,6 +18,7 @@ class InputInfoVC: UIViewController
     var teacherBtnPressed = false
     
     //IB Outlets
+    @IBOutlet weak var chooseTeacherButton: RoundedButton!
     @IBOutlet weak var blockNameLbl: UILabel!
     @IBOutlet weak var saveBtn: UIButton!
     
@@ -45,6 +46,7 @@ class InputInfoVC: UIViewController
         super.viewDidLoad()
         blockNameLbl.text = blockName
         blockNameLbl.textColor = blockColor
+        chooseTeacherButton.backgroundColor = blockColor
         saveBtn.setTitleColor(blockColor, for: .normal)
     }
     

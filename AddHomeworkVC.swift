@@ -61,9 +61,15 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControl
             //Save the data
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
             
+            // Create Notification
             self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
             
+//            let moc = …
             let content = UNMutableNotificationContent()
+//            let classTitles = NSFetchRequest<NSFetchRequestResult>(entityName: "classTitle")
+//
+//
+            
             content.title = "Reminder"
             
             content.badge = 1

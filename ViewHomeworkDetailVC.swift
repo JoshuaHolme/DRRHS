@@ -72,7 +72,6 @@ class ViewHomeworkDetailVC: UIViewController {
             websiteBtn.backgroundColor = .DRGold
         }
         determineTeacherInfo(identity: identity)
-        print(userDataServices.instance.GrB1Teacher?.components(separatedBy: ","))
     }
     
     // Function to determine the identity and replace TeacherName Label with the appropriate Name, email, and websites
@@ -153,5 +152,16 @@ class ViewHomeworkDetailVC: UIViewController {
         if let url = URL(string: websiteField!) {
             UIApplication.shared.open(url, options: [:])
         }
+    }
+    
+    @IBAction func imageButtonPushed(_ sender: Any) {
+        if image != nil {
+            performSegue(withIdentifier: TO_IMAGE_VC, sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as? ImageVC
+        vc?.image = image
     }
 }

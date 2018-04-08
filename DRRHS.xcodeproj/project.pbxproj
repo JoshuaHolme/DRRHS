@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31083C8A20796A0F006F4864 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31083C8920796A0F006F4864 /* ImageVC.swift */; };
 		310B32B3202DF7F600A92F6B /* UserDataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B32B2202DF7F600A92F6B /* UserDataServices.swift */; };
 		310B32B6202DF9C500A92F6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310B32B5202DF9C500A92F6B /* Constants.swift */; };
 		31111F171F45D2A100AA204F /* AddHomeworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31111F161F45D2A100AA204F /* AddHomeworkVC.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		1596F0A0424EE2DB3260BE82 /* Pods_DRRHSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DRRHSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31083C8920796A0F006F4864 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		310B32B2202DF7F600A92F6B /* UserDataServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataServices.swift; sourceTree = "<group>"; };
 		310B32B5202DF9C500A92F6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		31111F161F45D2A100AA204F /* AddHomeworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHomeworkVC.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */,
 				31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */,
 				312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */,
+				31083C8920796A0F006F4864 /* ImageVC.swift */,
 			);
 			name = Schedule;
 			path = ..;
@@ -389,7 +392,7 @@
 				TargetAttributes = {
 					699A69931F19816000E9CAD9 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = TGLE8RZWF5;
+						DevelopmentTeam = XLEYC29AG5;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -634,6 +637,7 @@
 				699A69981F19816000E9CAD9 /* AppDelegate.swift in Sources */,
 				69D931E41F54F7B8003D10B6 /* DirectoryDetailVC.swift in Sources */,
 				310B32B6202DF9C500A92F6B /* Constants.swift in Sources */,
+				31083C8A20796A0F006F4864 /* ImageVC.swift in Sources */,
 				3183A76A204B9CCD00ED1985 /* CircleGraphView.swift in Sources */,
 				312A9BDE204092AC00603567 /* ViewHomeworkDetailVC.swift in Sources */,
 				31470706203FBFAB002CF4A0 /* Extensions.swift in Sources */,
@@ -812,7 +816,7 @@
 			baseConfigurationReference = 3BBC2CC2DD94678BE84567F7 /* Pods-DRRHS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -829,7 +833,7 @@
 			baseConfigurationReference = F14BD033C7CCD2CEA6B83311 /* Pods-DRRHS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = TGLE8RZWF5;
+				DEVELOPMENT_TEAM = XLEYC29AG5;
 				INFOPLIST_FILE = DRRHS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -262,6 +262,7 @@
                     </view>
                     <connections>
                         <outlet property="blockNameLbl" destination="Md6-jS-yQH" id="DMj-dO-yIa"/>
+                        <outlet property="chooseTeacherButton" destination="HeT-0p-UMF" id="Z30-cD-0jd"/>
                         <outlet property="classEditTextBox" destination="7nC-Bv-oiD" id="uuK-wM-Tt8"/>
                         <outlet property="pickTeacherBtn" destination="HeT-0p-UMF" id="nvN-Cv-aWA"/>
                         <outlet property="saveBtn" destination="JFQ-Zi-fl8" id="oYt-Wn-koN"/>
@@ -304,6 +305,11 @@
                                         <state key="normal" title="Edit Block 1">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="editGRB1Pressed:" destination="U5a-3v-C6U" eventType="touchUpInside" id="d4N-nB-sMa"/>
                                         </connections>
@@ -315,6 +321,14 @@
                                         <state key="normal" title="Edit Block 2">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="editGRB2Pressed:" destination="U5a-3v-C6U" eventType="touchUpInside" id="cfp-gI-DDH"/>
                                         </connections>
@@ -326,6 +340,14 @@
                                         <state key="normal" title="Edit Block 3">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="editGRB3Pressed:" destination="U5a-3v-C6U" eventType="touchUpInside" id="zzF-yi-C6x"/>
                                         </connections>
@@ -337,6 +359,11 @@
                                         <state key="normal" title="Edit Block 4">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="-2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="editGRB4Pressed:" destination="U5a-3v-C6U" eventType="touchUpInside" id="6Ff-N2-hDv"/>
                                         </connections>
