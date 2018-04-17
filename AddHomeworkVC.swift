@@ -60,26 +60,22 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControl
             
             //Save the data
             (UIApplication.shared.delegate as! AppDelegate).saveContext()
-            getCoreData()
             
             // Create Notification
             self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
             
+//            let moc = …
             let content = UNMutableNotificationContent()
-            let homeworkAmount = homework.count
-            var assignments: [String] = []
-            
-            for i in 0...homeworkAmount - 1 {
-                let task = homework[i]
-                assignments.append(task.classTitle!)
-            }
+//            let classTitles = NSFetchRequest<NSFetchRequestResult>(entityName: "classTitle")
+//
+//
             
             content.title = "Reminder"
-            content.body = "Don't forget you have homework due in \(assignments.description.replacingOccurrences(of: "\"", with: ""))".replacingOccurrences(of: "]", with: "").replacingOccurrences(of: "[", with: "")
+            
             content.badge = 1
             content.categoryIdentifier = "notificationCategory"
             
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
+            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*5, repeats: false)
             
             let requestIndentifier = "GoldDayNotification"
             let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
