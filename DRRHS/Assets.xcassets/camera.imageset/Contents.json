@@ -6,7 +6,7 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "camera-photo-picture-photography-iphonex-ios11-ui-3938b181871d26a5-512x512.png",
+      "filename" : "camera.pdf",
       "scale" : "2x"
     },
     {
@@ -17,5 +17,8 @@
   "info" : {
     "version" : 1,
     "author" : "xcode"
+  },
+  "properties" : {
+    "template-rendering-intent" : "template"
   }
 }

@@ -33,8 +33,8 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7eT-CO-Ney">
-                        <barButtonItem key="leftBarButtonItem" image="spacer" id="NOQ-nH-koW"/>
-                        <barButtonItem key="rightBarButtonItem" image="settingsIcon" id="x7X-ei-yXX">
+                        <barButtonItem key="leftBarButtonItem" image="navigationBarSpacer" id="NOQ-nH-koW"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="x7X-ei-yXX">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="1iD-3B-FHG" kind="show" id="LhO-sp-1Mj"/>
@@ -57,7 +57,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="settingsIcon" width="25" height="25"/>
-        <image name="spacer" width="25" height="25"/>
+        <image name="navigationBarSpacer" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
 </document>

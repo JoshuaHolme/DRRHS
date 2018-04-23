@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wPC-Pb-5Vh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="wPC-Pb-5Vh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -94,7 +93,8 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cW2-u2-0lF" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="SRt-1o-2Mv">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="settingsIcon" id="PXd-3F-RKj">
+                        <barButtonItem key="leftBarButtonItem" image="navigationBarSpacer" id="GMu-Lp-wb6"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" image="settings" id="PXd-3F-RKj">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -117,8 +117,9 @@
     </scenes>
     <resources>
         <image name="holmeBarIcon" width="25" height="25"/>
+        <image name="navigationBarSpacer" width="24" height="24"/>
         <image name="scheduleBarIcon" width="25" height="25"/>
-        <image name="settingsIcon" width="25" height="25"/>
+        <image name="settings" width="24" height="24"/>
         <image name="teachersBarIcon" width="25" height="25"/>
     </resources>
 </document>

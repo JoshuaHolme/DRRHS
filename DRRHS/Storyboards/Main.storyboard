@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -37,13 +36,14 @@
             </objects>
             <point key="canvasLocation" x="-778" y="-1"/>
         </scene>
-        <!--Schedule-->
+        <!--Academic-->
         <scene sceneID="NsI-xD-csw">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2lU-VJ-0CY" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" image="scheduleBarIcon" selectedImage="scheduleBarIcon" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Academic" image="academic" selectedImage="academic" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="gEs-hu-1hA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -60,11 +60,11 @@
         <!--Home-->
         <scene sceneID="K4I-b9-LLf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq9-G9-gH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController title="Home" automaticallyAdjustsScrollViewInsets="NO" id="hLH-BO-kQv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="holmeBarIcon" selectedImage="holmeBarIcon" id="q5E-9o-4MK"/>
+                    <tabBarItem key="tabBarItem" title="News" image="news" selectedImage="news" id="q5E-9o-4MK"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="sEU-P5-J2b">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0065151359009288923" green="0.5" blue="0.22171467487736285" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -84,6 +84,7 @@
                         <segue destination="LCy-VJ-65n" kind="relationship" relationship="rootViewController" id="dN7-0S-3xv"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mq9-G9-gH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="394" y="-1"/>
         </scene>
@@ -91,9 +92,10 @@
         <scene sceneID="y1W-Go-Fh0">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1dw-R4-H7l" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Teachers" image="teachersBarIcon" selectedImage="teachersBarIcon" id="PNJ-Qf-zXT"/>
+                    <tabBarItem key="tabBarItem" title="Teachers" image="teachers" selectedImage="teachers" id="PNJ-Qf-zXT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="jO7-xu-FKY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.0065151359010000003" green="0.5" blue="0.22171467489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,8 +112,8 @@
         <!--UIViewController-qmc-lP-vab-->
         <scene sceneID="z1l-pC-Ahg">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2w2-nH-VfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardIdentifier="UIViewController-qmc-lP-vab" storyboardName="Settings" referencedIdentifier="UIViewController-qmc-lP-vab" id="fd9-b2-r61" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2w2-nH-VfR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-779" y="-456"/>
         </scene>
@@ -147,8 +149,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="holmeBarIcon" width="25" height="25"/>
-        <image name="scheduleBarIcon" width="25" height="25"/>
-        <image name="teachersBarIcon" width="25" height="25"/>
+        <image name="academic" width="23" height="23"/>
+        <image name="news" width="23" height="23"/>
+        <image name="teachers" width="23" height="23"/>
     </resources>
 </document>

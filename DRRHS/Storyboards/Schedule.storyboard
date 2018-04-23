@@ -62,8 +62,8 @@
                         <viewLayoutGuide key="safeArea" id="0sH-Ts-OqK"/>
                     </view>
                     <navigationItem key="navigationItem" id="WVr-NH-Hkb">
-                        <barButtonItem key="leftBarButtonItem" image="spacer" id="gLg-7d-FVS"/>
-                        <barButtonItem key="rightBarButtonItem" image="settingsIcon" id="Obb-Y3-JWg">
+                        <barButtonItem key="leftBarButtonItem" image="navigationBarSpacer" id="gLg-7d-FVS"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="Obb-Y3-JWg">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="settingsButtonPushed:" destination="pIY-We-ron" id="5DA-D3-t8B"/>
@@ -376,12 +376,11 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="LbL-YL-9Kc">
                                             <rect key="frame" x="20.333333333333343" y="383" width="373.66666666666663" height="88"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmV-5F-ufF" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmV-5F-ufF" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="178.33333333333334" height="88"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
-                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" title="Image">
+                                                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <state key="normal" image="camera">
                                                         <color key="titleColor" red="0.3433700838" green="0.34802321580000001" blue="0.3718424609" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -396,9 +395,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5MP-Km-LCQ" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                                     <rect key="frame" x="195.33333333333331" y="0.0" width="178.33333333333331" height="88"/>
                                                     <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="40"/>
                                                     <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <state key="normal" title="Text">
+                                                    <state key="normal" title="Tt">
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </state>
                                                     <userDefinedRuntimeAttributes>
@@ -489,17 +488,14 @@
                                         <constraint firstItem="LbL-YL-9Kc" firstAttribute="width" secondItem="2t4-32-Svf" secondAttribute="width" multiplier="27:30" constant="1" id="w26-d0-jMg"/>
                                     </constraints>
                                 </view>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Rm8-1g-T25">
-                                    <rect key="frame" x="177" y="2" width="60" height="30"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="30" id="8bz-3U-b76"/>
-                                        <constraint firstAttribute="width" constant="60" id="C9I-WZ-Puv"/>
-                                    </constraints>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dissmissArrow" translatesAutoresizingMaskIntoConstraints="NO" id="Rm8-1g-T25">
+                                    <rect key="frame" x="166.66666666666666" y="8" width="81" height="27"/>
+                                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </imageView>
                             </subviews>
                             <constraints>
                                 <constraint firstItem="Rm8-1g-T25" firstAttribute="centerX" secondItem="UGv-TI-e4a" secondAttribute="centerX" id="4hS-AX-Wki"/>
-                                <constraint firstItem="Rm8-1g-T25" firstAttribute="top" secondItem="UGv-TI-e4a" secondAttribute="top" constant="2" id="C8u-Z4-wVY"/>
+                                <constraint firstItem="Rm8-1g-T25" firstAttribute="top" secondItem="UGv-TI-e4a" secondAttribute="top" constant="8" id="C8u-Z4-wVY"/>
                                 <constraint firstAttribute="bottom" secondItem="2t4-32-Svf" secondAttribute="bottom" id="CBK-Pz-jAv"/>
                                 <constraint firstItem="2t4-32-Svf" firstAttribute="top" secondItem="UGv-TI-e4a" secondAttribute="top" id="DoA-k8-QBo"/>
                                 <constraint firstItem="2t4-32-Svf" firstAttribute="trailing" secondItem="p8n-q9-7Be" secondAttribute="trailing" id="H6p-t4-0hz"/>
@@ -699,6 +695,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA6-er-wh1" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="55" height="55"/>
                                                 <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="6" minY="6" maxX="6" maxY="6"/>
                                                 <state key="normal" image="internetIcon">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
@@ -723,6 +721,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eI-2e-hGw" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
                                         <rect key="frame" x="67" y="0.0" width="55" height="55"/>
                                         <color key="backgroundColor" red="0.2156862745" green="0.48627450979999998" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="8" minY="12" maxX="8" maxY="12"/>
                                         <state key="normal" image="emailIcon">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -740,12 +740,9 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downArrow" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-IS-QSH">
-                                <rect key="frame" x="177" y="2" width="60" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="ZeT-tT-JTz"/>
-                                    <constraint firstAttribute="height" constant="30" id="zKg-HM-Vqf"/>
-                                </constraints>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dissmissArrow" translatesAutoresizingMaskIntoConstraints="NO" id="HQy-IS-QSH">
+                                <rect key="frame" x="166.66666666666666" y="8" width="81" height="27"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9K-Dj-rHW">
                                 <rect key="frame" x="16" y="161" width="382" height="286"/>
@@ -780,7 +777,7 @@
                             <constraint firstItem="iRI-Fp-GcH" firstAttribute="bottom" secondItem="2iz-aI-RGf" secondAttribute="bottom" constant="22" id="W8J-1a-H7V"/>
                             <constraint firstItem="sit-sG-pK7" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="YVs-Ld-XKV"/>
                             <constraint firstItem="iRI-Fp-GcH" firstAttribute="trailing" secondItem="kur-yg-7y7" secondAttribute="trailing" constant="16" id="ZC9-BR-OZx"/>
-                            <constraint firstItem="HQy-IS-QSH" firstAttribute="top" secondItem="mc1-jy-I6q" secondAttribute="top" constant="2" id="az8-US-YmY"/>
+                            <constraint firstItem="HQy-IS-QSH" firstAttribute="top" secondItem="mc1-jy-I6q" secondAttribute="top" constant="8" id="az8-US-YmY"/>
                             <constraint firstItem="A9K-Dj-rHW" firstAttribute="leading" secondItem="iRI-Fp-GcH" secondAttribute="leading" constant="16" id="bPL-WV-5uy"/>
                             <constraint firstItem="iRI-Fp-GcH" firstAttribute="trailing" secondItem="A9K-Dj-rHW" secondAttribute="trailing" constant="16" id="f9a-LU-BDg"/>
                             <constraint firstItem="2iz-aI-RGf" firstAttribute="centerX" secondItem="mc1-jy-I6q" secondAttribute="centerX" id="fhc-sa-81N"/>
@@ -823,14 +820,16 @@
                                 <rect key="frame" x="0.0" y="111.33333333333334" width="414" height="445.33333333333326"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyl-vG-rTb" customClass="RoundedButton" customModule="DRRHS" customModuleProvider="target">
-                                <rect key="frame" x="348" y="39" width="46" height="40"/>
+                                <rect key="frame" x="354" y="39" width="40" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Qhy-D8-mmh"/>
-                                    <constraint firstAttribute="width" constant="46" id="eMP-WN-hbu"/>
+                                    <constraint firstAttribute="width" constant="40" id="eMP-WN-hbu"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="twtr-icn_close.png">
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -1142,12 +1141,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="downArrow" width="98" height="61"/>
-        <image name="emailIcon" width="172" height="168"/>
-        <image name="internetIcon" width="172" height="168"/>
-        <image name="settingsIcon" width="25" height="25"/>
-        <image name="spacer" width="25" height="25"/>
-        <image name="twtr-icn_close.png" width="15" height="15"/>
+        <image name="camera" width="100" height="76"/>
+        <image name="dissmissArrow" width="81" height="27"/>
+        <image name="emailIcon" width="66" height="48"/>
+        <image name="internetIcon" width="80" height="80"/>
+        <image name="navigationBarSpacer" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="i2W-2E-0UV"/>

@@ -36,8 +36,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="4ba-lr-PLg">
-                        <barButtonItem key="leftBarButtonItem" image="spacer" id="KNO-Vw-REv"/>
-                        <barButtonItem key="rightBarButtonItem" image="settingsIcon" id="NiA-oU-MF1">
+                        <barButtonItem key="leftBarButtonItem" image="navigationBarSpacer" id="KNO-Vw-REv"/>
+                        <barButtonItem key="rightBarButtonItem" image="settings" id="NiA-oU-MF1">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <segue destination="v0G-Qf-I0U" kind="show" id="8R6-so-kyr"/>
@@ -213,7 +213,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="settingsIcon" width="25" height="25"/>
-        <image name="spacer" width="25" height="25"/>
+        <image name="navigationBarSpacer" width="24" height="24"/>
+        <image name="settings" width="24" height="24"/>
     </resources>
 </document>
