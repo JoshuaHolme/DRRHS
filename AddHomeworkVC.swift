@@ -20,6 +20,7 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControl
     var identity = String()
     var calendar = Calendar.current
     var imageView = UIImage()
+    var homework: [Schedule] = []
     
     var dueDate = ""
     
@@ -64,18 +65,51 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControl
             // Create Notification
             self.performSegue(withIdentifier: "GRHWUnwind", sender: self)
             
-//            let moc = …
+            // Pull the necessary information from the core data for the notification
+            getCoreData()
+            
+            // Add Notification Action
+            let remindMinutesAction = UNNotificationAction(identifier: "minutes.action", title: "Remind Me in 30 Minutes", options: [])
+            let remindHourAction = UNNotificationAction(identifier: "hour.action", title: "Remind Me in 1 Hour", options: [])
+            
+            // Add Notification Category (this is not employed currently but is in app if needed later, just change category identifier to match notification)
+            let homeworkCategory = UNNotificationCategory(identifier: "homework.category", actions: [remindMinutesAction, remindHourAction], intentIdentifiers: [], options: [])
+            
+            // Send Category to Notification System
+            UNUserNotificationCenter.current().setNotificationCategories([homeworkCategory])
+            
+            // Define the primary notification
             let content = UNMutableNotificationContent()
-//            let classTitles = NSFetchRequest<NSFetchRequestResult>(entityName: "classTitle")
-//
-//
+            let homeworkAmount = homework.count
+            var assignments: [String] = []
+            var date = DateComponents()
+            date.hour = 17
             
-            content.title = "Reminder"
-            
+            // determine the string of classes in which homework is due for, this will determine if a class is already entered into the array and if so, not readd it to make it appear repetitive, also add an "and" statement at the end to make it appear fluent
+            assignments.removeAll()
+            for i in 0...homeworkAmount - 1 {
+                let task = homework[i]
+                
+                if assignments.contains(task.classTitle!){
+                    if i == homeworkAmount - 1 {
+                        assignments.append("and more \(task.classTitle!)")
+                    }
+                } else {
+                    if i == homeworkAmount - 1 {
+                        assignments.append("and \(task.classTitle!)")
+                    } else {
+                        assignments.append(task.classTitle!)
+                    }
+                }
+            }
+            // Set characteristics of the notifcation, including Title of notification, as well as the body using the array created earlier.
+            content.title = "Homework Reminder"
+            content.body = "Don't forget you have \(assignments.description.replacingOccurrences(of: "\"", with: "")) Homework Due Soon".replacingOccurrences(of: "]", with: "").replacingOccurrences(of: "[", with: "")
             content.badge = 1
-            content.categoryIdentifier = "notificationCategory"
+            content.categoryIdentifier = "homework.category"
             
-            let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60*5, repeats: false)
+            // Defines when the notification will fire. This uses a specific time in the day, but can also be set to a specific time after the save button is pressed.
+            let trigger = UNCalendarNotificationTrigger(dateMatching: date, repeats: false)
             
             let requestIndentifier = "GoldDayNotification"
             let request = UNNotificationRequest(identifier: requestIndentifier, content: content, trigger: trigger)
@@ -197,6 +231,20 @@ class AddHomeworkVC: UIViewController, UITextFieldDelegate, UIImagePickerControl
     {
         self.view.endEditing(true)
         return true
+    }
+    
+    func getCoreData()
+    {
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        
+        do
+        {
+            homework = try context.fetch(Schedule.fetchRequest())
+        }
+        catch
+        {
+            print ("fetching Failed")
+        }
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])

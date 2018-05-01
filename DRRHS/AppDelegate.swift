@@ -11,7 +11,7 @@ import TwitterKit
 import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate{
 
     var window: UIWindow?
 
@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
         }
-        
+        UNUserNotificationCenter.current().delegate = self
         
         //Tint Search Bar to match theme
         UISearchBar.appearance().barTintColor = .DRGreen
@@ -42,6 +42,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let action = response.actionIdentifier
+        if action == "minutes.action" {
+            let content = UNMutableNotificationContent()
+            content.title = "Homework Reminder"
+            content.body = "It's been 30 minutes, time to get on that homework!"
+            let snoozeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*30, repeats: false)
+            let snoozeRequest = UNNotificationRequest(identifier: "pizza.snooze", content: content, trigger: snoozeTrigger)
+            center.add(snoozeRequest) {
+                (error) in
+                if error != nil {
+                    print("Snooze Request Error: \(String(describing: error?.localizedDescription))")
+                }
+            }
+        }
+        if action == "hour.action" {
+            let content = UNMutableNotificationContent()
+            content.title = "Homework Reminder"
+            content.body = "It's been an hour, lets start that homework!"
+            let snoozeTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 60*60, repeats: false)
+            let snoozeRequest = UNNotificationRequest(identifier: "pizza.snooze", content: content, trigger: snoozeTrigger)
+            center.add(snoozeRequest) {
+                (error) in
+                if error != nil {
+                    print("Snooze Request Error: \(String(describing: error?.localizedDescription))")
+                }
+            }
+        }
+        
+        completionHandler()
+    }
+    
     
 
     func applicationWillResignActive(_ application: UIApplication) {
