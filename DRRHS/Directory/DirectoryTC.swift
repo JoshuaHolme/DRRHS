@@ -49,7 +49,7 @@ class DirectoryTC: UITableViewController, UISearchResultsUpdating
             // Set Search Bar background to white
             if let textfield = searchController.searchBar.value(forKey: "searchField") as? UITextField
             {
-                textfield.textColor = .DRGreen
+                textfield.textColor = UIColor.darkGray
                 if let backgroundview = textfield.subviews.first
                 {
                     // Background color
