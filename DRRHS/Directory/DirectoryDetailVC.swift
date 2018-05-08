@@ -16,8 +16,11 @@ class DirectoryDetailVC: UIViewController
     var website = ""
     
     @IBOutlet weak var NameLabel: UILabel!
-    
+    @IBOutlet weak var seperatorOne: UIView!
+    @IBOutlet weak var seperatorTwo: UIView!
+    @IBOutlet weak var seperatorThree: UIView!
     @IBOutlet weak var EmailLabel: UITextView!
+
     
 //    @IBOutlet weak var RoomNumberLabel: UILabel!
     
@@ -27,6 +30,9 @@ class DirectoryDetailVC: UIViewController
     {
         super.viewDidLoad()
         
+        seperatorOne.backgroundColor = .DRGreen
+        seperatorTwo.backgroundColor = .DRGreen
+        seperatorThree.backgroundColor = .DRGreen
         NameLabel.text = name
         NameLabel.sizeToFit()
         EmailLabel.text = email
@@ -34,7 +40,16 @@ class DirectoryDetailVC: UIViewController
 //        RoomNumberLabel.text = roomNumber
 //        RoomNumberLabel.sizeToFit()
         WebsiteLabel.text = website
-        WebsiteLabel.sizeToFit()
+        //adjustUITextViewHeight(arg: WebsiteLabel)
+        
+        
+    }
+    
+    func adjustUITextViewHeight(arg : UITextView)
+    {
+        arg.translatesAutoresizingMaskIntoConstraints = true
+        arg.sizeToFit()
+        arg.isScrollEnabled = false
     }
 }
 
