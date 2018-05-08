@@ -40,16 +40,8 @@ class DirectoryDetailVC: UIViewController
 //        RoomNumberLabel.text = roomNumber
 //        RoomNumberLabel.sizeToFit()
         WebsiteLabel.text = website
-        //adjustUITextViewHeight(arg: WebsiteLabel)
         
         
-    }
-    
-    func adjustUITextViewHeight(arg : UITextView)
-    {
-        arg.translatesAutoresizingMaskIntoConstraints = true
-        arg.sizeToFit()
-        arg.isScrollEnabled = false
     }
 }
 
