@@ -151,6 +151,10 @@ class ViewHomeworkDetailVC: UIViewController {
     @IBAction func websiteBtnPressed(_ sender: Any) {
         if let url = URL(string: websiteField!) {
             UIApplication.shared.open(url, options: [:])
+        } else if websiteField == "There is no wesbite available for this teacher"{
+            addAlert()
+        } else {
+            performSegue(withIdentifier: TO_MULTIPLEWEBSITES, sender: self)
         }
     }
     
@@ -160,8 +164,20 @@ class ViewHomeworkDetailVC: UIViewController {
         }
     }
     
+    func addAlert()
+    {
+        let alert = UIAlertController(title: "Uh Oh!", message: "There is no website currently available for this teacher", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .`default`, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc = segue.destination as? ImageVC
-        vc?.image = image
+        if let vc = segue.destination as? ImageVC {
+            vc.image = image
+        } else if let vc = segue.destination as? MultipleWebsitesVC {
+            vc.websites = websiteField!
+        }
     }
 }

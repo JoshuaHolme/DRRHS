@@ -21,6 +21,7 @@
 		315973892075A913001B9F16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 315973882075A913001B9F16 /* Assets.xcassets */; };
 		3159ECB9204ED705001A2D23 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3159ECB8204ED705001A2D23 /* Functions.swift */; };
 		3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3160B9CE1F35746B00EA532B /* InputInfoVC.swift */; };
+		31736E0720A4838E003A7D6A /* MultipleWebsitesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31736E0620A4838E003A7D6A /* MultipleWebsitesVC.swift */; };
 		3183A76A204B9CCD00ED1985 /* CircleGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3183A769204B9CCD00ED1985 /* CircleGraphView.swift */; };
 		31C3168B205CCDA60042D49A /* Enumerations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C3168A205CCDA60042D49A /* Enumerations.swift */; };
 		31F74ED02072A4960018FB30 /* DRRHS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 31F74ECE2072A4960018FB30 /* DRRHS.xcdatamodeld */; };
@@ -83,6 +84,7 @@
 		315973882075A913001B9F16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3159ECB8204ED705001A2D23 /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		3160B9CE1F35746B00EA532B /* InputInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputInfoVC.swift; sourceTree = "<group>"; };
+		31736E0620A4838E003A7D6A /* MultipleWebsitesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleWebsitesVC.swift; sourceTree = "<group>"; };
 		3183A769204B9CCD00ED1985 /* CircleGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleGraphView.swift; sourceTree = "<group>"; };
 		31C3168A205CCDA60042D49A /* Enumerations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumerations.swift; sourceTree = "<group>"; };
 		31F74ECF2072A4960018FB30 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				31111F181F45EF9300AA204F /* ViewHomeworkVC.swift */,
 				31111F1E1F45F51B00AA204F /* ViewHomeworkTVCell.swift */,
 				312A9BDD204092AC00603567 /* ViewHomeworkDetailVC.swift */,
+				31736E0620A4838E003A7D6A /* MultipleWebsitesVC.swift */,
 				31083C8920796A0F006F4864 /* ImageVC.swift */,
 			);
 			name = Schedule;
@@ -651,6 +654,7 @@
 				699A699A1F19816000E9CAD9 /* FirstViewController.swift in Sources */,
 				311E2F811F4347790098B355 /* EditScheduleVC.swift in Sources */,
 				3160B9CF1F35746B00EA532B /* InputInfoVC.swift in Sources */,
+				31736E0720A4838E003A7D6A /* MultipleWebsitesVC.swift in Sources */,
 				695317781F60BA760092454A /* DirectoryTC.swift in Sources */,
 				31111F1F1F45F51B00AA204F /* ViewHomeworkTVCell.swift in Sources */,
 				31111F171F45D2A100AA204F /* AddHomeworkVC.swift in Sources */,

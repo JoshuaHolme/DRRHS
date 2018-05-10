@@ -39,9 +39,6 @@ class CircleGraphView: UIView {
         // Starting Code for Drawing a Circle
         let context = UIGraphicsGetCurrentContext()
         
-        //Set ColorSpace
-        let colorspace = CGColorSpaceCreateDeviceRGB()
-        
         // Set Line Attributes
         context!.setLineWidth(arcWidth)
         context!.setLineCap(CGLineCap.round)
